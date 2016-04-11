@@ -13,8 +13,6 @@ body {
   font-size: 13px;
 }
 
-<<<<<<< HEAD
-=======
 /**** MENUS ****/
 
 #left a,
@@ -37,7 +35,6 @@ body {
   color: #FFF;
   text-decoration: none;
 }
->>>>>>> carina
 
 /**** MENU GAUCHE ****/
 
@@ -80,8 +77,6 @@ header #logo img {
   background-color: #d1d1d7;
 }
 
-<<<<<<< HEAD
-=======
 #left nav#menuNav a {
   padding: 5px 37px;
   display: block;
@@ -105,12 +100,10 @@ header #logo img {
  text-decoration: none;
 }
 
-
 .activeMenu {
   background-color: #1c1c25;
   border-left: solid 2px #007feb;
 }
->>>>>>> carina
 
 /**** MENUS ****/
 
@@ -144,18 +137,17 @@ header nav#menuNav a {
   display: block;
 }
 
-<<<<<<< HEAD
 #left li:hover a,
 #right li:hover a {
   color: #FFF;
   text-decoration: none;
-=======
+}
+
 #personnaliser{
   background-image: url(../images/personnaliser.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0px 30px;
->>>>>>> carina
 }
 
 
