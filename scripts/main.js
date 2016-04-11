@@ -10,7 +10,7 @@ $(document).ready(function () {
 		Pour changer la couleur du body en fonction de l'heure
 
 	************************************************************/
-<<<<<<< HEAD
+
 	/*var body = document.getElementById("body");
 
 	// Récupération de l'heure
@@ -61,10 +61,10 @@ $(document).ready(function () {
 		if(dayTime == 24){dayTime = 0;}
 		changeTime(dayTime);
 	}
-=======
+
 	
 	var body = $("#body");
->>>>>>> origin/master
+
 
 	// Récupération de l'heure
 	var date = new Date;
@@ -128,9 +128,6 @@ $(document).ready(function () {
 		Pour changer la couleur du body en fonction de l'heure
 
  ************************************************************/
-
-<<<<<<< HEAD
-  
 // Fonction pour dérouler la playlist
   $('#list-playlists').hide();
   $('#playlists').on('click', function(){
@@ -141,10 +138,4 @@ $(document).ready(function () {
       $('#list-playlists').hide();
     }
   });
-  
-  
-  
 });
-=======
-});
->>>>>>> origin/master
