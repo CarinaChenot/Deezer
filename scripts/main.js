@@ -8,7 +8,7 @@ $(document).ready(function(){
 		Pour changer la couleur du body en fonction de l'heure
 		
 	************************************************************/
-	var body = document.getElementById("body");
+	var body = $("#body");
 
 	// Récupération de l'heure
 	var date = new Date;
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	var forceJour = 0;
 	var situation = 0; //0 pour le jour et 1 pour la nuit
-	$("jour").on("click",function(){
+	$("#jour").on("click",function(){
 		if(forceJour == 0){
 			forceJour = 1;
 			forceTime();
@@ -32,22 +32,22 @@ $(document).ready(function(){
 
 	function forceTime(){
 		if(situation == 0){
-			body.style.background = "#454545";
+			body.css("background", "#454545");
 			situation = 1;
 		}
 		else{
-			body.style.background = "#C8C8C8";
+			body.css("background", "#C8C8C8");
 			situation = 0;
 		}
 	}	
 
 	function changeTime(dayTime){
 		if(dayTime > 18){
-			body.style.background = "#454545";
+			body.css("background", "#454545");
 			situation = 1;
 		}
 		else{
-			body.style.background = "#C8C8C8";
+			body.css("background", "#C8C8C8");
 			situation = 0;
 		}
 	}
