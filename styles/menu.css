@@ -1,7 +1,80 @@
-body{
-  margin:0;
-  font-family: 'Open Sans', sans-serif;
+/**** HEADER ****/
+
+header {
+  position: fixed;
+  background-color: #23232c;
+  width: 220px;
+  height: 100%;
+  font-size: 13px;
 }
+
+/**** LOGO ****/
+
+header #logo {
+  text-align: center;
+  padding: 10px 5px;
+}
+header #logo img {
+  width: 130px;
+}
+
+/**** SEARCH ****/
+
+#search form {
+  text-align: center;
+}
+#search input{
+  background-color: #d1d1d7;
+  color: #42424d;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+}
+
+#search #textinput{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+
+#search #loupe{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  background-image: url(../images/loupe.png);
+  background-repeat: no-repeat;
+}
+
+/**** MENUS ****/
+
+header a {
+  color: #c1c1c9;
+}
+
+header li {
+  padding: 5px 10px;
+}
+
+header li:active {
+  background-color: #1c1c25;
+  border-left: solid 2px #007feb; 
+}
+
+.activeMenu {
+  background-color: #1c1c25;
+  border-left: solid 2px #007feb; 
+}
+
+
+header nav#menuNav a{
+  padding: 5px;
+  display: block;
+}
+
+header li:hover a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 
 
 
