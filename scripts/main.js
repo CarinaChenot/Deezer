@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('header li').click(function () {
     $(this).toggleClass('activeMenu');
   });
-
+  
 /************************************************************
 	
 		Pour changer la couleur du body en fonction de l'heure
@@ -71,5 +71,5 @@ $(document).ready(function () {
 		Pour changer la couleur du body en fonction de l'heure
 		
  ************************************************************/
-  
+
 });
