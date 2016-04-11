@@ -2,7 +2,8 @@ body {
   position: relative;
 }
 
-#right, #left {
+#right,
+#left {
   font-family: "Open Sans", Arial, sans-serif;
   position: fixed;
   background-color: #23232c;
@@ -11,7 +12,9 @@ body {
   font-size: 13px;
 }
 
+
 /**** MENU GAUCHE ****/
+
 
 /**** LOGO ****/
 
@@ -19,9 +22,11 @@ header #logo {
   text-align: center;
   padding: 10px 5px;
 }
+
 header #logo img {
   width: 130px;
 }
+
 
 /**** SEARCH ****/
 
@@ -30,7 +35,7 @@ header #logo img {
   margin-bottom: 10px;
 }
 
-#search #textinput{
+#search #textinput {
   background-color: #d1d1d7;
   color: #42424d;
   border-radius: 3px;
@@ -39,7 +44,7 @@ header #logo img {
   width: 180px;
 }
 
-#search #loupe{
+#search #loupe {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   background-image: url(../images/loupe.png);
@@ -49,36 +54,41 @@ header #logo img {
   background-color: #d1d1d7;
 }
 
+
 /**** MENUS ****/
 
-header a {
+#left a,
+#right a {
   color: #c1c1c9;
 }
 
-header li {
+#left li,
+#right li {
   padding: 3px 16px;
 }
 
 header li:active {
   background-color: #1c1c25;
-  border-left: solid 2px #007feb; 
+  border-left: solid 2px #007feb;
 }
 
-header li:hover {
+#left li:hover,
+#right li:hover {
   background-color: #1f1f29;
 }
 
 .activeMenu {
   background-color: #1c1c25;
-  border-left: solid 2px #007feb; 
+  border-left: solid 2px #007feb;
 }
 
-header nav#menuNav a{
+header nav#menuNav a {
   padding: 5px;
   display: block;
 }
 
-header li:hover a {
+#left li:hover a,
+#right li:hover a {
   color: #FFF;
   text-decoration: none;
 }
@@ -86,9 +96,9 @@ header li:hover a {
 
 /**** MENU DROIT ****/
 
-section#right{
+section#right {
   position: fixed;
   right: 0;
+  width: 150px;
 }
-
 
