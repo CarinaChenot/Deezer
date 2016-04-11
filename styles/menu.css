@@ -12,8 +12,35 @@ body {
   font-size: 13px;
 }
 
+/**** MENUS ****/
 
-/**** MENU GAUCHE ****/
+#left a,
+#right a {
+  color: #c1c1c9;
+}
+
+#left li,
+#right li {
+  padding: 3px 16px;
+}
+
+#left li:hover,
+#right li:hover {
+  background-color: #1f1f29;
+}
+
+#left li:hover a,
+#right li:hover a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+/***************************
+
+        MENU GAUCHE 
+
+****************************/
 
 
 /**** LOGO ****/
@@ -26,7 +53,6 @@ header #logo {
 header #logo img {
   width: 130px;
 }
-
 
 /**** SEARCH ****/
 
@@ -54,7 +80,12 @@ header #logo img {
   background-color: #d1d1d7;
 }
 
+#left nav#menuNav a {
+  padding: 5px 37px;
+  display: block;
+}
 
+<<<<<<< HEAD
 /**** MENUS ****/
 
 #left li,
@@ -81,21 +112,77 @@ header #logo img {
 .activeMenu {
   background-color: #1c1c25;
   border-left: solid 2px #007feb;
+=======
+.activeMenu {
+  background-color: #1c1c25;
+  border-left: solid 2px #007feb;
 }
 
-header nav#menuNav a {
-  padding: 5px;
-  display: block;
+/**** Icones Menu ****/
+
+#left li a {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position:left;
 }
 
-#left li:hover a,
-#right li:hover a {
+li#accueil a {
+   background-image: url(../images/accueil.png);
+}
+li#ecouter a {
+   background-image: url(../images/a_ecouter.png);
+}
+li#nouveautes a {
+   background-image: url(../images/nouveautes.png);
+}
+li#top_playlists a {
+   background-image: url(../images/top_playlists.png);
+}
+li#genres a {
+   background-image: url(../images/genres.png);
+}
+li#ambiances a {
+   background-image: url(../images/ambiances.png);
+}
+li#infos a {
+   background-image: url(../images/infos_et_divertissements.png);
+}
+
+/**** FLOW ****/
+
+#flow {
+  margin: 0px 15px;
+  text-align: center;
+  width: 190px;
+  height: 150px;
+  background-image: url(../images/flow-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
   color: #FFF;
-  text-decoration: none;
+  position: relative;
+}
+
+#flow h3 {
+  padding-top: 15px;
+>>>>>>> master
+}
+
+#flow img {
+  cursor: pointer;
+}
+
+#flow h5 {
+  text-align: center;
+  padding-top: 10px;
 }
 
 
-/**** MENU DROIT ****/
+/*************************
+
+        MENU DROIT 
+
+**************************/
 
 section#right {
   position: fixed;
