@@ -1,5 +1,6 @@
 body {
   position: relative;
+  color: #FFF;
 }
 
 #right,
@@ -12,6 +13,31 @@ body {
   font-size: 13px;
 }
 
+<<<<<<< HEAD
+=======
+/**** MENUS ****/
+
+#left a,
+#right a {
+  color: #c1c1c9;
+}
+
+#left li,
+#right li {
+  padding: 3px 9px 3px 16px;
+}
+
+#left li:hover,
+#right li:hover {
+  background-color: #1f1f29;
+}
+
+#left li:hover a,
+#right li:hover a {
+  color: #FFF;
+  text-decoration: none;
+}
+>>>>>>> carina
 
 /**** MENU GAUCHE ****/
 
@@ -54,6 +80,37 @@ header #logo img {
   background-color: #d1d1d7;
 }
 
+<<<<<<< HEAD
+=======
+#left nav#menuNav a {
+  padding: 5px 37px;
+  display: block;
+}
+
+/**** MENUS ****/
+
+
+#left li:hover,
+#right li:hover {
+  background-color: #1f1f29;
+}
+
+#left a,
+#right a {
+  color: #c1c1c9;
+}
+
+#left li:active a,
+#right li:active a {
+ text-decoration: none;
+}
+
+
+.activeMenu {
+  background-color: #1c1c25;
+  border-left: solid 2px #007feb;
+}
+>>>>>>> carina
 
 /**** MENUS ****/
 
@@ -87,10 +144,18 @@ header nav#menuNav a {
   display: block;
 }
 
+<<<<<<< HEAD
 #left li:hover a,
 #right li:hover a {
   color: #FFF;
   text-decoration: none;
+=======
+#personnaliser{
+  background-image: url(../images/personnaliser.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 30px;
+>>>>>>> carina
 }
 
 
@@ -102,6 +167,44 @@ section#right {
   width: 150px;
 }
 
+.subscribe{
+  background-color: #007feb;
+  border-radius: 5px;
+  padding: 4px 15px;
+  text-transform: uppercase;
+  margin: 13px 16px;
+}
+
+#user {
+  margin: 10px 15px;
+}
+
 #user img{
   border-radius: 50px;
+  margin-right: 5px;
+}
+
+#user a:nth-child(1) {
+ margin-right: 10px;
+}
+
+#profilNav a{
+  padding-left: 10px;
+  padding: 5px;
+  display: block;
+}
+
+#profilNav #playlists a{
+  padding: 2px;
+}
+
+#arrow {
+  background-image: url(../images/uparrow.png);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  background-size: contain;
+  float: right;
+  margin-left: -10px;
+  
 }
