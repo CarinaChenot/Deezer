@@ -102,3 +102,6 @@ section#right {
   width: 150px;
 }
 
+#user img{
+  border-radius: 50px;
+}
