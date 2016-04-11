@@ -1,5 +1,6 @@
 body {
   position: relative;
+  color: #FFF;
 }
 
 #right,
@@ -85,7 +86,6 @@ header #logo img {
   display: block;
 }
 
-<<<<<<< HEAD
 /**** MENUS ****/
 
 #left li,
@@ -109,10 +109,6 @@ header #logo img {
 }
 
 
-.activeMenu {
-  background-color: #1c1c25;
-  border-left: solid 2px #007feb;
-}
 .activeMenu {
   background-color: #1c1c25;
   border-left: solid 2px #007feb;
@@ -176,6 +172,12 @@ li#infos a {
   padding-top: 10px;
 }
 
+#personnaliser{
+  background-image: url(../images/personnaliser.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 30px;
+}
 
 /*************************
 
@@ -187,8 +189,30 @@ section#right {
   position: fixed;
   right: 0;
   width: 150px;
+  color: #a3a3aa;
+}
+
+.subscribe{
+  background-color: #007feb;
+  border-radius: 5px;
+  padding: 4px 15px;
+  text-transform: uppercase;
+  margin: 13px 16px;
+}
+
+#user {
+  margin: 10px 15px;
 }
 
 #user img{
   border-radius: 50px;
+  margin-right: 5px;
+}
+
+#user a:nth-child(1) {
+ margin-right: 10px;
+}
+
+#profilNav a{
+  padding-left: 10px;
 }
