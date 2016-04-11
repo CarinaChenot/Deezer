@@ -34,22 +34,22 @@ $(document).ready(function () {
 
 	function forceTime(){
 		if(situation == 0){
-			body.style.background = "#454545";
+			body.css("background", "#454545");
 			situation = 1;
 		}
 		else{
-			body.style.background = "#C8C8C8";
+			body.css("background", "#C8C8C8");
 			situation = 0;
 		}
 	}	
 
 	function changeTime(dayTime){
 		if(dayTime > 18){
-			body.style.background = "#454545";
+			body.css("background", "#454545");
 			situation = 1;
 		}
 		else{
-			body.style.background = "#C8C8C8";
+			body.css("background", "#C8C8C8");
 			situation = 0;
 		}
 	}
