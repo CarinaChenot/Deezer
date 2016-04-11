@@ -14,7 +14,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="body">
 <!-- MENU GAUCHE -->
 <section id="left">
   <header>
@@ -41,7 +41,12 @@
     </nav>
   </header>
   <div id="theme">
-    <!-- Boutons jour nuit ici-->
+    <div class="switch" id="jourNuit">
+				<input type="checkbox" id="input-switch" class="switch__checkbox" />
+				<label class="switch__label" for="input-switch" id="jour">         
+					<span class="switch__circle jour" id="day"></span>     
+				</label>
+			</div>
   </div>
   <div id="flow">
    <h3>Flow</h3>
