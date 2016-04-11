@@ -4,17 +4,13 @@ $(document).ready(function () {
   $('header li').click(function () {
     $(this).toggleClass('activeMenu');
   });
-<<<<<<< HEAD
-=======
-  
->>>>>>> master
+
 /************************************************************
 	
 		Pour changer la couleur du body en fonction de l'heure
 		
 	************************************************************/
-	var body = document.getElementById("body");
-<<<<<<< HEAD
+	/*var body = document.getElementById("body");
 
 	// Récupération de l'heure
 	var date = new Date;
@@ -65,8 +61,6 @@ $(document).ready(function () {
 		changeTime(dayTime);
 	}
 
-=======
-
 	// Récupération de l'heure
 	var date = new Date;
 	var daySecond = date.getSeconds();
@@ -115,8 +109,6 @@ $(document).ready(function () {
 		if(dayTime == 24){dayTime = 0;}
 		changeTime(dayTime);
 	}
-
->>>>>>> master
 	var changeColor = setInterval(function(){
 		animation();
 	}, 1000);
@@ -128,4 +120,18 @@ $(document).ready(function () {
 		
  ************************************************************/
 
+  
+// Fonction pour dérouler la playlist
+  $('#list-playlists').hide();
+  $('#playlists').on('click', function(){
+    $('#list-playlists').toggleClass('opened');
+    if($('#list-playlists').hasClass('opened')){
+      $('#list-playlists').show();
+    } else{
+      $('#list-playlists').hide();
+    }
+  });
+  
+  
+  
 });
