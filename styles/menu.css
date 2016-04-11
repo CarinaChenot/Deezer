@@ -62,15 +62,21 @@ header #logo img {
   padding: 3px 16px;
 }
 
-header li:active {
-  background-color: #1c1c25;
-  border-left: solid 2px #007feb;
-}
-
 #left li:hover,
 #right li:hover {
   background-color: #1f1f29;
 }
+
+#left a,
+#right a {
+  color: #c1c1c9;
+}
+
+#left li:active a,
+#right li:active a {
+ text-decoration: none;
+}
+
 
 .activeMenu {
   background-color: #1c1c25;
