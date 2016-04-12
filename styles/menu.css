@@ -1,6 +1,7 @@
 body {
   position: relative;
   color: #FFF;
+  background-color:#FFF;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -11,6 +12,7 @@ body {
   width: 220px;
   height: 100%;
   font-size: 13px;
+  z-index: 10;
 }
 
 

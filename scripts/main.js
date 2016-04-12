@@ -128,6 +128,9 @@ $(document).ready(function () {
 
    ************************************************************/
   
+  //Régler la taille de la page
+  $('.page').css('width', parseInt($('.page').css('width')));
+  
   //Fonction pour rétracter le menu gauche
   $('#hamburger').on('click', function(){
     $('#left').toggle( "slide" );
