@@ -9,85 +9,98 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="styles/menu.css" rel=stylesheet>
   <link href="styles/styles.css" rel=stylesheet>
+  <link href="styles/accueil.css" rel=stylesheet>
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body id="body">
-<!-- MENU GAUCHE -->
-<section id="left">
-  <header>
-    <div id="logo">
-      <img src="images/deezer_logo.png" alt="logo">
+  <!-- MENU GAUCHE -->
+  <section id="left">
+    <header>
+      <div id="logo">
+        <img src="images/deezer_logo.png" alt="logo">
+      </div>
+      <div id="search">
+        <form method="get" action="#">
+          <input type="text" id="textinput" name="search" placeholder="Rechercher">
+          <input type="submit" id="loupe" value=" " class="">
+        </form>
+      </div>
+      <nav id="menuNav">
+        <ul class="text-uppercase list-unstyled">
+          <li id="accueil"><a href="#">Accueil</a></li>
+          <li id="ecouter"><a href="#">À écouter</a></li>
+          <li id="nouveautes"><a href="#">Nouveautés</a></li>
+          <li id="top_playlists"><a href="#">Top playlists</a></li>
+          <li id="genres"><a href="#">Genres</a></li>
+          <li id="ambiances"><a href="#">Ambiances</a></li>
+          <li id="infos"><a href="#">Infos & divertissement</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <div id="theme">
+      <div class="switch" id="jourNuit">
+        <input type="checkbox" id="input-switch" class="switch__checkbox" />
+        <label class="switch__label" for="input-switch" id="jour">
+          <span class="switch__circle" id="buttonJour"></span>
+        </label>
+      </div>
     </div>
-    <div id="search">
-      <form method="get" action="#">
-        <input type="text" id="textinput" name="search" placeholder="Rechercher">
-        <input type="submit" id="loupe" value=" " class="">
-      </form>
+
+    <div id="flow">
+      <h3>Flow</h3>
+      <img id="playflow" src="images/play.png" alt="play">
+      <h5>Un mix basé sur vos favoris</h5>
     </div>
-    <nav id="menuNav">
-      <ul class="text-uppercase list-unstyled">
-        <li id="accueil"><a href="#">Accueil</a></li>
-        <li id="ecouter"><a href="#">À écouter</a></li>
-        <li id="nouveautes"><a href="#">Nouveautés</a></li>
-        <li id="top_playlists"><a href="#">Top playlists</a></li>
-        <li id="genres"><a href="#">Genres</a></li>
-        <li id="ambiances"><a href="#">Ambiances</a></li>
-        <li id="infos"><a href="#">Infos & divertissement</a></li>
-        
+    <div>Personnaliser</div>
+
+    <div id="personnaliser">Personnaliser</div>
+  </section>
+
+
+  <!-- MENU DROIT -->
+  <section id="right">
+    <button class="subscribe btn">+ S'abonner</button>
+    <div id="user">
+      <a href="#">
+        <img src="images/user.jpg" alt="user">Pseudo
+      </a>
+      <a href="#"><img src="images/settings.png" alt="settings" id="settings"></a>
+
+    </div>
+    <nav id="profilNav">
+      <ul class="list-unstyled">
+        <li><a href="#">MA MUSIQUE</a></li>
+        <li id="playlists"><a href="#">MES PLAYLISTS<div id="arrow"></div></a>
+          <ul id="list-playlists" class="list-unstyled">
+            <li><a href="#">Chill - Relax</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="#">COUPS DE CŒUR</a></li>
+        <li><a href="#">ALBUMS</a></li>
+        <li><a href="#">PODCASTS</a></li>
+        <li><a href="#">APPLICATIONS</a></li>
+        <li><a href="#">HISTORIQUE</a></li>
       </ul>
     </nav>
-  </header>
-  <div id="theme">
-    <div class="switch" id="jourNuit">
-				<input type="checkbox" id="input-switch" class="switch__checkbox" />
-				<label class="switch__label" for="input-switch" id="jour">         
-					<span class="switch__circle jour" id="day"></span>     
-				</label>
-			</div>
-  </div>
-  <div id="flow">
-   <h3>Flow</h3>
-   <img id="playflow" src="images/play.png" alt="play">
-    <h5>Un mix basé sur vos favoris</h5>
-  </div>
-  <div>Personnaliser</div>
-  
-  <div id="personnaliser">Personnaliser</div>
-</section>
+  </section>
 
+  <!-- PAGE ACCUEIL -->
+  <section id="accueil">
+    <figure id="accueilFlow" class="text-center">
 
-<!-- MENU DROIT -->
-<section id="right">
- <button class="subscribe btn">+ S'abonner</button>
-  <div id="user">
-    <a href="#">
-      <img src="images/user.jpg" alt="user">Pseudo
-    </a>
-    <a href="#"><img src="images/settings.png" alt="settings" id="settings"></a>
+      <img src="images/flow-banner.png" alt="flow-banner">
+      <figcaption>FLOW</figcaption>
+    </figure>
 
-  </div>
-  <nav id="profilNav">
-    <ul class="list-unstyled">
-      <li><a href="#">MA MUSIQUE</a></li>
-      <li id="playlists"><a href="#">MES PLAYLISTS<div id="arrow"></div></a>
-      <ul id="list-playlists" class="list-unstyled">
-        <li><a href="#">Chill - Relax</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Party</a></li>
-      </ul>
-      </li>
-      <li><a href="#">COUPS DE CŒUR</a></li>
-      <li><a href="#">ALBUMS</a></li>
-      <li><a href="#">PODCASTS</a></li>
-      <li><a href="#">APPLICATIONS</a></li>
-      <li><a href="#">HISTORIQUE</a></li>
-    </ul>
-  </nav>
-</section>
-  
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
