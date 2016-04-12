@@ -1,11 +1,11 @@
 body {
   position: relative;
   color: #FFF;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 #right,
 #left {
-  font-family: "Open Sans", Arial, sans-serif;
   position: fixed;
   background-color: #23232c;
   width: 220px;
@@ -105,6 +105,10 @@ header #logo img {
   background-color: #d1d1d7;
 }
 
+#menuNav ul{
+  margin-bottom: 0px;
+}
+
 #left nav#menuNav a {
   padding: 5px 37px;
   display: block;
@@ -166,10 +170,22 @@ li#infos a {
   background-image: url(../images/infos_et_divertissements.png);
 }
 
+/**** THEME ****/
+
+#theme{
+  display: none;
+}
 
 /**** FLOW ****/
 
 #flow {
+  border-top: solid 1px #292933;
+  border-bottom: solid 2px #292933;
+  margin: 0px 25px;
+  padding: 0px 10px;
+}
+
+#flow figure{
   margin: 0px 15px;
   text-align: center;
   width: 190px;
@@ -206,10 +222,33 @@ li#infos a {
 #personnaliser {
   background-image: url(../images/personnaliser.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 0px 30px;
+  background-size: 13px 13px;
+  background-position: left;
+  padding: 0px 20px;
+  width: 115px;
+  margin: auto;
+  margin-top: 15px;
 }
 
+#left button.subscribe{
+  padding: 3px 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.subscribe {
+  background-color: #007feb;
+  border-radius: 5px;
+  padding: 4px 15px;
+  text-transform: uppercase;
+  margin: 13px 16px;
+}
+
+/**** PLAYING ****/
+
+#playing h6:nth-child(4){
+  font-style: italic;
+}
 
 /*************************
         MENU DROIT 
@@ -222,14 +261,6 @@ section#right {
   font-size: 11px;
 }
 
-.subscribe {
-  background-color: #007feb;
-  border-radius: 5px;
-  padding: 4px 15px;
-  text-transform: uppercase;
-  margin: 13px 16px;
-}
-
 #user {
   margin: 10px 15px;
 }
@@ -240,7 +271,7 @@ section#right {
 }
 
 #user a:nth-child(1) {
-  margin-right: 10px;
+  margin-right: 22px;
 }
 
 #profilNav a {
@@ -285,13 +316,15 @@ section#right {
   -ms-transform: rotate(180deg);
 }
 
+/**** SUGGESTIONS ****/
+
 #suggestions {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #suggestions span {
   padding-left: 23px;
-  margin-left: 10px;
+  margin-left: 13px;
   text-transform: uppercase;
   background-image: url(../images/suggestions.png);
   background-repeat: no-repeat;
@@ -307,8 +340,9 @@ section#right {
 }
 
 #suggestions a {
-  background-image: url(../images/cover_album.png);
+  background-image:url(../images/suggestion-twitter.png);
   background-repeat: no-repeat;
+  background-position: left;
   background-size: 18px 18px;
   padding: 10px 0px 10px 25px;
   display: block;
@@ -323,4 +357,14 @@ section#right {
   color: #c1c1c9;
   font-size: 12px;
   margin-top: 5px;
+}
+
+/*************************
+        PLAYER 
+**************************/
+
+#player {
+  position: fixed;
+  bottom: 0px;
+  
 }

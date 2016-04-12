@@ -49,13 +49,23 @@
         </label>
       </div>
     </div>
-    <figure id="flow">
+    <div id="flow">
+    <figure>
       <figcaption>
         <h4>Flow</h4>
         <h6>Un mix basé sur vos favoris</h6>
       </figcaption>
     </figure>
+    </div>
     <div id="personnaliser">Personnaliser</div>
+    <button class="btn subscribe">+ S'abonner</button>
+    
+    <div id="playing" class="text-center">
+      <img src="images/Calque-16.png" alt="" id="playing-cover">
+      <h6 id="title">Ultralight beam</h6>
+      <h6 id="artist">Kanye West</h6>
+      <h6 id="album">The life of Pablo</h6>
+    </div>
   </section>
   <section id="reducedleft">
     
@@ -64,13 +74,11 @@
 
   <!-- MENU DROIT -->
   <section id="right">
-    <button class="subscribe btn">+ S'abonner</button>
     <div id="user">
-      <a href="#">
+      <a href="#" title="Mon profil">
         <img src="images/user.jpg" alt="user">Pseudo
       </a>
-      <a href="#"><img src="images/settings.png" alt="settings" id="settings"></a>
-
+      <a href="#"><img src="images/settings.png" alt="settings" title="Paramètres" id="settings"></a>
     </div>
     <nav id="profilNav">
       <ul class="list-unstyled">
@@ -108,6 +116,10 @@
       <figcaption>FLOW</figcaption>
     </figure>
     <h4>Découvrez toute l'actualité musicale de Deezer.</h4>
+  </section>
+  
+  <section id="player">
+    
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
