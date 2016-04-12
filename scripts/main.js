@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-  //Page active menu
-  $('header li').click(function () {
-    $(this).toggleClass('activeMenu');
-  });
-
   /************************************************************
 
   		Pour changer la couleur du body en fonction de l'heure
@@ -141,6 +136,14 @@ $(document).ready(function () {
     }
   });
 
+  //Fonction pour la navigation des pages
+  $('#menuNav li').click(function () {
+    $('#menuNav li').removeClass('activeMenu');
+    $('.page').css('display', 'none');
+    $(this).addClass('activeMenu');
+    $('#page-' + $(this).attr('id')).css('display', 'block');
+  });
+  
   // Fonction pour dérouler la playlist
   $('#list-playlists').hide();
   $('#playlists').on('click', function () {
