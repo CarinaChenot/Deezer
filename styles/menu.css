@@ -13,6 +13,7 @@ body {
   font-size: 13px;
 }
 
+
 /**** MENUS ****/
 
 #left a,
@@ -53,6 +54,7 @@ header #logo img {
   width: 130px;
 }
 
+
 /**** SEARCH ****/
 
 #search form {
@@ -84,8 +86,8 @@ header #logo img {
   display: block;
 }
 
-/**** MENUS ****/
 
+/**** MENUS ****/
 
 #left li:hover,
 #right li:hover {
@@ -99,41 +101,47 @@ header #logo img {
 
 #left li:active a,
 #right li:active a {
- text-decoration: none;
+  text-decoration: none;
 }
-
 
 .activeMenu {
   background-color: #1c1c25;
   border-left: solid 2px #007feb;
 }
 
+
 /**** Icones Menu ****/
 
 #left li a {
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position:left;
+  background-position: left;
 }
 
 li#accueil a {
-   background-image: url(../images/accueil.png);
+  background-image: url(../images/accueil.png);
 }
+
 li#ecouter a {
-   background-image: url(../images/a_ecouter.png);
+  background-image: url(../images/a_ecouter.png);
 }
+
 li#nouveautes a {
-   background-image: url(../images/nouveautes.png);
+  background-image: url(../images/nouveautes.png);
 }
+
 li#top_playlists a {
-   background-image: url(../images/top_playlists.png);
+  background-image: url(../images/top_playlists.png);
 }
+
 li#mix a {
-   background-image: url(../images/mix.png);
+  background-image: url(../images/mix.png);
 }
+
 li#infos a {
-   background-image: url(../images/infos_et_divertissements.png);
+  background-image: url(../images/infos_et_divertissements.png);
 }
+
 
 /**** FLOW ****/
 
@@ -141,34 +149,43 @@ li#infos a {
   margin: 0px 15px;
   text-align: center;
   width: 190px;
-  height: 150px;
+  height: 66px;
   background-image: url(../images/flow-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
   color: #FFF;
   position: relative;
-}
-
-#flow h3 {
-  padding-top: 15px;
-}
-
-#flow img {
   cursor: pointer;
 }
 
-#flow h5 {
-  text-align: center;
-  padding-top: 10px;
+#flow figcaption{
+  background-image: url(../images/play.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-#personnaliser{
+#flow h4, #flow h6 {
+  text-align: left;
+  padding-left: 40px;
+}
+
+#flow h6 {
+  margin-top: 3px;
+}
+
+#flow h4 {
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+#personnaliser {
   background-image: url(../images/personnaliser.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0px 30px;
 }
+
 
 /*************************
         MENU DROIT 
@@ -178,9 +195,10 @@ section#right {
   position: fixed;
   right: 0;
   width: 150px;
+  font-size: 11px;
 }
 
-.subscribe{
+.subscribe {
   background-color: #007feb;
   border-radius: 5px;
   padding: 4px 15px;
@@ -192,22 +210,38 @@ section#right {
   margin: 10px 15px;
 }
 
-#user img{
+#user img {
   border-radius: 50px;
   margin-right: 5px;
 }
 
 #user a:nth-child(1) {
- margin-right: 10px;
+  margin-right: 10px;
 }
 
-#profilNav a{
+#profilNav a {
   padding-left: 10px;
   padding: 5px;
   display: block;
 }
 
-#profilNav #playlists a{
+#ma_musique {
+  margin-bottom: 10px;
+}
+
+#ma_musique a {
+  background-image: url(../images/ma-musique.png);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: left;
+  padding-left: 25px;
+}
+
+#playlists {
+  margin-bottom: 10px;
+}
+
+#playlists a {
   padding: 2px;
 }
 
@@ -217,12 +251,52 @@ section#right {
   width: 13px;
   height: 13px;
   background-size: contain;
-  float: right;
-  margin-left: -10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .arrowRotate:active {
-   transform: rotate(180deg);
-   -webkit-transform: rotate(180deg);
-   -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+#suggestions {
+  margin-top: 10px;
+}
+
+#suggestions span {
+  padding-left: 23px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  background-image: url(../images/suggestions.png);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  color: #c1c1c9;
+}
+
+#suggestions ul {
+  color: #c1c1c9;
+  margin-top: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+#suggestions a {
+  background-image: url(../images/cover_album.png);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  padding: 10px 0px 10px 25px;
+  display: block;
+}
+
+#suggestions button {
+  background-color: #23232c;
+  border: solid 2px #c1c1c9;
+  border-radius: 0px;
+  margin-left: 20px;
+  padding: 5px 25px;
+  color: #c1c1c9;
+  font-size: 12px;
+  margin-top: 5px;
 }

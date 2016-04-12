@@ -37,7 +37,6 @@
           <li id="top_playlists"><a href="#">Top playlists</a></li>
           <li id="mix"><a href="#">Mix</a></li>
           <li id="infos"><a href="#">Infos & divertissement</a></li>
-
         </ul>
       </nav>
     </header>
@@ -49,14 +48,12 @@
         </label>
       </div>
     </div>
-
-    <div id="flow">
-      <h3>Flow</h3>
-      <img id="playflow" src="images/play.png" alt="play">
-      <h5>Un mix basé sur vos favoris</h5>
-    </div>
-    <div>Personnaliser</div>
-
+    <figure id="flow">
+      <figcaption>
+        <h4>Flow</h4>
+        <h6>Un mix basé sur vos favoris</h6>
+      </figcaption>
+    </figure>
     <div id="personnaliser">Personnaliser</div>
   </section>
 
@@ -73,7 +70,7 @@
     </div>
     <nav id="profilNav">
       <ul class="list-unstyled">
-        <li><a href="#">MA MUSIQUE</a></li>
+        <li id="ma_musique"><a href="#">MA MUSIQUE</a></li>
         <li id="playlists"><a href="#">MES PLAYLISTS<div id="arrow" class="arrowRotate"></div></a>
           <ul id="list-playlists" class="list-unstyled">
             <li><a href="#">Chill - Relax</a></li>
@@ -88,7 +85,15 @@
         <li><a href="#">HISTORIQUE</a></li>
       </ul>
     </nav>
-    <div></div>
+    <div id="suggestions">
+     <span>Suggestions</span>
+      <ul class="list-unstyled">
+        <li><a href="" class="scrollthis">Pony - Deluxe</a></li>
+        <li><a href="" class="scrollthis">The Sun - Parrow</a></li>
+        <li><a href="" class="scrollthis">Mountains at my goal</a></li>
+      </ul>
+      <button class="btn text-uppercase">See more</button>
+    </div>
   </section>
 
   <!-- PAGE ACCUEIL -->
@@ -99,7 +104,6 @@
       <figcaption>FLOW</figcaption>
     </figure>
     <h4>Découvrez toute l'actualité musicale de Deezer.</h4>
-
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
