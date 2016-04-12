@@ -138,4 +138,13 @@ $(document).ready(function () {
       $('#list-playlists').hide();
     }
   });
+  
+  //Fonction pour tourner flèche playlist
+  $( "#playlists a" ).on('click',function() {
+    if (  $( '#arrow' ).css( "transform" ) == 'none' ){
+        $('#arrow').css("transform","rotate(180deg)");
+    } else {
+        $('#arrow').css("transform","" );
+    }
+});
 }); //Fin document ready

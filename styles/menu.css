@@ -128,11 +128,8 @@ li#nouveautes a {
 li#top_playlists a {
    background-image: url(../images/top_playlists.png);
 }
-li#genres a {
-   background-image: url(../images/genres.png);
-}
-li#ambiances a {
-   background-image: url(../images/ambiances.png);
+li#mix a {
+   background-image: url(../images/mix.png);
 }
 li#infos a {
    background-image: url(../images/infos_et_divertissements.png);
@@ -222,4 +219,10 @@ section#right {
   background-size: contain;
   float: right;
   margin-left: -10px;
+}
+
+.arrowRotate:active {
+   transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
 }
