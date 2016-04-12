@@ -127,6 +127,11 @@ $(document).ready(function () {
   		Pour changer la couleur du body en fonction de l'heure
 
    ************************************************************/
+  
+  //Fonction pour rétracter le menu gauche
+  $('#hamburger').on('click', function(){
+    $('#left').slideToggle();
+  });
 
   // Fonction pour dérouler la playlist
   $('#list-playlists').hide();

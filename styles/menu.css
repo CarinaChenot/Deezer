@@ -54,6 +54,17 @@ header #logo img {
   width: 130px;
 }
 
+/**** HAMBURGER ****/
+
+#hamburger {
+  margin-bottom: -10px;
+  margin-left: 5px;
+  background-image: url(../images/hamburger.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
 
 /**** SEARCH ****/
 
