@@ -11,19 +11,6 @@ $(document).ready(function () {
 
 	************************************************************/
 
-$(document).ready(function(){
-
-	$('header li').click(function(){
-		$(this).toggleClass('activeMenu');
-	});
-
-
-/************************************************************
-
-		Pour changer la couleur du body en fonction de l'heure
-
-	************************************************************/
-	
 var body = $("#body");
 
 			var date = new Date;
@@ -77,14 +64,6 @@ var body = $("#body");
 			var changeColor = setInterval(function(){
 				animation();
 			}, 1000);
-
-	/************************************************************
-
-								Fin de la fonction
-		Pour changer la couleur du body en fonction de l'heure
-
- ************************************************************/
-});
 
 	/************************************************************
 
