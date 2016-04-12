@@ -48,6 +48,8 @@ body {
 header #logo {
   text-align: center;
   padding: 10px 5px;
+  margin-left: 30px;
+  display: inline-block;
 }
 
 header #logo img {
