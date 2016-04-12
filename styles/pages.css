@@ -2,6 +2,23 @@
   padding: 30px 60px 100px 60px;
 }
 
+.cover{
+  width: 200px;
+  border: 1px solid black;
+}
+
+.clearBoth{
+  clear: both;
+}
+
+.button{
+  font-size: 12px;
+  border: 1px solid #23232c;
+  border-radius: 4px;
+  padding: 3px 5px;
+  text-align: center;
+}
+
 /****** PAGE D'ACCUEIL *******/
 #page-accueil {
   position: absolute;
@@ -11,8 +28,52 @@
   right: 150px;
 }
 
-#accueilFlow {
+.left{
+  display: block;
+  float: left;
+  width: 393px;
+  height: 190px;
+}
 
+.right{
+  float: right;
+  width: 393px;
+  height: 190px;
+}
+
+#accueilFlow{
+  position : relative;
+}
+
+.flowText {
+  font-size: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  position: absolute;
+  top: 40px;
+  left: 20%;
+}
+
+.playButtonFlow{
+  position: absolute;
+  top: 85px;
+  left: 21.5%;
+}
+
+.flowSong{
+  position: absolute;
+  font-size: 11px;
+  top: 100px;
+  left: 72%;
+}
+
+.flowSong p{
+  margin-bottom: -1px;
+}
+
+.gif{
+  position: absolute;
+  left: 70%;
+  width: 100px;
 }
 
 #accueilFlow figcaption {
@@ -20,6 +81,97 @@
   font-size: 25px;
 }
 
+.accueilContent{
+  text-align: center;
+}
+
+.ongletsAccueil{
+  font-size: 15px;
+  color: #23232c;
+  display: inline-block;
+  margin: 50px 40px;
+}
+
+.ongletsAccueil:hover{
+  color: #26c3f5;
+}
+
+h4{
+  text-align: left;
+  color: #23232c;
+  font-size: 12px; 
+  margin-bottom: 30px;
+}
+
+.exclusiveCover{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.new{
+  position: absolute;
+  font-size: 8px;
+  left: 12px;
+  top: 85%;
+  color: white;
+  font-weight: 600;
+  background-color: #ee1e23;
+  padding: 3px 6px;
+}
+
+.popular{
+  position: absolute;
+  font-size: 8px;
+  color:  #23232c;
+  font-weight: 800;
+  transform:rotate(330deg); 
+  top: 15px;
+  left: 0px;
+}
+
+.newAlbum{
+  position: absolute;
+  font-size: 8px;
+  left: 12px;
+  top: 85%;
+  color: white;
+  font-weight: 600;
+  background-color: #23232c;
+  padding: 3px 6px;
+}
+
+.exclu{
+  position: absolute;
+  font-size: 8px;
+  color: #ee1e23;
+  font-weight: 800;
+  transform:rotate(330deg); 
+  top: 15px;
+  left: 0;
+}
+
+.infos{
+  color: #23232c;
+  font-size: 9px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.infos2{
+  color: #23232c;
+  font-size: 9px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-right: 30px;
+  padding: 30px;
+}
+
+.red{
+  color: #ee1e23;
+}
 
 /*************************
         PAGE MIX 
