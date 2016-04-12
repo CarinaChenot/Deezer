@@ -1,0 +1,14 @@
+/****** PAGE D'ACCUEIL *******/
+#accueil {
+  position: absolute;
+  margin-left: 220px;
+}
+
+#accueilFlow {
+
+}
+
+#accueilFlow figcaption {
+  margin-top: -150px;
+  font-size: 25px;
+}
