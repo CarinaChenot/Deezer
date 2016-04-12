@@ -130,7 +130,12 @@ $(document).ready(function () {
   
   //Fonction pour rétracter le menu gauche
   $('#hamburger').on('click', function(){
-    $('#left').slideToggle();
+    $('#left').toggle( "slide" );
+    $('#left').toggleClass('reduced');
+    if($('#left').hasClass('reduced')){
+      console.log('test');
+      $('#reducedleft').css('display', 'block');
+    }
   });
 
   // Fonction pour dérouler la playlist

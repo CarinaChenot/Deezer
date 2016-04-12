@@ -43,6 +43,17 @@ body {
 ****************************/
 
 
+
+#reducedleft{
+  display: none;
+font-family: "Open Sans", Arial, sans-serif;
+  position: fixed;
+  background-color: #23232c;
+  width: 70px;
+  height: 100%;
+  font-size: 13px;
+}
+
 /**** LOGO ****/
 
 header #logo {
