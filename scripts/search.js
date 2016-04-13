@@ -8,7 +8,15 @@ $(document).ready(function(){
 		e.preventDefault();
 		searchBar();
 	});
+	
+	$("#result").on("click", function(){
+		$("#result").hide();
+	});
 
+	$("#emptie").on("click", function(e){
+		e.preventDefault;
+		var search = $("#search").val("");
+	})
 	function searchBar(){
 		var search = $("#search").val();
 		var text = "";
@@ -32,7 +40,6 @@ $(document).ready(function(){
 					if(same == 1){
 						url = response.data[i].album.cover;
 						text += "<img src='" + url + "' alt='" + currentTitle + "' class='album'/></br>";
-						console.log(url);
 					}
 				}
 			}

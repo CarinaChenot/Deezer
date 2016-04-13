@@ -18,8 +18,6 @@
   <link rel="stylesheet" href="styles/page-mix.css">
   <link rel="stylesheet" href="styles/page-infos.css">
   <link rel="stylesheet" href="styles/page-ecouter.css">
-  
-
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -38,7 +36,7 @@
     <div id="shortcuts-zone">
 			<form id="div_search" method="post">
 				<input type="search" placeholder="Recherche" id="search"/>
-				<input type="submit" value=" " id="submit"/>
+				<a href="#" id="emptie">x</a>
 			</form>
 		</div>
 		<div id="result"></div>
@@ -122,146 +120,153 @@
   </section>
 
   <!-- PAGE ACCUEIL -->
-  <section id="page-accueil" class="page">
-    <figure id="accueilFlow" class="text-center">
-      <img src="images/background_flow.jpg" alt="flow-banner" class="left">
-      <img src="images/background_gif.jpg" alt="flow-banner" class="right">
-      <div class="flowText">FLOW</div>
-      <a href="#">
-        <img src="images/play_button.png" alt="play" class="playButtonFlow">
-      </a>
-      <img src="images/gifDeezerNoirBlanc.gif" alt="gif" class="gif">
-      <div class="flowSong">
-        <p>"Woes"</p>
-        <p>Tim Rosenthal</p>
-        <p>Summer songs</p>
-      </div>
-    </figure>
-    <div class="accueilContent">
-      <div>
-        <p class="ongletsAccueil">MIX</p>
-        <p class="ongletsAccueil">|</p>
-        <p class="ongletsAccueil">TOP PLAYLISTS</p>
-        <p class="ongletsAccueil">|</p>
-        <p class="ongletsAccueil">NOUVEAUTÉS</p>
-      </div>
-      <h4>Découvrez toute l'actualité musicale de DEEZER</h4>
-    </div>
+		<section id="page-accueil" class="page">
+			<figure id="accueilFlow" class="text-center">
+				<div class="row">
+					<div class="marge col-lg-6 col-md-6 col-sm-12">
+						<img src="images/background_flow.jpg" alt="flow-banner" class="testImg">
+						<div class="flowText">FLOW</div>
+						<a href="#">
+							<img src="images/iconePlay.png" alt="play" class="playButtonFlow">
+						</a>
+					</div>
+					<div class="marge col-lg-6 col-md-6 col-sm-12">
+						<img src="images/background_gif.jpg" alt="flow-banner" class="testImg">
+						<img src="images/gifDeezer.gif" alt="gif" class="gif">
+						<div class="flowSong">
+							<p>"Woes"</p>
+							<p>Tim Rosenthal</p>
+							<p>Summer songs</p>
+						</div>
+					</div>
+				</div>
+			</figure>
+			<div class="accueilContent">
+				<div>
+					<p id="nouveautesTitle" class="ongletsAccueil">NOUVEAUTÉS</p>
+					<p class="ongletsAccueil">|</p>
+					<p id="mixTitle" class="ongletsAccueil">MIX</p>
+					<p class="ongletsAccueil">|</p>
+					<p id="topPlaylisitsTitle" class="ongletsAccueil">TOP PLAYLISTS</p>
+				</div>
+				<h4>Découvrez toute l'actualité musicale de DEEZER</h4>
+			</div>
 
-    <div id="actuAccueil">
-      <div class="exclusiveCover">
-        <img src="images/cover_jennyferLopez.jpg" alt="Cover Jennyfer Lopez" class="coverPrincipale">
-        <span class="new">NEW</span>
-        <span class="exclu">EXCLUSIVITÉ</span>
-        <svg id="box" width="250" height="100">
-          <line class="cls-1" x1="0" y1="50" x2="0" y2="100" />
-          <line class="cls-1" x1="0" y1="100" x2="100" y2="100" />
-          <line class="cls-1" x1="150" y1="0" x2="250" y2="0" />
-          <line class="cls-1" x1="250" y1="0" x2="250" y2="50" />
-        </svg>
-        <div class="infos">
-          <span>JENNIFER LOPEZ</span><span class="red"> NEW ALBUM</span>
-          <p>Incluant le nouveau single Ain't Your Mama</p>
-        </div>
-      </div>
-      <div class="clearBoth"></div>
-      <div class="infos2">
-        <span>RIHANNA</span><span class="red"> CONCERT</span>
-        <p>Anti Tour à Paris & Lyon les 25.09.16 et 27.09.16</p>
-        <span class="button">En savoir +</span>
-      </div>
-      <div class="exclusiveCover">
-        <img src="images/cover_rihanna.png" alt="Cover Rihanna" class="coverPrincipale">
-        <span class="newAlbum">ALBUM</span>
-        <span class="popular">MOST POPULAR</span>
-      </div>
-    </div>
-    <div id="playlistAccueil">
-      <span class="subtitle black">PLAYLIST</span>
-      <span class="subtitle"> | SÉLECTION DEEZER</span>
-      <div>
-        <div class="newPlaylist">
-          <div class="filet"></div>
-          <span><b>Top Alternative</b></span>
-          <span class="mini">par Top Alternative</span>
-        </div>
-        <div>
-          <span><img src="images/cover_playlist_accueil2.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>One Dance</span>
-          <span class="mini"> par Snake</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Come</span>
-          <span class="mini"> par Jain</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Home</span>
-          <span class="mini"> par Daniel</span>
-        </div>
-      </div>
-      <div class="filet"></div>
-      <div>
-        <div class="newPlaylist">
-          <span><b>Folk / Pop Rock</b></span>
-          <span class="mini"> par Peter Gallacher</span>
-        </div>
-        <div>
-          <span><img src="images/cover_playlist_accueil1.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Orange Blossom</span>
-          <span class="mini"> par Mayce</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Never give up</span>
-          <span class="mini"> par K.Fast</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Work</span>
-          <span class="mini"> par Rihanna</span>
-        </div>
-      </div>
-      <div clear="both"></div>
-      <div class="filet"></div>
-      <div>
-        <div class="newPlaylist">
-          <span><b>Good Old Songs</b></span>
-          <span class="mini"> par Vanessa Jackson</span>
-        </div>
-        <div>
-          <span><img src="images/cover_playlist_accueil3.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Blueberry</span>
-          <span class="mini"> par Topie Loupe</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Back Down</span>
-          <span class="mini"> par Mauno</span>
-        </div>
-        <div>
-          <span><img src=images/playBlack.png alt="play" class="play"></span>
-          <span>Wistling</span>
-          <span class="mini"> par Jackie</span>
-        </div>
-      </div>
-    </div>
-    <div class="clearBoth"></div>
+			<div id="actuAccueil">
+				<div class="exclusiveCover">
+					<img src="images/cover_jennyferLopez.jpg" alt="Cover Jennyfer Lopez" class="coverPrincipale">
+					<span class="new">NEW</span>
+					<span class="exclu">EXCLUSIVITÉ</span>
+					<svg id="box" width="250" height="100">
+						<line class="cls-1" x1="0" y1="50" x2="0" y2="100" />
+						<line class="cls-1" x1="0" y1="100" x2="100" y2="100" />
+						<line class="cls-1" x1="150" y1="0" x2="250" y2="0" />
+						<line class="cls-1" x1="250" y1="0" x2="250" y2="50" />
+					</svg>
+					<div class="infos">
+						<span>JENNIFER LOPEZ</span><span class="red"> NEW ALBUM</span>
+						<p>Incluant le nouveau single Ain't Your Mama</p>
+					</div>
+				</div>
+				<div class="clearBoth"></div>
+				<div class="infos2">
+					<span>RIHANNA</span><span class="red"> CONCERT</span>
+					<p>Anti Tour à Paris & Lyon les 25.09.16 et 27.09.16</p>
+					<span class="button">En savoir +</span>
+				</div>
+				<div class="exclusiveCover">
+					<img src="images/cover_rihanna.png" alt="Cover Rihanna" class="coverPrincipale">
+					<span class="newAlbum">ALBUM</span>
+					<span class="popular">MOST POPULAR</span>
+				</div>
+			</div>
 
-    <div id="mixAccueil">
-      <h4>Les meilleures ambiances selon vos goûts</h4>
-      <img src="images/eminem.png" alt="cover" class="cover">
-      <img src="images/eminem.png" alt="cover" class="cover">
-      <img src="images/eminem.png" alt="cover" class="cover">
-      <img src="images/eminem.png" alt="cover" class="cover">
-      <div class="petitFilet"></div>
-      <span class="button">Voir tous les mix</span>
-    </div>
-  </section>
+			<div id="playlistAccueil">
+				<span class="subtitle black">PLAYLIST</span>
+				<span class="subtitle"> | SÉLECTION DEEZER</span>
+				<div>
+					<div class="newPlaylist">
+						<div class="filet"></div>
+						<span><b>Top Alternative</b></span>
+						<span class="mini">par Top Alternative</span>
+					</div>
+					<div>
+						<span><img src="images/cover_playlist_accueil2.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>One Dance</span>
+						<span class="mini"> par Snake</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Come</span>
+						<span class="mini"> par Jain</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Home</span>
+						<span class="mini"> par Daniel</span>
+					</div>
+				</div>
+				<div class="filet"></div>
+				<div>
+					<div class="newPlaylist">
+						<span><b>Folk / Pop Rock</b></span>
+						<span class="mini"> par Peter Gallacher</span>
+					</div>
+					<div>
+						<span><img src="images/cover_playlist_accueil1.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Orange Blossom</span>
+						<span class="mini"> par Mayce</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Never give up</span>
+						<span class="mini"> par K.Fast</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Work</span>
+						<span class="mini"> par Rihanna</span>
+					</div>
+				</div>
+				<div clear="both"></div>
+				<div class="filet"></div>
+				<div>
+					<div class="newPlaylist">
+						<span><b>Good Old Songs</b></span>
+						<span class="mini"> par Vanessa Jackson</span>
+					</div>
+					<div>
+						<span><img src="images/cover_playlist_accueil3.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Blueberry</span>
+						<span class="mini"> par Topie Loupe</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Back Down</span>
+						<span class="mini"> par Mauno</span>
+					</div>
+					<div>
+						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<span>Wistling</span>
+						<span class="mini"> par Jackie</span>
+					</div>
+				</div>
+			</div>
+			<div class="clearBoth"></div>
+
+			<div id="mixAccueil">
+				<h4>Les meilleures ambiances selon vos goûts</h4>
+				<img src="images/eminem.png" alt="cover" class="cover">
+				<img src="images/eminem.png" alt="cover" class="cover">
+				<img src="images/eminem.png" alt="cover" class="cover">
+				<img src="images/eminem.png" alt="cover" class="cover">
+				<div class="petitFilet"></div>
+				<span class="button">Voir tous les mix</span>
+			</div>
+		</section>
 
   <!-- PAGE A ECOUTER -->
 <section id="page-a_ecouter" class="page">
@@ -597,10 +602,10 @@
     <div id="playliste">
     </div>
     <div class="playerUltime">
-      <span id="prev"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+      <span id="prevMus"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
       <span id="play"><i class="fa fa-play" aria-hidden="true"></i></span>
       <span id="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
-      <span id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+      <span id="nextMus"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
       <div id="progressBarControl">
         <div id="progressBar"><span id="cercle"></span></div>
       </div>
@@ -631,7 +636,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="scripts/musiques.json" ></script>
   <script src="scripts/player.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="scripts/slider.js"></script>
   <script src="scripts/carina.js"></script>
   <script src="scripts/search.js"></script>
   

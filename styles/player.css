@@ -37,7 +37,7 @@ La bar de progression
 #progressBarControl{
 	position: absolute;
 	display: inline-block;
-	width: 300px;
+	width: 600px;
 	left: 90px;
 	top: 14px;
 	background: #454545;
@@ -62,7 +62,7 @@ La bar de progression
 
 #progressTime{
 	position: absolute;
-	left: 400px;
+	left: 700px;
 }
 
 /*---------------*\
@@ -73,7 +73,7 @@ Le volume
 
 #sound{
 	position: relative;
-	margin-left: 460px;
+	margin-left: 760px;
 	margin-top: -18px;
 	font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ Le volume
 #alea{
 	position: absolute;
 	margin-left: 4px;
-	left: 500px;
+	left: 800px;
 	top: 8px;
 }
 /*---------------*\
