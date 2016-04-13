@@ -5,11 +5,11 @@ Le player
 \*---------------*/
 
 #player{
-  position: fixed;
-  bottom: 0px;
-  z-index: 1000;
-  padding-right: 150px;
-  width: 100%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000;
+	padding-right: 150px;
+	width: 100%;
 }
 
 .playerUltime{	
@@ -17,8 +17,8 @@ Le player
 	z-index: 10;
 	position: relative;
 	padding: 5px;
-	background: RGBa(123, 127, 130, 0.5);
-    margin-left: 220px;
+	background: RGBa(100, 100, 100, 0.5);
+	margin-left: 220px;
 }
 
 
@@ -95,7 +95,21 @@ Le volume
 #alea{
 	position: absolute;
 	margin-left: 4px;
-	left: 800px;
+	left: 790px;
+	top: 8px;
+}
+
+#share{
+	position: absolute;
+	font-size: 2em;
+	margin-left: 4px;
+	left: 815px;
+	top: -8px;
+}
+#wanted{
+	position: absolute;
+	margin-left: 4px;
+	left: 850px;
 	top: 8px;
 }
 /*---------------*\
