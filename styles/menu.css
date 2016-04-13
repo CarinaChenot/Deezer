@@ -44,16 +44,6 @@ body {
         MENU GAUCHE 
 ****************************/
 
-#reducedleft{
-  display: none;
-font-family: "Open Sans", Arial, sans-serif;
-  position: fixed;
-  background-color: #23232c;
-  width: 70px;
-  height: 100%;
-  font-size: 13px;
-}
-
 /**** LOGO ****/
 
 header #logo {
@@ -61,6 +51,10 @@ header #logo {
   padding: 10px 5px;
   margin-left: 30px;
   display: inline-block;
+}
+
+.reduced #logo{
+  display: none;
 }
 
 header #logo img {
@@ -77,6 +71,11 @@ header #logo img {
   height: 24px;
   width: 24px;
   display: inline-block;
+}
+
+.reduced #hamburger {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /**** SEARCH ****/

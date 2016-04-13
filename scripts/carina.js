@@ -9,18 +9,22 @@ $(document).ready(function () {
 
   //Fonction pour rétracter le menu gauche
   $('#hamburger').on('click', function () {
-    $('#left').toggle("slide");
+    $('#left').toggleClass('reduced');
+    if ($('#left').hasClass('reduced')) {
+      $('#left').css('width', '53');
+    }
+    /*$('#left').toggle("slide");
     $('#left').toggleClass('reduced');
     if ($('#left').hasClass('reduced')) {
       console.log('test');
       $('#reducedleft').css('display', 'block');
-    }
+    }*/
   });
 
   //Fonction pour la navigation des pages
   $('#menuNav li').click(function () {
     $('#menuNav li').removeClass('activeMenu');
-    $('#menuNav li').each(function(){
+    $('#menuNav li').each(function () {
       $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     });
     $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
