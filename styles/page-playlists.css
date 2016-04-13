@@ -1,3 +1,16 @@
+#page-top_playlists h2{
+  color: #ea0085;
+}
+
+#page-top_playlists .navPage a:hover{
+  color: #ea0085;
+}
+
+#page-top_playlists h5{
+  font-size: 14px;
+  text-align: center;
+}
+
 #page-top_playlists section {
   width: 40em;
   height: 25em;
