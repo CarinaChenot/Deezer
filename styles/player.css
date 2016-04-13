@@ -14,7 +14,7 @@ Le player
 
 .playerUltime{	
 	display: block;
-	z-index: 10;
+	z-index: 1000;
 	position: relative;
 	padding: 5px;
 	background: RGBa(123, 127, 130, 0.5);

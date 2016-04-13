@@ -38,7 +38,7 @@ var duration;    // Durée totale
 var time; // Temps écoulé
 var fraction;
 var percent = 0;
-
+ 
 //permet d'initialiser les classes
 play.className = "active";
 pause.className = "hide";
@@ -52,15 +52,12 @@ function changeMusic(){
 }
 
 function playMusic(){ // Met le player en play 
-	var yes = document.getElementById("cache");
-	if(yes.className == "hide"){
-		if(player.hasAttribute("src")){
-			player.play();
-		} else {
-			changeMusic();
-		}
-		permut();
+	if(player.hasAttribute("src")){
+		player.play();
+	} else {
+		changeMusic();
 	}
+	permut();
 } 
 
 function pauseMusic() { // Met le player en pause
