@@ -1,35 +1,24 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
-}
-
-
 /*---------------*\
 
 Le player
 
 \*---------------*/
 
+#player{
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  padding-right: 150px;
+  width: 100%;
+}
+
 .playerUltime{	
+	display: block;
+	z-index: 1000;
 	position: relative;
 	padding: 5px;
 	background: RGBa(123, 127, 130, 0.5);
+    margin-left: 220px;
 }
 
 
@@ -48,7 +37,7 @@ La bar de progression
 #progressBarControl{
 	position: absolute;
 	display: inline-block;
-	width: 300px;
+	width: 600px;
 	left: 90px;
 	top: 14px;
 	background: #454545;
@@ -73,7 +62,7 @@ La bar de progression
 
 #progressTime{
 	position: absolute;
-	left: 400px;
+	left: 700px;
 }
 
 /*---------------*\
@@ -84,7 +73,7 @@ Le volume
 
 #sound{
 	position: relative;
-	margin-left: 460px;
+	margin-left: 760px;
 	margin-top: -18px;
 	font-size: 1.2em;
 }
@@ -106,7 +95,7 @@ Le volume
 #alea{
 	position: absolute;
 	margin-left: 4px;
-	left: 500px;
+	left: 800px;
 	top: 8px;
 }
 /*---------------*\

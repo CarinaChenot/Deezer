@@ -1,16 +1,29 @@
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: white;
+	width: 100%;
+	height: 100%;
+	transition: 1.5s;
+}
+
 .switch {
 	z-index: 10;
 	overflow: hidden;
-	background: #FFF;
-	position: relative;
-	display: inline-block;
-	width: 27px;
-	height: 62px;
+	background: #77B5FE;
+	position: absolute;
+	width: 62px;
+	height: 27px;
 	border-radius: 30px;
 	border: 1px solid #42424d;
 }
 .switch .switch__checkbox:checked ~ .switch__label {
-	background: #FFF;
+	background: #003366;
 }
 .switch__checkbox {
 	z-index: -10;
@@ -35,15 +48,15 @@
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	top: 25%;
-	left: 1px;
+	top: 50%;
+	left: 2px;
 	margin-top: -11px;
-	background: #000; /* Jour */
+	background: #ffffff; /* Jour */
 	border-radius: 11px;
 	transition: transform 1.5s;
 }
 .switch__checkbox:checked ~ .switch__label .switch__circle {
-	transform: translateY(30px);
+	transform: translateX(35px);
 }
 .switch__circle:before {
 	content: '';
@@ -55,7 +68,7 @@
 	left: 0;
 	left: -21px;
 	margin-top: -7px;
-	background: #FFF; /*  Jour */
+	background: #77B5FE; /*  Jour */
 	border-radius: 11px;
 	transition: all 1.5s;
 }
@@ -63,5 +76,18 @@
 	transform: translate3d(50%, 0, 0);
 }
 .switch__checkbox:checked ~ .switch__label .switch__circle:before {
-	background: #FFF;  /*  Nuit */
+	background: #003366;  /*  Nuit */
+}
+
+.jour {
+	background: #FFFF6B;
+	transition:background-color 0.5s ease;
+}
+
+.nuit {
+	background: #C8C8C8;
+}
+
+#jourNuit{
+	margin-left: 16px;
 }

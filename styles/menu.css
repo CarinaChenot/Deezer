@@ -53,10 +53,6 @@ header #logo {
   display: inline-block;
 }
 
-.reduced #logo{
-  display: none;
-}
-
 header #logo img {
   width: 130px;
 }
@@ -71,11 +67,6 @@ header #logo img {
   height: 24px;
   width: 24px;
   display: inline-block;
-}
-
-.reduced #hamburger {
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 /**** SEARCH ****/
@@ -264,6 +255,46 @@ width: 100%;
 #playing #album{
   font-style: italic;
   margin-top: 5px;
+}
+
+
+/**** MENU GAUCHE SMALL ****/
+
+.reduced #logo{
+  display: none;
+}
+
+.reduced #hamburger {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.reduced #searchBar {
+  display: none;
+}
+
+.reduced #menuNav {
+  margin-top: 20px;
+}
+
+.reduced #menuNav a{
+  color: #FFF;
+}
+
+.reduced #flow {
+  display: none;
+}
+
+.reduced #personnaliser {
+  display: none;
+}
+
+.reduced button.subscribe {
+  display: none;
+}
+
+.reduced #playing {
+  display: none;
 }
 
 /*************************
