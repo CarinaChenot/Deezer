@@ -40,13 +40,3 @@ $(document).ready(function(){
 		});
 	}
 });
-
-// Get data from user with ID 5
-
-
-
-
-
-
-
-

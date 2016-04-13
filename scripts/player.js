@@ -1,11 +1,11 @@
 var player = document.getElementById("myMusic");
-
+var playliste = document.getElementById("playliste");
 
 //Les bouttons des options
 var play = document.getElementById("play");
 var pause = document.getElementById("pause");
-var prev = document.getElementById("prev");
-var next = document.getElementById("next");
+var prevMus = document.getElementById("prev");
+var nextMus = document.getElementById("next");
 var progressBar = document.getElementById("progressBarControl");
 var alea = document.getElementById("alea");
 
@@ -19,7 +19,7 @@ var less = document.getElementById("minus");
 //les évènements 
 play.addEventListener("click", playMusic);
 pause.addEventListener("click", pauseMusic);
-prev.addEventListener("click", nextMusic);
+prevMus.addEventListener("click", nextMusic);
 next.addEventListener("click", prevMusic);
 progressBar.addEventListener("click", function(){
 	clickProgress(player, this, event);
@@ -31,14 +31,15 @@ less.addEventListener("click", soundLess);
 alea.addEventListener("click", aleaMusic);
 
 var id_music = 1; // l'indice dans le tableau
+var textPlaylist = "";
 
 
 var duration;    // Durée totale
 var time; // Temps écoulé
 var fraction;
 var percent = 0;
-
-
+ 
+alert(music.length);
 //permet d'initialiser les classes
 play.className = "active";
 pause.className = "hide";
@@ -68,6 +69,7 @@ function pauseMusic() { // Met le player en pause
 function nextMusic(){ // Met la prochaine musique
 	id_music = (id_music + 1) % music.length;
 	changeMusic();
+  alert("ok");
 }
 
 function prevMusic(){ //Met la musique précédente
