@@ -124,7 +124,10 @@ $(document).ready(function () {
    ************************************************************/
   
   //Régler la taille de la page
-  $('.page').css('width', parseInt($('.page').css('width'))-370);
+  $('.page').css('width', $(window).width() - 370);
+  $(window).resize(function(){
+    $('.page').css('width', $(window).width() - 370);
+  });
   
   //Fonction pour rétracter le menu gauche
   $('#hamburger').on('click', function(){
