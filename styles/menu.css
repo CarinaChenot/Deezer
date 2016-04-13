@@ -44,8 +44,6 @@ body {
         MENU GAUCHE 
 ****************************/
 
-
-
 #reducedleft{
   display: none;
 font-family: "Open Sans", Arial, sans-serif;
@@ -84,28 +82,29 @@ header #logo img {
 /**** SEARCH ****/
 
 #search form {
-  text-align: center;
+  margin-left: 18px;
   margin-bottom: 10px;
 }
 
 #search #textinput {
-  background-color: #d1d1d7;
-  color: #42424d;
-  border-radius: 3px;
   border: none;
-  padding: 5px 10px;
-  width: 180px;
+  background-color: #23232c;
+  padding-left: 10px;
+  border-left: solid 1px #8c8c91;
 }
 
 #search #loupe {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
-  background-image: url(../images/loupe.png);
-  background-repeat: no-repeat;
+  background: url(../images/loupe-bar-de-recherche.png) no-repeat right;
+  background-size: 12px 12px;
   margin-left: -23px;
   border: none;
-  background-color: #d1d1d7;
+  background-color:#23232c;
 }
+
+
+/**** MENU ****/
 
 #menuNav ul{
   margin-bottom: 0px;
@@ -115,9 +114,6 @@ header #logo img {
   padding: 5px 37px;
   display: block;
 }
-
-
-/**** MENUS ****/
 
 #left li:hover,
 #right li:hover {
@@ -149,27 +145,27 @@ header #logo img {
 }
 
 li#accueil a {
-  background-image: url(../images/accueil.png);
+  background-image: url(../images/icones-menu/accueil.png);
 }
 
-li#ecouter a {
-  background-image: url(../images/a_ecouter.png);
+li#a_ecouter a {
+  background-image: url(../images/icones-menu/a_ecouter.png);
 }
 
 li#nouveautes a {
-  background-image: url(../images/nouveautes.png);
+  background-image: url(../images/icones-menu/nouveautes.png);
 }
 
 li#top_playlists a {
-  background-image: url(../images/top_playlists.png);
+  background-image: url(../images/icones-menu/top_playlists.png);
 }
 
 li#mix a {
-  background-image: url(../images/mix.png);
+  background-image: url(../images/icones-menu/mix.png);
 }
 
 li#infos a {
-  background-image: url(../images/infos_et_divertissements.png);
+  background-image: url(../images/icones-menu/infos.png);
 }
 
 /**** THEME ****/
@@ -178,64 +174,70 @@ li#infos a {
   display: none;
 }
 
-/**** FLOW ****/
+/******** FLOW ********/
 
 #flow {
-  border-top: solid 1px #292933;
-  border-bottom: solid 2px #292933;
-  margin: 0px 25px;
-  padding: 0px 10px;
+margin-top: 10px;
 }
 
 #flow figure{
-  margin: 0px 15px;
-  text-align: center;
-  width: 190px;
-  height: 66px;
-  background-image: url(../images/flow-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  color: #FFF;
+  display: inline-block;
+  height: 76px;
+  width: 86px;
+  background: url(../images/flow-bg.jpg) no-repeat left;
+  background-size: 81px 76px;
   position: relative;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 #flow figcaption{
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position:center;
+  background-size: 42px 42px;
+}
+
+#flow div {
+  height: 76px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100px;
+  border-top: solid 2px #2e2e37;
+  border-bottom: solid 2px #2e2e37;
+  margin-left: 5px;
 }
 
 #flow h4, #flow h6 {
   text-align: left;
-  padding-left: 40px;
 }
 
 #flow h6 {
-  margin-top: 3px;
+  margin-top: 12px;
 }
 
 #flow h4 {
-  padding-top: 5px;
   margin-bottom: 0px;
+  margin-top: 6px;
 }
 
+/**** Personnaliser ****/
+
 #personnaliser {
-  background-image: url(../images/personnaliser.png);
-  background-repeat: no-repeat;
+ background: url(../images/icone-personnaliser.png) no-repeat left;
   background-size: 13px 13px;
-  background-position: left;
   padding: 0px 20px;
   width: 115px;
   margin: auto;
   margin-top: 15px;
+  color: rgba(194, 194, 202, 0.3);
+  
 }
 
 #left button.subscribe{
   padding: 3px 30px;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 .subscribe {
@@ -248,8 +250,27 @@ li#infos a {
 
 /**** PLAYING ****/
 
-#playing h6:nth-child(4){
+#playing img{
+  width: 100%;
+}
+
+#playing div{
+width: 100%;
+  margin-top: 5px;
+}
+
+#playing #title {
+  text-align: left;
+}
+#playing #artist{
+  margin-left: 13px;
+  font-weight: 100;
+  text-align: left;
+}
+
+#playing #album{
   font-style: italic;
+  margin-top: 5px;
 }
 
 /*************************

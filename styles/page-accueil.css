@@ -1,0 +1,207 @@
+/****** PAGE D'ACCUEIL *******/
+
+#page-accueil {
+  position: absolute;
+  left: 220px;
+  z-index: -1;
+  display: block;
+  right: 150px;
+}
+
+.left{
+  display: block;
+  float: left;
+  width: 393px;
+  height: 190px;
+}
+
+.right{
+  float: right;
+  width: 393px;
+  height: 190px;
+}
+
+#accueilFlow{
+  position : relative;
+}
+
+.flowText {
+  font-size: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  position: absolute;
+  color: #FFF;
+  top: 40px;
+  left: 20%;
+}
+
+.playButtonFlow{
+  position: absolute;
+  top: 85px;
+  left: 21.5%;
+}
+
+.flowSong{
+  position: absolute;
+  font-size: 11px;
+  top: 100px;
+  color: #FFF;
+  left: 72%;
+}
+
+.flowSong p{
+  margin-bottom: -1px;
+}
+
+.gif{
+  position: absolute;
+  left: 70%;
+  width: 100px;
+}
+
+#accueilFlow figcaption {
+  margin-top: -150px;
+  font-size: 25px;
+}
+
+.accueilContent{
+  text-align: center;
+}
+
+.ongletsAccueil{
+  font-size: 15px;
+  color: #23232c;
+  display: inline-block;
+  margin: 50px 40px;
+}
+
+.ongletsAccueil:hover{
+  color: #26c3f5;
+}
+
+#page-accueil h4{
+  text-align: left;
+  color: #23232c;
+  font-size: 12px; 
+  margin-bottom: 30px;
+}
+
+.exclusiveCover{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.new{
+  position: absolute;
+  font-size: 8px;
+  left: 12px;
+  top: 85%;
+  color: white;
+  font-weight: 600;
+  background-color: #ee1e23;
+  padding: 3px 6px;
+}
+
+.popular{
+  position: absolute;
+  font-size: 8px;
+  color:  #23232c;
+  font-weight: 800;
+  transform:rotate(330deg); 
+  top: 15px;
+  left: 0px;
+}
+
+.newAlbum{
+  position: absolute;
+  font-size: 8px;
+  right: 12px;
+  top: 85%;
+  color: white;
+  font-weight: 600;
+  background-color: #23232c;
+  padding: 3px 6px;
+}
+
+.exclu{
+  position: absolute;
+  font-size: 8px;
+  color: #ee1e23;
+  font-weight: 800;
+  transform:rotate(330deg); 
+  top: 15px;
+  left: 0;
+}
+
+.infos{
+  color: #23232c;
+  font-size: 9px;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.infos2{
+  color: #23232c;
+  font-size: 9px;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.red{
+  color: #ee1e23;
+}
+
+
+#actuAccueil{
+  display: inline-block;
+  float: left;
+}
+
+#playlistAccueil{
+  color: #23232c;
+  display: inline-block;
+  float: right;
+  font-size: 9px;
+  width: 250px;
+}
+
+.black{
+  background-color: #23232c;
+  color: #ffffff;
+  padding: 2px 4px;
+}
+
+.subtitle{
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.mini{
+  font-size: 8px;
+  color: #72727d;
+}
+
+.play{
+  width: 15px;
+}
+
+.newPlaylist{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.coverPlaylistAccueil{
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+
+#playlistAccueil div{
+  margin-top: 5px;
+}
+
+#mixAccueil{
+  margin-top: 30px;
+}
