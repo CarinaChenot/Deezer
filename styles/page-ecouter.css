@@ -13,10 +13,12 @@
 }
 
 .secondaryText{
+  font-size:  11px;
   color: #73737b;
 }
 
 .italicText{
+  font-size:  11px;
   color: #73737b;
   font-style: italic;
 }
