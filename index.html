@@ -156,10 +156,16 @@
         <img src="images/cover_jennyferLopez.jpg" alt="Cover Jennyfer Lopez" class="coverPrincipale">
         <span class="new">NEW</span>
         <span class="exclu">EXCLUSIVITÉ</span>
-      </div>
-      <div class="infos">
-        <span>JENNIFER LOPEZ</span><span class="red"> NEW ALBUM</span>
-        <p>Incluant le nouveau single Ain't Your Mama </p>
+        <svg id="box" width="250" height="100">
+          <line class="cls-1" x1="0" y1="50" x2="0" y2="100" />
+          <line class="cls-1" x1="0" y1="100" x2="100" y2="100" />
+          <line class="cls-1" x1="150" y1="0" x2="250" y2="0" />
+          <line class="cls-1" x1="250" y1="0" x2="250" y2="50" />
+        </svg>
+        <div class="infos">
+          <span>JENNIFER LOPEZ</span><span class="red"> NEW ALBUM</span>
+          <p>Incluant le nouveau single Ain't Your Mama</p>
+        </div>
       </div>
       <div class="clearBoth"></div>
       <div class="infos2">
@@ -168,7 +174,7 @@
         <span class="button">En savoir +</span>
       </div>
       <div class="exclusiveCover">
-        <img src="images/cover_rihanna.png" alt="Cover Jennyfer Lopez" class="coverPrincipale">
+        <img src="images/cover_rihanna.png" alt="Cover Rihanna" class="coverPrincipale">
         <span class="newAlbum">ALBUM</span>
         <span class="popular">MOST POPULAR</span>
       </div>
@@ -440,6 +446,37 @@
 
   </section>
 
+  <!-- PAGE TOP PLAYLISTS -->
+<section id="page-top_playlists" class="page">
+    <h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
+    <ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-4"><a href="#">Ambiances</a></li>
+    </ul>
+    <div class="col-lg-12">
+      <ul class="carousel">
+        <li class="items main-pos" id="1">
+          <img src="images/cover_playlist1.png" alt="caroussel">
+        </li>
+        <li class="items right-pos" id="2">
+          <img src="images/cover_playlist2.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="3">
+          <img src="images/cover_playlist3.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="4">
+          <img src="images/cover_playlist4.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="5">
+          <img src="images/cover_playlist5.png" alt="caroussel">
+        </li>
+      </ul>
+      <div id="prevNext">
+        <input type="button" value="Prev" id="prev">
+        <input type="button" value="Next" id="next">
+      </div>
+    </div>
+  </section>
 
   <!-- PAGE MIX -->
   <section id="page-mix" class="page">
@@ -561,6 +598,8 @@
   <!-- PLAYER -->
   <section id="player">
     <audio id="myMusic" preload ontimeupdate="update(this)"></audio>
+    <div id="playliste">
+    </div>
     <div class="playerUltime">
       <span id="prev"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
       <span id="play"><i class="fa fa-play" aria-hidden="true"></i></span>
