@@ -12,13 +12,19 @@ $(document).ready(function () {
     $('#left').toggleClass('reduced');
     if ($('#left').hasClass('reduced')) {
       $('#left').css('width', '53');
+      $("#left").hover(
+        function () {
+          $(this).removeClass('reduced');
+          $('#left').css('width', '220');
+        },
+        function () {
+          $(this).addClass('reduced');
+          $('#left').css('width', '53');
+        }
+      );
+    } else {
+      $('#left').css('width', '220');
     }
-    /*$('#left').toggle("slide");
-    $('#left').toggleClass('reduced');
-    if ($('#left').hasClass('reduced')) {
-      console.log('test');
-      $('#reducedleft').css('display', 'block');
-    }*/
   });
 
   //Fonction pour la navigation des pages

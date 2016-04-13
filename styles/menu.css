@@ -79,7 +79,7 @@ header #logo img {
 #searchBar #search {
   border: none;
   background-color: #23232c;
-  padding-left: 10px;
+  padding-left: 6px;
   border-left: solid 2px #8c8c91;
 }
 
@@ -91,6 +91,10 @@ header #logo img {
   margin-left: -23px;
   border: none;
   background-color:#23232c;
+}
+
+#searchBar form a {
+  margin-right: 5px;
 }
 
 
