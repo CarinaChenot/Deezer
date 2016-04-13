@@ -14,6 +14,7 @@ $(document).ready(function () {
       $('.page').css('width', $(window).width() - 203);
       $('.page').css('left', '53px');
       $('#left').css('width', '53');
+      $('#playing-small').show();
       /*$("#left").hover(
         function () {
           $(this).removeClass('reduced');
@@ -28,6 +29,7 @@ $(document).ready(function () {
       $('#left').css('width', '220');
       $('.page').css('width', $(window).width() - 370);
       $('.page').css('left', '220px');
+      $('#playing-small').hide();
     }
   });
 
