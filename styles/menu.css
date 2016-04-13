@@ -301,6 +301,16 @@ width: 100%;
   display: none;
 }
 
+#playing-small{
+  width: 220px;
+  height: 35px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #707076;
+}
+
+
 /*************************
         MENU DROIT 
 **************************/
