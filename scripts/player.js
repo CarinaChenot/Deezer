@@ -7,6 +7,7 @@ var pause = document.getElementById("pause");
 var prev = document.getElementById("prev");
 var next = document.getElementById("next");
 var progressBar = document.getElementById("progressBarControl");
+var alea = document.getElementById("alea");
 
 //Le son
 var id_sound = 1;
@@ -27,7 +28,7 @@ soundMute.addEventListener("click", mute);
 soudUp.addEventListener("click", mute);
 plus.addEventListener("click", soundMore);
 less.addEventListener("click", soundLess);
-
+alea.addEventListener("click", aleaMusic);
 
 var id_music = 1; // l'indice dans le tableau
 
@@ -127,6 +128,12 @@ function changeSound(){
 	player.volume = id_sound;
 }
 
+function aleaMusic(){
+	id_music = Math.floor(Math.random()*music.length);
+	console.log(id_music);
+	changeMusic();
+}
+
 //Pour Le calcule de la durée de la musique
 function formatTime(time) {
 	var hours = Math.floor(time / 3600);
@@ -168,6 +175,10 @@ function update(player) {
 
 	if(percent > 0){
 		progress.style.background = "#FFF";
+	}
+	if(percent == 100){
+		id_music = (id_music + 1) % music.length;
+		changeMusic();
 	}
 }
 
