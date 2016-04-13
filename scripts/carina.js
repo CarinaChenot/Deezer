@@ -50,9 +50,10 @@ $(document).ready(function () {
   });
 
   //Fonction pour faire scroll le texte
-  var resetHTML = $('.scrollthis').html();
+  var resetHTML;
   var intervalID;
   $(".scrollthis").hover(function () {
+    resetHTML = $(this).html();
     var $this = $(this);
     intervalID = setInterval(function () {
       scroll($this);
