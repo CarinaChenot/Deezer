@@ -1,11 +1,11 @@
 body {
-background-color: #C8C8C8;
-transition: background-color 0.5s ease;
+	background-color: #C8C8C8;
+	transition: background-color 0.5s ease;
 }
 
 
 /*
-	Le cache
+Le cache
 */
 #cache{
 	background-color:black;
@@ -59,3 +59,4 @@ Le style des popUp
 .hide{
 	display: none;
 }
+
