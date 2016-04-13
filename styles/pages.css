@@ -33,11 +33,18 @@
 }
 
 .button{
-  font-size: 12px;
+  font-size: 11px;
   border: 1px solid #23232c;
   border-radius: 4px;
   padding: 3px 5px;
   text-align: center;
+  margin-top: 20px !important;
+  margin-left: 60px;
+}
+
+.button:hover{
+  color: #FFF;
+  background-color: #23232c;
 }
 
 /****** PAGE D'ACCUEIL *******/
@@ -46,7 +53,7 @@
   position: absolute;
   left: 220px;
   z-index: -1;
-  display: none;
+  display: block;
   right: 150px;
 }
 
@@ -118,7 +125,7 @@
   color: #26c3f5;
 }
 
-h4{
+#page-accueil h4{
   text-align: left;
   color: #23232c;
   font-size: 12px; 
@@ -177,7 +184,6 @@ h4{
   color: #23232c;
   font-size: 9px;
   display: inline-block;
-  border: 1px solid black;
   margin-left: 20px;
   padding: 20px;
 }
@@ -186,7 +192,6 @@ h4{
   color: #23232c;
   font-size: 9px;
   display: inline-block;
-  border: 1px solid black;
   margin-right: 20px;
   padding: 20px;
 }
@@ -217,6 +222,7 @@ h4{
 
 .subtitle{
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .mini{
@@ -227,7 +233,30 @@ h4{
 .play{
   width: 15px;
 }
+<<<<<<< HEAD
 
+.newPlaylist{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.coverPlaylistAccueil{
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+
+#playlistAccueil div{
+  margin-top: 5px;
+}
+
+.filet{
+  border-top: 1px solid #FFF; 
+  margin: 20px;
+}
+
+=======
+>>>>>>> carina
 /*************************
         PAGE MIX 
 **************************/
