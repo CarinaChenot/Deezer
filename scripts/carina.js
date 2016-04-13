@@ -11,8 +11,10 @@ $(document).ready(function () {
   $('#hamburger').on('click', function () {
     $('#left').toggleClass('reduced');
     if ($('#left').hasClass('reduced')) {
+      $('.page').css('width', $(window).width() - 203);
+      $('.page').css('left', '53px');
       $('#left').css('width', '53');
-      $("#left").hover(
+      /*$("#left").hover(
         function () {
           $(this).removeClass('reduced');
           $('#left').css('width', '220');
@@ -21,9 +23,11 @@ $(document).ready(function () {
           $(this).addClass('reduced');
           $('#left').css('width', '53');
         }
-      );
+      );*/
     } else {
       $('#left').css('width', '220');
+      $('.page').css('width', $(window).width() - 370);
+      $('.page').css('left', '220px');
     }
   });
 
