@@ -1,0 +1,20 @@
+/*************************
+        PAGE INFOS 
+**************************/
+
+#page-infos h2{
+  color:#ee9229;
+}
+
+#page-infos .navPage a:hover{
+  color: #ee9229;
+}
+
+#page-infos h5{
+  font-size: 14px;
+  text-align: center;
+}
+
+#page-infos .square{
+  height: 230px;
+}
