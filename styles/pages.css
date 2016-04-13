@@ -46,7 +46,7 @@
   position: absolute;
   left: 220px;
   z-index: -1;
-  display: none;
+  display: block;
   right: 150px;
 }
 
@@ -118,7 +118,7 @@
   color: #26c3f5;
 }
 
-h4{
+#page-accueil h4{
   text-align: left;
   color: #23232c;
   font-size: 12px; 
@@ -227,7 +227,6 @@ h4{
 .play{
   width: 15px;
 }
-
 /*************************
         PAGE MIX 
 **************************/
