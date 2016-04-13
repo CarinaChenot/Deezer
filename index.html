@@ -8,7 +8,7 @@
   <title>Deezer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="styles/styles.css" rel=stylesheet>
-    <link href="styles/menu.css" rel=stylesheet>
+  <link href="styles/menu.css" rel=stylesheet>
   <link href="styles/pages.css" rel=stylesheet>
   <link rel="stylesheet" href="styles/page-accueil.css">
   <link rel="stylesheet" href="styles/page-a_ecouter.css">
@@ -31,11 +31,16 @@
         <img src="images/deezer_logo.png" alt="logo">
       </div>
       <div id="hamburger"></div>
-      <div id="search">
-        <form method="get" action="#">
-          <input type="text" id="textinput" name="search" placeholder="Rechercher">
-          <input type="submit" id="loupe" value=" " class="">
-        </form>
+      <div id="searchBar">
+    <div id="shortcuts-zone">
+			<form id="div_search" method="post">
+				<input type="search" placeholder="Recherche" id="search"/>
+				<input type="submit" value=" " id="submit"/>
+			</form>
+		</div>
+		<div id="result"></div>
+
+		<div id="dz-root"></div>
       </div>
       <nav id="menuNav">
         <ul class="text-uppercase list-unstyled">
@@ -89,7 +94,7 @@
       <a href="#" title="Mon profil">
         <img src="images/user.jpg" alt="user">Pseudo
       </a>
-      <a href="#"><img src="images/settings.png" alt="settings" title="Paramètres" id="settings"></a>
+      <a href="#"><img src="images/icones-menu/settings.png" alt="settings" title="Paramètres" id="settings"></a>
     </div>
     <nav id="profilNav">
       <ul class="list-unstyled">
@@ -244,7 +249,7 @@
       </div>
     </div>
     <div class="clearBoth"></div>
-    
+
     <div id="mixAccueil">
       <h4>Les meilleures ambiances selon vos goûts</h4>
       <img src="images/eminem.png" alt="cover" class="cover">
@@ -253,67 +258,69 @@
       <img src="images/eminem.png" alt="cover" class="cover">
       <div class="petitFilet"></div>
       <span class="button">Voir tous les mix</span>
-    </div> 
+    </div>
   </section>
-  
+
   <!-- PAGE A ECOUTER -->
- <section id="page-a_ecouter" class="page">
-   <h2>À écouter <span>Toute l'actualité musciale DEEZER</span></h2>
-   <ul id="navNouveautes" class="navPage col-lg-11 text-uppercase list-inline">
-     <li class="col-md-4"><a href="#">événements</a></li>
-     <li class="col-md-4"><a href="#">recommandé pour vous</a></li>
-     <li class="col-md-4"><a href="#">selection deezer</a></li>
-   </ul>
-   <div class="col-md-12" id="actu1">
-     <div class="col-md-7">
-       <img src="images/actu1.png" alt="actu">
-     </div>
-     <div class="col-md-5">
-       <span><h4>INTERVIEW</h4></span><div class="line"></div>
-       <div class="petitFilet"></div>
-       <p><b>21 pilots en close-up</b></p>
-       <p class="secondaryText">Regardez Josh et Tyler discuter de leurs influences musicales dans une interview vidéo exclusive sous-titrée français</p>
-       <div class="petitFilet"></div>
-       <span class="button">Leur playlist</span>
-       <span class="button">Leur dernier album</span>
-     </div>
-   </div>
-   <div class="clearBoth"></div>
-   <div class="col-md-12" id="actu1">
-     <div class="col-md-5">
-       <span><h4>PRIX DEEZER ADAMI</h4></span><div class="line2"></div>
-       <div class="petitFilet"></div>
-       <p class="secondaryText">DEEZER et Adami sont heureux de vous annoncer les trois lauréats de l'édition 2016 ! Découvrez-les en concerts accompagnés de Youssoupha, le parrain de cette édition, le 6 juin au Casino de Paris.</p>
-       <p class="secondaryText">Les places sont disponibles sur Digitick dès le 27 avril !</p>
-       <div class="petitFilet"></div>
-       <span class="button">Acheter des places</span>
-     </div>
-     <div class="col-md-7">
-       <img src="images/actu2.png" alt="actu">
-     </div>
-   </div>
-   <div class="clearBoth"></div>
-   <div>
-     <div class="col-md-3"><img src="images/actu3.png" alt="actu" class="cover"></div>
-     <div class="col-md-3">
-       <h4>JEU CONCOURS</h4>
-       <div class="petitFilet"></div>
-       <p class="secondaryText">Gagnez vos places pour le festival "Les nuits claires"</p>
-       <p class="italicText">1 & 2 avril - Palais de Tokyo</p>
-       <div class="petitFilet"></div>
-       <span class="button">En savoir plus</span>
-     </div>
-     <div class="col-md-3"><img src="images/actu4.png" alt="actu" class="cover"></div>
-     <div class="col-md-3">
-       <h4>CONCERT</h4>
-       <div class="petitFilet"></div>
-       <p class="secondaryText">Gagnez vos places pour le Drones World Tour de MUSE"</p>
-       <p class="italicText">4 septembre - Stade de France</p>
-       <div class="petitFilet"></div>
-       <span class="button">En savoir plus</span>
-     </div>
-   </div>
- </section>
+  <section id="page-a_ecouter" class="page">
+    <h2>À écouter <span>Toute l'actualité musciale DEEZER</span></h2>
+    <ul id="navNouveautes" class="navPage col-lg-11 text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">événements</a></li>
+      <li class="col-md-4"><a href="#">recommandé pour vous</a></li>
+      <li class="col-md-4"><a href="#">selection deezer</a></li>
+    </ul>
+    <div class="col-md-12" id="actu1">
+      <div class="col-md-7">
+        <img src="images/actu1.png" alt="actu">
+      </div>
+      <div class="col-md-5">
+        <span><h4>INTERVIEW</h4></span>
+        <div class="line"></div>
+        <div class="petitFilet"></div>
+        <p><b>21 pilots en close-up</b></p>
+        <p class="secondaryText">Regardez Josh et Tyler discuter de leurs influences musicales dans une interview vidéo exclusive sous-titrée français</p>
+        <div class="petitFilet"></div>
+        <span class="button">Leur playlist</span>
+        <span class="button">Leur dernier album</span>
+      </div>
+    </div>
+    <div class="clearBoth"></div>
+    <div class="col-md-12" id="actu1">
+      <div class="col-md-5">
+        <span><h4>PRIX DEEZER ADAMI</h4></span>
+        <div class="line2"></div>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">DEEZER et Adami sont heureux de vous annoncer les trois lauréats de l'édition 2016 ! Découvrez-les en concerts accompagnés de Youssoupha, le parrain de cette édition, le 6 juin au Casino de Paris.</p>
+        <p class="secondaryText">Les places sont disponibles sur Digitick dès le 27 avril !</p>
+        <div class="petitFilet"></div>
+        <span class="button">Acheter des places</span>
+      </div>
+      <div class="col-md-7">
+        <img src="images/actu2.png" alt="actu">
+      </div>
+    </div>
+    <div class="clearBoth"></div>
+    <div>
+      <div class="col-md-3"><img src="images/actu3.png" alt="actu" class="cover"></div>
+      <div class="col-md-3">
+        <h4>JEU CONCOURS</h4>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">Gagnez vos places pour le festival "Les nuits claires"</p>
+        <p class="italicText">1 & 2 avril - Palais de Tokyo</p>
+        <div class="petitFilet"></div>
+        <span class="button">En savoir plus</span>
+      </div>
+      <div class="col-md-3"><img src="images/actu4.png" alt="actu" class="cover"></div>
+      <div class="col-md-3">
+        <h4>CONCERT</h4>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">Gagnez vos places pour le Drones World Tour de MUSE"</p>
+        <p class="italicText">4 septembre - Stade de France</p>
+        <div class="petitFilet"></div>
+        <span class="button">En savoir plus</span>
+      </div>
+    </div>
+  </section>
 
 
   <!-- PAGE NOUVEAUTES -->
@@ -552,11 +559,45 @@
     </div>
   </section>
   <!-- PLAYER -->
-  <section id="player"></section>
+  <section id="player">
+    <audio id="myMusic" preload ontimeupdate="update(this)"></audio>
+    <div class="playerUltime">
+      <span id="prev"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+      <span id="play"><i class="fa fa-play" aria-hidden="true"></i></span>
+      <span id="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
+      <span id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+      <div id="progressBarControl">
+        <div id="progressBar"><span id="cercle"></span></div>
+      </div>
+      <span id="progressTime">00:00</span>
+      <div id="sound">
+        <span id="minus" class="vol">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </span>
+        <span id="plus" class="vol">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </span>
+        <span id="soundUp" class="hide">
+		  <i class="fa fa-volume-up" aria-hidden="true"></i>
+		</span>
+        <span id="mute">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+		</span>
+      </div>
+      <span id="alea">
+		<i class="fa fa-random" aria-hidden="true"></i>
+      </span>
+    </div>
+  </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
   <script src="scripts/main.js"></script>
+  <script src="scripts/search.js"></script>
   <script src="scripts/carina.js"></script>
+  <script src="scripts/musiques.json"></script>
+  <script src="scripts/player.js"></script>
+
 </body>
 
 </html>

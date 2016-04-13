@@ -72,7 +72,7 @@ header #logo img {
 #hamburger {
   margin-bottom: -10px;
   margin-left: 5px;
-  background-image: url(../images/hamburger.png);
+  background-image: url(../images/icones-menu/hamburger.png);
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
@@ -81,22 +81,22 @@ header #logo img {
 
 /**** SEARCH ****/
 
-#search form {
+#searchBar form {
   margin-left: 18px;
   margin-bottom: 10px;
 }
 
-#search #textinput {
+#searchBar #search {
   border: none;
   background-color: #23232c;
   padding-left: 10px;
-  border-left: solid 1px #8c8c91;
+  border-left: solid 2px #8c8c91;
 }
 
-#search #loupe {
+#searchBar #submit {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
-  background: url(../images/loupe-bar-de-recherche.png) no-repeat right;
+  background: url(../images/icones-menu/search.png) no-repeat right;
   background-size: 12px 12px;
   margin-left: -23px;
   border: none;
@@ -129,12 +129,6 @@ header #logo img {
 #right li:active a {
   text-decoration: none;
 }
-
-.activeMenu {
-  background-color: #1c1c25;
-  border-left: solid 2px #007feb;
-}
-
 
 /**** Icones Menu ****/
 
@@ -231,7 +225,7 @@ margin-top: 10px;
   margin: auto;
   margin-top: 15px;
   color: rgba(194, 194, 202, 0.3);
-  
+  cursor: not-allowed;
 }
 
 #left button.subscribe{
@@ -308,7 +302,7 @@ section#right {
 }
 
 #ma_musique a {
-  background-image: url(../images/ma-musique.png);
+  background-image: url(../images/icones-menu/ma_musique.png);
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: left;
@@ -324,7 +318,7 @@ section#right {
 }
 
 #arrow {
-  background-image: url(../images/uparrow.png);
+  background-image: url(../images/icones-menu/playlist-arrow.png);
   background-repeat: no-repeat;
   width: 13px;
   height: 13px;
@@ -349,7 +343,7 @@ section#right {
   padding-left: 23px;
   margin-left: 13px;
   text-transform: uppercase;
-  background-image: url(../images/suggestions.png);
+  background-image: url(../images/icones-menu/suggestions.png);
   background-repeat: no-repeat;
   background-size: 18px 18px;
   color: #c1c1c9;
@@ -367,8 +361,8 @@ section#right {
   background-repeat: no-repeat;
   background-position: left;
   background-size: 18px 18px;
-  padding: 10px 0px 10px 25px;
   display: block;
+  padding: 10px 0px 10px 25px;
 }
 
 #suggestions button {
@@ -380,14 +374,4 @@ section#right {
   color: #c1c1c9;
   font-size: 12px;
   margin-top: 5px;
-}
-
-/*************************
-        PLAYER 
-**************************/
-
-#player {
-  position: fixed;
-  bottom: 0px;
-  
 }
