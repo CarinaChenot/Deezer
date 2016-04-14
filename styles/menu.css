@@ -91,13 +91,12 @@ header #logo img {
 }
 
 #searchBar #submit {
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
   background: url(../images/icones-menu/search.png) no-repeat right;
   background-size: 12px 12px;
-  margin-left: -23px;
   border: none;
   background-color: #23232c;
+  width: 12px;
+  margin-left: -10px;
 }
 
 #searchBar form a {
@@ -118,6 +117,7 @@ header #logo img {
 #result .album {
   margin-bottom: 5px;
 }
+
 
 /**** MENU ****/
 
@@ -285,6 +285,7 @@ li#infos a {
   font-style: italic;
   margin-top: 5px;
 }
+
 
 /*************************
 MENU DROIT 
