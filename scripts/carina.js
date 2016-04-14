@@ -96,11 +96,11 @@ $(document).ready(function () {
   $('#nouveautesTitle').on('click', function () {
     $('#menuNav li').removeClass('activeMenu');
     $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     });
     $('.page').css('display', 'none');
     $('#nouveautes').addClass('activeMenu');
-    $('#nouveautes a').css('background-image', 'url(images/icones-menu/nouveautes-active.png)');
+    $('#nouveautes').css('background-image', 'url(images/icones-menu/nouveautes-active.png)');
     $('#page-nouveautes').css('display', 'block');
   });
 
@@ -108,11 +108,11 @@ $(document).ready(function () {
   $('#mixTitle').on('click', function () {
     $('#menuNav li').removeClass('activeMenu');
     $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     });
     $('.page').css('display', 'none');
     $('#mix').addClass('activeMenu');
-    $('#mix a').css('background-image', 'url(images/icones-menu/mix-active.png)');
+    $('#mix').css('background-image', 'url(images/icones-menu/mix-active.png)');
     $('#page-mix').css('display', 'block');
   });
 
@@ -120,11 +120,11 @@ $(document).ready(function () {
   $('#topPlaylisitsTitle').on('click', function () {
     $('#menuNav li').removeClass('activeMenu');
     $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     });
     $('.page').css('display', 'none');
     $('#top_playlists').addClass('activeMenu');
-    $('#top_playlists a').css('background-image', 'url(images/icones-menu/top_playlists-active.png)');
+    $('#top_playlists').css('background-image', 'url(images/icones-menu/top_playlists-active.png)');
     $('#page-top_playlists').css('display', 'block');
   });
 
