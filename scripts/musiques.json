@@ -1,37 +1,75 @@
 var music = [
 	{
-		"titre": "Do I Wanna Know?",
-		"chanteur": "Arctic Monkeys",
-		"url": "musique/Arctic Monkeys - Do I Wanna Know.mp3",
-		"albumCover": "images/covers/cover_articsmonkey.png",
-		"albumName": "AM"
-	},
+		"id": 0,
+		"title": "Flaws",
+		"artist": "Bastille",
+		"url": "musique/flaws.mp3",
+		"albumCover": "images/covers/cover_bastille.png",
+		"albumName": "Bad blood",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   },
 	{
-		"titre": "Stressed Out",
-		"chanteur": "Twenty One Pilots",
-		"url": "musique/twentyonepilots-StressedOut.mp3",
-		"albumCover": "images/twenty_one_pilots_blurryface.jpg",
-		"albumName": "Blurryface"
-	},
+		"id": 1,
+		"title": "Worth It",
+		"artist": "Fifth Harmony",
+		"url": "musique/worthIt.mp3",
+		"albumCover": "images/covers/cover_fifthHarmony.png",
+		"albumName": "Reflection",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   },
 	{
-		"titre": "Les lacs du Connemara",
-		"chanteur": "Michel Sardou",
-		"url": "musique/lesLacDuConnemara.mp3",
-		"albumCover": "images/covers/cover_MS_connemara.jpg",
-		"albumName": "Les lacs du Connemara"
-	},
+		"id": 2,
+		"title": "Centuries",
+		"artist": "Fall out boy",
+		"url": "musique/centuries.mp3",
+		"albumCover": "images/covers/cover_fallOutBoy.png",
+		"albumName": "American beauty",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   },
 	{
-		"titre": "Les Ricains",
-		"chanteur": "Michel Sardou",
-		"url": "musique/lesRicains.mp3",
-		"albumCover": "images/covers/cover_MS_ricains.jpg",
-		"albumName": "Les Ricains"
-	},
+		"id": 3,
+		"title": "On top of the world",
+		"artist": "Imagine Dragons",
+		"url": "musique/onTopOfTheWorld.mp3",
+		"albumCover": "images/covers/cover_imagineDragons.png",
+		"albumName": "Dream",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   },
 	{
-		"titre": "Un Roi Barbare",
-		"chanteur": "Michel Sardou",
-		"url": "musique/unRoiBarbar.mp3",
-		"albumCover": "images/covers/cover_MS_vieille.jpg",
-		"albumName": "La vieille"
-	}
+		"id": 4,
+		"title": "Clint Eastwood",
+		"artist": "Gorillaz",
+		"url": "musique/clintEastwood.mp3",
+		"albumCover": "images/covers/cover_gorillaz.png",
+		"albumName": "Dream",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   },
+	{
+		"id": 5,
+		"title": "Ain't your mama",
+		"artist": "Jennifer Lopez",
+		"url": "musique/aintYourMama.mp3",
+		"albumCover": "images/cover_jennyferLopez.jpg",
+		"albumName": "Ain't your mama",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
+   }
+
 ]

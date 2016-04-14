@@ -27,6 +27,7 @@
 
 .navPage {
   margin-bottom: 30px;
+  
 }
 
 .navPage a {
@@ -114,8 +115,18 @@
 }
 
 .playMusic {
-  width: 40px;
+  width: 40px !important;
   padding-top: 30px;
+}
+
+#page-nouveautes .playMusic {
+  width: 40px;
+  padding-top: 55px;
+}
+
+#page-top_playlists .playMusic {
+  width: 40px;
+  padding-top: 55px;
 }
 
 .informationsChansons {
@@ -137,4 +148,60 @@
 .icones span {
   padding-left: 17px;
   padding-right: 17px;
+}
+
+
+.square {
+  height: 200px;
+}
+
+/***** Menus déroulants *****/
+
+.navPage {
+  margin-bottom: 30px;
+  
+}
+
+.navPage a {
+  color: #23232c;
+  text-decoration: none;
+}
+
+.navPage li{
+  position: relative;
+}
+
+.navPage li ul{
+  position: absolute;
+  display: none;
+  top : 0px;
+  left: 75%;
+  background: #FFF;
+  z-index: 5;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border: 1px solid #ABABAB;
+  width: 145px;
+}
+
+.navPage:hover li ul{
+  display: block;
+}
+
+.navPage li ul li{
+  text-transform: lowercase;
+  font-size: 12px;
+  list-style:none;
+  text-align: left;
+}
+
+#previous{
+  width: 15px !important;
+  margin-bottom: 2px;
+}
+
+#nextious{
+  width: 15px !important;
+  margin-bottom: 2px;
 }

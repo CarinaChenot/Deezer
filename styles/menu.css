@@ -105,9 +105,7 @@ header #logo img {
 }
 
 
-/*
-Les recultats de la recherche
-*/
+/* Les resultats de la recherche */
 
 #result {
   padding: 5px;
@@ -120,7 +118,6 @@ Les recultats de la recherche
 #result .album {
   margin-bottom: 5px;
 }
-
 
 /**** MENU ****/
 
@@ -179,13 +176,6 @@ li#mix a {
 
 li#infos a {
   background-image: url(../images/icones-menu/infos.png);
-}
-
-
-/**** THEME ****/
-
-#theme {
-  display: none;
 }
 
 
@@ -296,68 +286,19 @@ li#infos a {
   margin-top: 5px;
 }
 
-
-/**** MENU GAUCHE SMALL ****/
-
-.reduced #logo {
-  display: none;
-}
-
-.reduced #hamburger {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.reduced #searchBar {
-  display: none;
-}
-
-.reduced #menuNav {
-  margin-top: 20px;
-}
-
-.reduced #menuNav a {
-  color: #FFF;
-}
-
-.reduced #flow {
-  display: none;
-}
-
-.reduced #personnaliser {
-  display: none;
-}
-
-.reduced #playing {
-  display: none;
-}
-
-#playing-small {
-  <<<<<<< HEAD width: 220px;
-  height: 35px;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  background-color: #707076;
-  =======width: 220px;
-  height: 35px;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  background-color: #707076;
-  padding: 8px 0px;
-  background-image: url(../images/eminem.png);
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: right;
-  display: none;
-  >>>>>>> refs/remotes/origin/master
-}
-
-
 /*************************
 MENU DROIT 
 **************************/
+
+
+/* Bouton Thème */
+
+div#theme {
+  margin-left: 35px;
+  margin-top: 50px;
+  z-index: 30;
+  bottom: 30px;
+}
 
 section#right {
   position: fixed;

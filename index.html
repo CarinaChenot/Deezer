@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/page-mix.css">
   <link rel="stylesheet" href="styles/page-infos.css">
   <link rel="stylesheet" href="styles/page-ecouter.css">
+  <link rel="stylesheet" href="styles/jour_nuit.css">
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -36,7 +37,6 @@
         <div id="shortcuts-zone">
           <form id="div_search" method="post">
             <input type="search" placeholder="Recherche" id="search" />
-            <a href="#" id="emptie">x</a>
             <input type="submit" value=" " id="submit" />
           </form>
         </div>
@@ -53,14 +53,6 @@
         </ul>
       </nav>
     </header>
-    <div id="theme">
-      <div class="switch" id="jourNuit">
-        <input type="checkbox" id="input-switch" class="switch__checkbox" />
-        <label class="switch__label" for="input-switch" id="jour">
-          <span class="switch__circle" id="buttonJour"></span>
-        </label>
-      </div>
-    </div>
     <div id="flow">
       <figure>
         <figcaption>
@@ -113,6 +105,15 @@
       <button class="btn text-uppercase">Voir plus</button>
     </div>
     <button class="btn subscribe abo">+ S'abonner</button>
+    <!-- Changer le thème -->
+    <div id="theme">
+      <div class="switch" id="jourNuit">
+        <input type="checkbox" id="input-switch" class="switch__checkbox" />
+        <label class="switch__label" for="input-switch" id="jour">
+          <span class="switch__circle" id="buttonJour"></span>
+        </label>
+      </div>
+    </div>
   </section>
 
   <!-- PAGE ACCUEIL -->
@@ -197,17 +198,17 @@
         <div>
           <span><img src="images/cover_playlist_accueil2.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>One Dance</span>
+          <span class="title">One Dance</span>
           <span class="mini"> par Snake</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Come</span>
+          <span class="title">Come</span>
           <span class="mini"> par Jain</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Home</span>
+          <span class="title">Home</span>
           <span class="mini"> par Daniel</span>
         </div>
       </div>
@@ -220,17 +221,17 @@
         <div>
           <span><img src="images/cover_playlist_accueil1.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Orange Blossom</span>
+          <span class="title">Orange Blossom</span>
           <span class="mini"> par Mayce</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Never give up</span>
+          <span class="title">Never give up</span>
           <span class="mini"> par K.Fast</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Work</span>
+          <span class="title">Work</span>
           <span class="mini"> par Rihanna</span>
         </div>
       </div>
@@ -244,17 +245,17 @@
         <div>
           <span><img src="images/cover_playlist_accueil3.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Blueberry</span>
+          <span class="title">Blueberry</span>
           <span class="mini"> par Topie Loupe</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Back Down</span>
+          <span class="title">Back Down</span>
           <span class="mini"> par Mauno</span>
         </div>
         <div>
           <a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
-          <span>Wistling</span>
+          <span class="title">Wistling</span>
           <span class="mini"> par Jackie</span>
         </div>
       </div>
@@ -263,11 +264,68 @@
 
     <div id="mixAccueil">
       <h4>Les meilleures ambiances selon vos goûts</h4>
+      <div class="col-md-3 music">
       <img src="images/covers/cover_paramore.png" alt="cover" class="cover">
-      <img src="images/iconePlay.png" alt="play" class="playCover">
+      <a href="#" class="textCover" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+            <div class="informationsChansons">
+              <p class="title">Brand New Eyes</p>
+              <p>Paramore</p>
+              <p>Twilight</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 music">
       <img src="images/covers/cover_train.png" alt="cover" class="cover">
+      <a href="#" class="textCover" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+            <div class="informationsChansons">
+              <p class="title">Hey Soul Sister</p>
+              <p>Train</p>
+              <p>Save me, San Francisco</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 music">
       <img src="images/cover_playlist2.png" alt="cover" class="cover">
+      <a href="#" class="textCover" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+            <div class="informationsChansons">
+              <p class="title">Nouveautés</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 music">
       <img src="images/covers/cover_SamSmith.png" alt="cover" class="cover">
+      <a href="#" class="textCover" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+            <div class="informationsChansons">
+              <p class="title">Stay With Me</p>
+              <p>Sam Smith</p>
+              <p>In the lonely planet</p>
+            </div>
+          </a>
+        </div>
       <div class="petitFilet"></div>
       <span class="button">Voir tous les mix</span>
     </div>
@@ -340,7 +398,19 @@
   <section id="page-nouveautes" class="page">
     <h2>Nouveautés <span>Les nouveautés que vous ne devez vraiment pas manquer</span></h2>
     <ul id="navNouveautes" class="navPage text-center col-lg-10 text-uppercase list-inline">
-      <li class="col-md-3"><a href="#">Genres</a></li>
+      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+		<ul class="col-md-12">
+			<li><a href="#">Électro</a></li>
+			<li><a href="#">Pop</a></li>
+			<li><a href="#">Rap / Hip Hop</a></li>
+			<li><a href="#">Rock / Metal</a></li>
+			<li><a href="#">Jazz</a></li>
+			<li><a href="#">Reggae</a></li>
+			<li><a href="#">Soul / Funk</a></li>
+			<li><a href="#">Chanson Française</a></li>
+			<li><a href="#">Musiques du monde</a></li>
+		</ul>
+      </li>
       <li class="col-md-3"><a href="#">Singles</a></li>
       <li class="col-md-3"><a href="#">Albums</a></li>
       <li class="col-md-3"><a href="#">Extended play</a></li>
@@ -348,15 +418,18 @@
     <div class="col-md-12">
       <div class="col-lg-6">
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_articsmonkey.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">Do I wanna Know ?</h5>
-              <h5 id="artiste">Artics Monkey</h5>
-              <h5 id="date">Sorti le 9-04-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">Do I wanna Know ?</h5>
+              <h5 class="artiste">Artics Monkey</h5>
+              <h5 class="date">Sorti le 9-04-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -366,15 +439,18 @@
           </div>
         </div>
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_bastille.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">Flaws</h5>
-              <h5 id="artiste">Bastille</h5>
-              <h5 id="date">Sorti le 12-04-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">Flaws</h5>
+              <h5 class="artiste">Bastille</h5>
+              <h5 class="date">Sorti le 12-04-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -384,15 +460,18 @@
           </div>
         </div>
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_fallOutBoy.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">Centuries</h5>
-              <h5 id="artiste">Fall Out Boy</h5>
-              <h5 id="date">Sorti le 12-03-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">Centuries</h5>
+              <h5 class="artiste">Fall Out Boy</h5>
+              <h5 class="date">Sorti le 12-03-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -405,15 +484,18 @@
       <!--/gauche-->
       <div class="col-lg-6">
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_fifthHarmony.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">Worth It</h5>
-              <h5 id="artiste">Fifth Harmony</h5>
-              <h5 id="date">Sorti le 23-03-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">Worth It</h5>
+              <h5 class="artiste">Fifth Harmony</h5>
+              <h5 class="date">Sorti le 23-03-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -423,15 +505,18 @@
           </div>
         </div>
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_gorillaz.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">Clint Eastwood</h5>
-              <h5 id="artiste">Gorillaz</h5>
-              <h5 id="date">Sorti le 07-03-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">Clint Eastwood</h5>
+              <h5 class="artiste">Gorillaz</h5>
+              <h5 class="date">Sorti le 07-03-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -441,15 +526,18 @@
           </div>
         </div>
         <div class="row square">
-          <div class="col-md-6">
+          <div class="col-md-4 music">
             <img src="images/covers/cover_imagineDragons.png" alt="cover" class="cover">
+            <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="infosCover">
-              <h5 id="album">On top of the World</h5>
-              <h5 id="artiste">Imagine Dragons</h5>
-              <h5 id="date">Sorti le 16-02-2016</h5>
-              <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+              <h5 class="album title">On top of the World</h5>
+              <h5 class="artiste">Imagine Dragons</h5>
+              <h5 class="date">Sorti le 16-02-2016</h5>
+              <p class="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
             </div>
             <div id="logos">
               <img src="images/Calque-32.png" alt="coeur" class="love">
@@ -467,7 +555,19 @@
   <section id="page-top_playlists" class="page">
     <h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
     <ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
-      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+		<ul class="col-md-12">
+			<li><a href="#">Électro</a></li>
+			<li><a href="#">Pop</a></li>
+			<li><a href="#">Rap / Hip Hop</a></li>
+			<li><a href="#">Rock / Metal</a></li>
+			<li><a href="#">Jazz</a></li>
+			<li><a href="#">Reggae</a></li>
+			<li><a href="#">Soul / Funk</a></li>
+			<li><a href="#">Chanson Française</a></li>
+			<li><a href="#">Musiques du monde</a></li>
+		</ul>
+      </li>
       <li class="col-md-4"><a href="#">Ambiances</a></li>
     </ul>
     <div class="col-lg-12">
@@ -501,31 +601,55 @@
     <div class="col-md-12">
       <h4>Autres playlists</h4>
       <div id="row" class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3 music chanson_française">
           <img src="images/cover_playlist6.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music funk">
           <img src="images/cover_playlist7.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music ambiances">
           <img src="images/cover_playlist8.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music rap">
           <img src="images/cover_playlist9.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
       </div>
       <div id="row" class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3 music ambiance">
           <img src="images/cover_playlist10.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music electro">
           <img src="images/cover_playlist11.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music ambiance">
           <img src="images/cover_playlist12.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 music pop">
           <img src="images/cover_playlist13.png" alt="poadcast" class="cover">
+          <a href="#" class="textCover" style="text-decoration:none;">
+              <img src="images/iconePlay.png" alt="play" class="playMusic">
+            </a>
         </div>
       </div>
     </div>
@@ -535,7 +659,19 @@
   <section id="page-mix" class="page">
     <h2>Mix <span>Nos chansons préférées et nos recommandations, le tout dans un mix thématique</span></h2>
     <ul id="navMix" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+		<ul class="col-md-12">
+			<li><a href="#">Électro</a></li>
+			<li><a href="#">Pop</a></li>
+			<li><a href="#">Rap / Hip Hop</a></li>
+			<li><a href="#">Rock / Metal</a></li>
+			<li><a href="#">Jazz</a></li>
+			<li><a href="#">Reggae</a></li>
+			<li><a href="#">Soul / Funk</a></li>
+			<li><a href="#">Chanson Française</a></li>
+			<li><a href="#">Musiques du monde</a></li>
+		</ul>
+      </li>
       <li class="col-md-4"><a href="#">Ambiances</a></li>
       <li class="col-md-4"><a href="#">Artistes</a></li>
     </ul>
@@ -545,7 +681,7 @@
           <div>
             <h3>Vos préférences</h3></div>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_kanyeWest.jpg" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -555,13 +691,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
+              <p class="title">Ultralight Beam</p>
               <p>Kanye West</p>
               <p>The life of Pablo</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_concentration.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -571,15 +707,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Concentration</p>
             </div>
           </a>
         </div>
       </div>
       <div id="row2" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 electro">
           <img src="images/covers/cover_electro.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -589,9 +723,7 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Electro</p>
             </div>
           </a>
         </div>
@@ -605,13 +737,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p class="title">Born to Die</p>
+              <p>Lana Del Rey</p>
+              <p>HoneyMoon</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
               <span><i class="fa fa-heart" aria-hidden="true"></i></span>
@@ -620,14 +752,12 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Festival</p>
             </div>
           </a>
           <img src="images/covers/cover_festival.png" alt="Mix" class="cover">
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 chanson_française">
           <img src="images/covers/cover_frenchsongs.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -637,15 +767,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Chanson Française</p>
             </div>
           </a>
         </div>
       </div>
       <div id="row3" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_fun.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -655,13 +783,11 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Fun</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_holidays.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -671,13 +797,11 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Holidays</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_madeon.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -687,13 +811,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p class="title">Pay no Mind</p>
+              <p>Madeon</p>
+              <p>You're on</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_party.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -703,15 +827,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Party</p>
             </div>
           </a>
         </div>
       </div>
       <div id="row3" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_roadtrip.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -721,13 +843,11 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Road Trip</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_nirvana.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -737,13 +857,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p class="title">Smells Like Teen Spirit</p>
+              <p>Nirvana</p>
+              <p>Nevermind</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_vintage.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -753,13 +873,11 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Vintage</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 electro_swing">
           <img src="images/covers/cover_electroSwing.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -769,15 +887,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Electro Swing</p>
             </div>
           </a>
         </div>
       </div>
       <div id="row3" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_theWeeknd.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -787,13 +903,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p class="title">Can't feel my face</p>
+              <p>The Weeknd</p>
+              <p>Beauty Behind the Madness</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_travel.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -803,13 +919,11 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Travel</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_seafret.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -819,13 +933,13 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p class="title">Oceans</p>
+              <p>Seafret</p>
+              <p>Tell me it's real</p>
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 classique">
           <img src="images/covers/cover_classique.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -835,9 +949,7 @@
             </div>
             <img src="images/iconePlay.png" alt="play" class="playMusic">
             <div class="informationsChansons">
-              <p>Ultralight Beam</p>
-              <p>Kanye West</p>
-              <p>The life of Pablo</p>
+              <p>Musique Classique</p>
             </div>
           </a>
         </div>
@@ -849,63 +961,171 @@
   <section id="page-infos" class="page">
     <h2>Infos & divertissements <span>À écouter sans modération</span></h2>
     <ul id="navInfos" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+		<ul class="col-md-12">
+			<li><a href="#">Électro</a></li>
+			<li><a href="#">Pop</a></li>
+			<li><a href="#">Rap / Hip Hop</a></li>
+			<li><a href="#">Rock / Metal</a></li>
+			<li><a href="#">Jazz</a></li>
+			<li><a href="#">Reggae</a></li>
+			<li><a href="#">Soul / Funk</a></li>
+			<li><a href="#">Chanson Française</a></li>
+			<li><a href="#">Musiques du monde</a></li>
+		</ul>
+      </li>
       <li class="col-md-4"><a href="#">Podcasts</a></li>
       <li class="col-md-4"><a href="#">Émissions</a></li>
     </ul>
     <div class="col-lg-12">
       <div id="row1" class="row">
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Les mardis de l'espace</h5>
           <img src="images/Cover_podcast1.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>De la tête aux pieds</h5>
           <img src="images/Cover_podcast2.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3 .podcastCover">
           <h5>Les mardis de l'espace</h5>
           <img src="images/Cover_podcast3.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Women of the hour</h5>
           <img src="images/Cover_podcast4.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
       </div>
       <div id="row2" class="row">
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Slack variety pack</h5>
           <img src="images/Cover_podcast5.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Revue de presse</h5>
           <img src="images/Cover_podcast6.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>L'entretien</h5>
           <img src="images/Cover_podcast7.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Télérama</h5>
           <img src="images/Cover_podcast8.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
       </div>
       <div id="row3" class="row">
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Limetown</h5>
           <img src="images/Cover_podcast9.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Un oeif sur les médias</h5>
           <img src="images/Cover_podcast10.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <h5>Munchies</h5>
           <img src="images/Cover_podcast11.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
         <h5>Face à face</h5>
-        <div class="square col-lg-3">
+        <div class="square music col-lg-3">
           <img src="images/Cover_podcast12.png" alt="Eminem" class="cover">
+          <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
+            <div class="icones">
+              <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+              <span>+</span>
+              <span>...</span>
+            </div>
+            <img src="images/iconePlay.png" alt="play" class="playMusic">
+          </a>
         </div>
       </div>
     </div>
@@ -915,10 +1135,10 @@
   <!-- PLAYER -->
   <section id="player">
     <div id="playingInfos" class="text-center">
-      <span id="title" class="title">Do I Wanna Know?</span>
-      <span id="artist" class="artiste">Arctic Monkeys</span>
+      <span id="titlePlayer" class="title">Do I Wanna Know?</span>
+      <span id="artistPlayer" class="artiste">Arctic Monkeys</span>
       <br/>
-      <span id="album" class="album">AM</span>
+      <span id="albumPlayer" class="album">AM</span>
     </div>
     <audio id="myMusic" preload ontimeupdate="update(this)"></audio>
     <div id="playliste">
