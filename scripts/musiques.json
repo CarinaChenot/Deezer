@@ -6,7 +6,7 @@ var music = [
 		"url": "musique/flaws.mp3",
 		"albumCover": "images/covers/cover_bastille.png",
 		"albumName": "Bad blood",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
@@ -18,7 +18,7 @@ var music = [
 		"url": "musique/worthIt.mp3",
 		"albumCover": "images/covers/cover_fifthHarmony.png",
 		"albumName": "Reflection",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
@@ -30,7 +30,7 @@ var music = [
 		"url": "musique/centuries.mp3",
 		"albumCover": "images/covers/cover_fallOutBoy.png",
 		"albumName": "American beauty",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
@@ -42,7 +42,7 @@ var music = [
 		"url": "musique/onTopOfTheWorld.mp3",
 		"albumCover": "images/covers/cover_imagineDragons.png",
 		"albumName": "Dream",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
@@ -54,7 +54,7 @@ var music = [
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/covers/cover_gorillaz.png",
 		"albumName": "Dream",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
@@ -66,241 +66,241 @@ var music = [
 		"url": "musique/aintYourMama.mp3",
 		"albumCover": "images/cover_jennyferLopez.jpg",
 		"albumName": "Ain't your mama",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 6,
 		"title": "One Dance",
 		"artist": "Snake",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 7,
 		"title": "Come",
 		"artist": "Jain",
 		"url": "musique/jain.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 8,
 		"title": "Home",
 		"artist": "Daniel",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 9,
 		"title": "Orange Blossom",
 		"artist": "Mayce",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 10,
 		"title": "Never give up",
 		"artist": "K.Fast",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 11,
 		"title": "Work",
 		"artist": "Rihanna",
 		"url": "musique/rihanna.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 12,
 		"title": "Blueberry",
 		"artist": "Topie Loupe",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  
-    {
+
+	{
 		"id": 13,
 		"title": "Back Down",
 		"artist": "Mauno",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  
-    {
+
+	{
 		"id": 14,
 		"title": "Wistling",
 		"artist": "Jackie",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/cover_playlist2.png",
 		"albumName": "",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 15,
 		"title": "Brand New Eyes",
 		"artist": "Paramore",
 		"url": "musique/paramore.mp3",
 		"albumCover": "images/covers/cover_train.png",
 		"albumName": "Twilight",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 16,
 		"title": "Hey Soul Sister",
 		"artist": "Train",
 		"url": "musique/train.mp3",
 		"albumCover": "images/covers/cover_train.png",
 		"albumName": "Save me, San Francisco",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
+	{
 		"id": 17,
 		"title": "Stay With Me",
 		"artist": "Sam Smith",
 		"url": "musique/samSmith.mp3",
 		"albumCover": "images/covers/cover_SamSmith.png",
 		"albumName": "In the lonely planet",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-    {
-        "id": 18,
-        "title": "Do I Wanna Know?",
-        "artist": "Arctic Monkeys",
-        "url": "musique/Arctic Monkeys - Do I Wanna Know.mp3",
-        "albumCover": "images/covers/cover_articsmonkey.png",
-        "albumName": "AM",
-        "date":"",
+	{
+		"id": 18,
+		"title": "Do I Wanna Know?",
+		"artist": "Arctic Monkeys",
+		"url": "musique/Arctic Monkeys - Do I Wanna Know.mp3",
+		"albumCover": "images/covers/cover_articsmonkey.png",
+		"albumName": "AM",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 19,
 		"title": "Ultralight Beam",
 		"artist": "Kanye West",
 		"url": "musique/kanyeWest",
 		"albumCover": "images/covers/cover_kanyeWest.jpg",
 		"albumName": "The life of Pablo",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 20,
 		"title": "Born to Die",
 		"artist": "Lana Del Rey",
 		"url": "musique/lanaDelRey",
 		"albumCover": "images/covers/cover_lanaDelRey.png",
 		"albumName": "HoneyMoon",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 21,
 		"title": "Pay no Mind",
 		"artist": "Madeon",
 		"url": "musique/madeon.mp3",
 		"albumCover": "images/covers/cover_madeon.png",
 		"albumName": "You're on",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 22,
 		"title": "Smells Like Teen Spirit",
 		"artist": "Nirvana",
 		"url": "musique/nirvana.mp3",
 		"albumCover": "images/covers/cover_nirvana.png",
 		"albumName": "Nevermind",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 23,
 		"title": "Can't feel my face",
 		"artist": "The Weeknd",
 		"url": "musique/cantFeelMyFace",
 		"albumCover": "images/covers/cover_theWeeknd.png",
 		"albumName": "Beauty Behind the Madness",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  {
+	{
 		"id": 24,
 		"title": "Oceans",
 		"artist": "Seafret",
 		"url": "musique/oceans",
 		"albumCover": "images/covers/cover_seafret.png",
 		"albumName": "Tell me it's real",
-		"date":"",
+		"date": "",
 		"genre": "",
 		"ambiance": "",
 		"like": 0
    },
-  
+
 
 ]
