@@ -68,4 +68,12 @@ $(document).ready(function () {
     $(".emission").hide();
     $(".emission").show();
   });
+  
+  $(".select").on("click", function(e){
+    e.preventDefault();
+    var genre = $(this).text();
+    localStorage.setItem("genre_selectionné", genre);
+    var genreSelectionné = localStorage.getItem("genre_selectionné");
+    $(".genreSelect").html(genreSelectionné);
+  });
 });

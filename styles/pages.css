@@ -205,3 +205,10 @@
   width: 15px !important;
   margin-bottom: 2px;
 }
+
+.genreSelect{
+  text-transform: lowercase;
+  color: darkgray;
+  margin-left: 10px;
+  font-size: 12px;
+}
