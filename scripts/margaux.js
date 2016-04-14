@@ -29,8 +29,8 @@ $(document).ready(function () {
   
   $(".music a").hide();
   $(".music").hover(
-    function(){$(this).find("a").slideDown();},
-    function(){$(this).find("a").slideUp();}
+    function(){$(this).find("a").fadeIn();},
+    function(){$(this).find("a").fadeOut();}
     );
   
 }); 
