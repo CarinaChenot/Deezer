@@ -7,7 +7,8 @@ Le player
 #player {
   position: fixed;
   bottom: 0px;
-  z-index: 10;
+  z-index: 1000;
+  padding-right: 150px;
   width: 100%;
 }
 

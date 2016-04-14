@@ -18,8 +18,8 @@
   overflow: hidden;
   background: #C1C1C9;
   position: absolute;
-  width: 41px;
-  height: 18px;
+  width: 62px;
+  height: 27px;
   border-radius: 30px;
   border: 1px solid #42424d;
 }
@@ -51,11 +51,11 @@
   display: block;
   z-index: 10;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
   top: 50%;
   left: 2px;
-  margin-top: -7px;
+  margin-top: -11px;
   background: #ffffff;
   /* Jour */
   border-radius: 11px;
@@ -63,19 +63,19 @@
 }
 
 .switch__checkbox:checked ~ .switch__label .switch__circle {
-  transform: translateX(21px);
+  transform: translateX(35px);
 }
 
 .switch__circle:before {
   content: '';
   z-index: -10;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
   top: 0;
   left: 0;
-  left: -14px;
-  margin-top: -4px;
+  left: -21px;
+  margin-top: -7px;
   background: #C1C1C9;
   /*  Jour */
   border-radius: 11px;
