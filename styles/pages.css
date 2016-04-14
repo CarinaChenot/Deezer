@@ -220,3 +220,10 @@
 .fa-heart.liked {
   color: red;
 }
+
+.selected{
+  font-size: 12px;
+  margin-left: 10px;
+  text-transform: lowercase;
+  color: darkgray;
+}
