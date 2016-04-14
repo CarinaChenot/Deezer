@@ -23,6 +23,7 @@ $('.playButtonFlow').on('click', function(){
 	}, 2000);
 
 	nextMusic();
+	permut();
 	playMusic();
 
 });
