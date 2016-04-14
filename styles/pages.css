@@ -234,10 +234,12 @@
 
 #page-likes .artist{
   font-size: 12px;
+  margin-right: 5px;
 }
 
 #page-likes .song{
   font-size: 12px;
+  font-weight: 600;
 }
 
 #page-likes .music{
