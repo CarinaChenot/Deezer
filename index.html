@@ -400,7 +400,7 @@
   <section id="page-nouveautes" class="page">
     <h2>Nouveautés <span>Les nouveautés que vous ne devez vraiment pas manquer</span></h2>
     <ul id="navNouveautes" class="navPage text-center col-lg-10 text-uppercase list-inline">
-      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
@@ -557,7 +557,7 @@
   <section id="page-top_playlists" class="page">
     <h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
     <ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
-      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
@@ -661,7 +661,7 @@
   <section id="page-mix" class="page">
     <h2>Mix <span>Nos chansons préférées et nos recommandations, le tout dans un mix thématique</span></h2>
     <ul id="navMix" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres" id="genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
@@ -674,15 +674,16 @@
 			<li><a href="#">Musiques du monde</a></li>
 		</ul>
       </li>
-      <li class="col-md-4"><a href="#">Ambiances</a></li>
-      <li class="col-md-4"><a href="#">Artistes</a></li>
+      <li class="col-md-4" id="ambiances"><a href="#">Ambiances</a></li>
+      <li class="col-md-4" id="artistes"><a href="#">Artistes</a></li>
     </ul>
     <div class="col-lg-12">
-      <div id="row1" class="row">
+       <!--
         <div id="preferences" class="col-lg-6">
           <div>
             <h3>Vos préférences</h3></div>
         </div>
+        -->
         <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_kanyeWest.jpg" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
@@ -713,9 +714,7 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row2" class="row">
-        <div class="square music col-lg-3 electro">
+        <div class="square music col-lg-3 genre electro">
           <img src="images/covers/cover_electro.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -729,7 +728,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_lanaDelRey.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -759,7 +758,7 @@
           </a>
           <img src="images/covers/cover_festival.png" alt="Mix" class="cover">
         </div>
-        <div class="square music col-lg-3 chanson_française">
+        <div class="square music col-lg-3 genre chanson_française">
           <img src="images/covers/cover_frenchsongs.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -773,8 +772,6 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row3" class="row">
         <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_fun.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
@@ -833,8 +830,6 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row3" class="row">
         <div class="square music col-lg-3 ambiance">
           <img src="images/covers/cover_roadtrip.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
@@ -879,7 +874,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3 electro_swing">
+        <div class="square music col-lg-3 genre electro_swing">
           <img src="images/covers/cover_electroSwing.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -893,8 +888,6 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row3" class="row">
         <div class="square music col-lg-3 artistes">
           <img src="images/covers/cover_theWeeknd.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
@@ -941,7 +934,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3 classique">
+        <div class="square music col-lg-3 genre classique">
           <img src="images/covers/cover_classique.png" alt="Mix" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
             <div class="icones">
@@ -955,7 +948,6 @@
             </div>
           </a>
         </div>
-      </div>
     </div>
   </section>
 
@@ -963,7 +955,7 @@
   <section id="page-infos" class="page">
     <h2>Infos & divertissements <span>À écouter sans modération</span></h2>
     <ul id="navInfos" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-3"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
