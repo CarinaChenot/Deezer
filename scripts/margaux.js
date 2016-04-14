@@ -1,16 +1,9 @@
 $(document).ready(function () {
-  $(".play").on("click", function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("play")) {
-      $(this).attr("src", "images/pauseBlack.png");
-      $(this).removeClass("play");
-      $(this).addClass("pause");
-    } else if ($(this).hasClass("pause")) {
-      $(this).attr("src", "images/playBlack.png");
-      $(this).removeClass("pause");
-      $(this).addClass("play");
-    }
-  });
+	function updateAllPlayer() {
+		player.pause();
+		player.currentTime = 0;
+		player.setAttribute("src", music[id_music].url);
+		albumCover.setAttribute("src", music[id_music].albumCover);
 
   $(".music a").hide();
   $(".music").hover(
@@ -28,6 +21,30 @@ $(document).ready(function () {
     $(".ambiance").hide();
     $(".ambiance").show();
   });
+	$(".play").on("click", function (e) {
+		e.preventDefault();
+		if ($(this).hasClass("play")) {
+			$(".currentlyPlaying").attr("src", "images/playBlack.png");
+			$(".pause").addClass("play");
+			$(".pause").removeClass("currentlyPlaying");
+			$(".pause").removeClass("pause");
+			$(this).addClass("pause");
+			$(this).attr("src", "images/pauseBlack.png");
+			$(this).addClass("currentlyPlaying");
+			$(this).removeClass("play");
+			getSong();
+			updateAllPlayer();
+			permut();
+		} else if ($(this).hasClass("pause")) {
+			getSong();
+			pauseMusic();
+			$(".currentlyPlaying").attr("src", "images/playBlack.png");
+			$(this).removeClass("currentlyPlaying");
+			//$(this).attr("src", "images/playBlack.png");
+			$(this).addClass("play");
+			$(this).removeClass("pause");
+		}
+	});
 
   $("#genres-playlists").on("click", function () {
     $(".artistes").hide();

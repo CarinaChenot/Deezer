@@ -1,5 +1,24 @@
 /****  Général  ****/
 
+//lecture des chansons au click bouton
+//$('a img.play').on('click', function () {
+
+function getSong() {
+	var currentMusic = 0;
+	var currentTitle = $(".currentlyPlaying").parent("a").next('span.title').attr('data');
+	for (var j = 0; j < music.length; j++) {
+		if (music[j].id == currentTitle) {
+			currentMusic = j;
+		}
+		console.log("j = " + j);
+		console.log("currentTitle = " + currentTitle);
+		console.log("currentMusic = " + currentMusic);
+	}
+	id_music = currentMusic;
+}
+
+//});
+
 //barre espace play/pause
 
 $(document).keydown(function (e) {
