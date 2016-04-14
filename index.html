@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LearnJS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="./styles/login.css" rel=stylesheet>
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <section class="login">
+    <div class="deezer">
+      <div class="deezer_wrapper">
+        <span class="deezer_close">Deezer</span>
+        <div class="deezer_container">
+          <ul class="deezer_tabs">
+            <li data-tabtar="lgm-2"><a href="#">Se connecter</a></li>
+            <li data-tabtar="lgm-1"><a href="#">S'enregistrer</a></li>
+          </ul>
+          <div class="deezer_tab-wrapper">
+            <div class="deezer_tab lgm-1">
+              <div class="deezer_heading">
+                <span class="deezer_heading-subtitle">Entrez vos données personnelles <strong>pour créer un compte</strong></span>
+              </div>
+              <div class="deezer_form">
+                <form accept-charset="utf-8" action="#" class="simform">
+                  <div class="sminputs">
+                    <div class="input full">
+                      <label class="string optional" for="user-name">E-mail*</label>
+                      <input class="string optional" maxlength="255" id="user-email" placeholder="E-mail" type="email" size="50" />
+                    </div>
+                  </div>
+                  <div class="sminputs">
+                    <div class="input string optional">
+                      <label class="string optional" for="user-pw">Mot de passe *</label>
+                      <input class="string optional" maxlength="255" id="user-pw" placeholder="Mot de passe" type="text" size="50" />
+                    </div>
+                    <div class="input string optional">
+                      <label class="string optional" for="user-pw-repeat">Confirmation *</label>
+                      <input class="string optional" maxlength="255" id="user-pw-repeat" placeholder="Confirmation" type="text" size="50" />
+                    </div>
+                  </div>
+                  <div class="simform_actions">
+                    <input class="submit" name="commit" type="submit" value="Créer un compte" />
+                    <span class="simform_actions-sidetext">En créant un compte vous acceptez nos <a class="special" href="#" target="_blank" role="link">Termes et conditions</a></span>
+                  </div>
+                </form>
+              </div>
+              <div class="deezer_alter">
+                <div class="deezer_alter-container">
+                  <a href="#" class="connect facebook">
+                    <div class="connect_icon">
+                      <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="connect_context">
+                      <span>Créer un compte avec <strong>Facebook</strong></span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="connect googleplus">
+                    <div class="connect_icon">
+                      <i class="fa fa-google-plus"></i>
+                    </div>
+                    <div class="connect_context">
+                      <span>Créer un compte avec <strong>Google+</strong></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="deezer_tab lgm-2">
+              <div class="deezer_heading">
+                <span class="deezer_heading-subtitle">Entrez vos e-mail et mot de passe <strong>pour vous connecter</strong></span>
+              </div>
+              <div class="deezer_form">
+                <form accept-charset="utf-8" action="#" class="simform">
+                  <div class="sminputs">
+                    <div class="input full">
+                      <label class="string optional" for="user-name">E-mail*</label>
+                      <input class="string optional" maxlength="255" id="user-email" placeholder="E-mail" type="email" size="50" />
+                    </div>
+                  </div>
+                  <div class="sminputs">
+                    <div class="input full">
+                      <label class="string optional" for="user-pw">Mot de passe *</label>
+                      <input class="string optional" maxlength="255" id="user-pw" placeholder="Mot de passe" type="password" size="50" />
+                      <span class="hide-password">Voir</span>
+                    </div>
+                  </div>
+                  <div class="simform_actions">
+                    <input class="submit" name="commit" type="submit" value="Se connecter" />
+                    <span class="simform_actions-sidetext"><a class="special" role="link" href="#">Mot de passe oublié? Cliquez ici</a></span>
+                  </div>
+                </form>
+              </div>
+              <div class="deezer_alter">
+                <div class="deezer_alter-container">
+                  <a href="#" class="connect facebook">
+                    <div class="connect_icon">
+                      <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="connect_context">
+                      <span>Connexion avec <strong>Facebook</strong></span>
+                    </div>
+                  </a>
+                  <a href="#" class="connect googleplus">
+                    <div class="connect_icon">
+                      <i class="fa fa-google-plus"></i>
+                    </div>
+                    <div class="connect_context">
+                      <span>Connexion avec <strong>Google+</strong></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="./scripts/login.js"></script>
+</body>
+
+</html>
