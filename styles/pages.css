@@ -171,7 +171,7 @@
   position: relative;
 }
 
-.navPage li ul{
+.genres ul{
   position: absolute;
   display: none;
   top : 0px;
@@ -185,11 +185,11 @@
   width: 145px;
 }
 
-.navPage:hover li ul{
+.genres:hover ul{
   display: block;
 }
 
-.navPage li ul li{
+.genres ul li{
   text-transform: lowercase;
   font-size: 12px;
   list-style:none;
