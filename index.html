@@ -555,7 +555,7 @@
   <section id="page-top_playlists" class="page">
     <h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
     <ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
-      <li class="col-md-3 genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres" id="genres-playlists"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
@@ -568,7 +568,7 @@
 			<li><a href="#">Musiques du monde</a></li>
 		</ul>
       </li>
-      <li class="col-md-4"><a href="#">Ambiances</a></li>
+      <li class="col-md-4" id="ambiances-playlists"><a href="#">Ambiances</a></li>
     </ul>
     <div class="col-lg-12">
       <h4>Les meilleures playlists du moment</h4>
@@ -600,14 +600,13 @@
     </div>
     <div class="col-md-12">
       <h4>Autres playlists</h4>
-      <div id="row" class="row">
-        <div class="col-lg-3 music chanson_française">
+        <div class="col-lg-3 music genre chanson_française">
           <img src="images/cover_playlist6.png" alt="poadcast" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
               <img src="images/iconePlay.png" alt="play" class="playMusic">
             </a>
         </div>
-        <div class="col-lg-3 music funk">
+        <div class="col-lg-3 music genre funk">
           <img src="images/cover_playlist7.png" alt="poadcast" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
               <img src="images/iconePlay.png" alt="play" class="playMusic">
@@ -619,21 +618,19 @@
               <img src="images/iconePlay.png" alt="play" class="playMusic">
             </a>
         </div>
-        <div class="col-lg-3 music rap">
+        <div class="col-lg-3 music genre rap">
           <img src="images/cover_playlist9.png" alt="poadcast" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
               <img src="images/iconePlay.png" alt="play" class="playMusic">
             </a>
         </div>
-      </div>
-      <div id="row" class="row">
         <div class="col-lg-3 music ambiance">
           <img src="images/cover_playlist10.png" alt="poadcast" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
               <img src="images/iconePlay.png" alt="play" class="playMusic">
             </a>
         </div>
-        <div class="col-lg-3 music electro">
+        <div class="col-lg-3 music genre electro">
           <img src="images/cover_playlist11.png" alt="poadcast" class="cover">
           <a href="#" class="textCover" style="text-decoration:none;">
               <img src="images/iconePlay.png" alt="play" class="playMusic">
@@ -651,7 +648,6 @@
               <img src="images/iconePlay.png" alt="play" class="playMusic">
             </a>
         </div>
-      </div>
     </div>
   </section>
 
@@ -659,7 +655,7 @@
   <section id="page-mix" class="page">
     <h2>Mix <span>Nos chansons préférées et nos recommandations, le tout dans un mix thématique</span></h2>
     <ul id="navMix" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-3 genres" id="genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
+      <li class="col-md-3 genres" id="genres-mix"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
 		<ul class="col-md-12">
 			<li><a href="#">Électro</a></li>
 			<li><a href="#">Pop</a></li>
@@ -672,8 +668,8 @@
 			<li><a href="#">Musiques du monde</a></li>
 		</ul>
       </li>
-      <li class="col-md-4" id="ambiances"><a href="#">Ambiances</a></li>
-      <li class="col-md-4" id="artistes"><a href="#">Artistes</a></li>
+      <li class="col-md-4" id="ambiances-mix"><a href="#">Ambiances</a></li>
+      <li class="col-md-4" id="artistes-mix"><a href="#">Artistes</a></li>
     </ul>
     <div class="col-lg-12">
        <!--
@@ -953,25 +949,11 @@
   <section id="page-infos" class="page">
     <h2>Infos & divertissements <span>À écouter sans modération</span></h2>
     <ul id="navInfos" class="navPage text-center text-uppercase list-inline">
-      <li class="col-md-3 genres"><a href="#">Genres <img src="images/next.png" alt="menu déroulé" id="nextious"></a>
-		<ul class="col-md-12">
-			<li><a href="#">Électro</a></li>
-			<li><a href="#">Pop</a></li>
-			<li><a href="#">Rap / Hip Hop</a></li>
-			<li><a href="#">Rock / Metal</a></li>
-			<li><a href="#">Jazz</a></li>
-			<li><a href="#">Reggae</a></li>
-			<li><a href="#">Soul / Funk</a></li>
-			<li><a href="#">Chanson Française</a></li>
-			<li><a href="#">Musiques du monde</a></li>
-		</ul>
-      </li>
-      <li class="col-md-4"><a href="#">Podcasts</a></li>
-      <li class="col-md-4"><a href="#">Émissions</a></li>
+      <li class="col-md-6" id="podcast-infos"><a href="#">Podcasts</a></li>
+      <li class="col-md-6" id="emission-infos"><a href="#">Émissions</a></li>
     </ul>
     <div class="col-lg-12">
-      <div id="row1" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 podcast">
           <img src="images/Cover_podcast1.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -985,7 +967,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast2.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -999,7 +981,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3 .podcastCover">
+        <div class="square music col-lg-3 podcast .podcastCover">
           <img src="images/Cover_podcast3.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1013,7 +995,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast4.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1027,9 +1009,7 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row2" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 podcast">
           <img src="images/Cover_podcast5.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1043,7 +1023,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast6.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1057,7 +1037,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 podcast">
           <img src="images/Cover_podcast7.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1071,7 +1051,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast8.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1085,9 +1065,7 @@
             </div>
           </a>
         </div>
-      </div>
-      <div id="row3" class="row">
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 podcast">
           <img src="images/Cover_podcast9.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1101,7 +1079,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast10.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1115,7 +1093,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 podcast">
           <img src="images/Cover_podcast11.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1129,7 +1107,7 @@
             </div>
           </a>
         </div>
-        <div class="square music col-lg-3">
+        <div class="square music col-lg-3 emission">
           <img src="images/Cover_podcast12.png" alt="Eminem" class="cover">
           <a href="#" class="textCover coverPodcast" style="text-decoration:none;">
             <div class="icones">
@@ -1143,7 +1121,6 @@
             </div>
           </a>
         </div>
-      </div>
     </div>
   </section>
 

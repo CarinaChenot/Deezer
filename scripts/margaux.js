@@ -22,24 +22,50 @@ $(document).ready(function () {
     }
   );
 
-  $("#ambiances").on("click", function () {
-    $(".artistes").fadeOut("slow");
-    $(".genre").fadeOut("slow");
-    $(".ambiance").fadeOut("slow");
-    $(".ambiance").fadeIn("slow");
+  $("#ambiances-playlists").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".ambiance").show();
   });
 
-  $("#genres").on("click", function () {
-    $(".artistes").fadeOut("slow");
-    $(".genre").fadeOut("slow");
-    $(".ambiance").fadeOut("slow");
-    $(".genre").fadeIn("slow");
+  $("#genres-playlists").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".genre").show();
+  });
+  
+    $("#ambiances-mix").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".ambiance").show();
   });
 
-  $("#artistes").on("click", function () {
-    $(".artistes").fadeOut("slow");
-    $(".genre").fadeOut("slow");
-    $(".ambiance").fadeOut("slow");
-    $(".artistes").fadeIn("slow");
+  $("#genres-mix").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".genre").show();
+  });
+
+  $("#artistes-mix").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".artistes").show();
+  });
+  
+  $("#podcast-infos").on("click", function () {
+    $(".podcast").hide();
+    $(".emission").hide();
+    $(".podcast").show();
+  });
+  
+  $("#emission-infos").on("click", function () {
+    $(".podcast").hide();
+    $(".emission").hide();
+    $(".emission").show();
   });
 });
