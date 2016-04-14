@@ -1,13 +1,34 @@
 var player = document.getElementById("myMusic");
 var playliste = document.getElementById("playliste");
 
-//Les bouttons des options
+//Les boutons des options
 var play = document.getElementById("play");
 var pause = document.getElementById("pause");
 var prevMus = document.getElementById("prevMus");
 var nextMus = document.getElementById("nextMus");
 var progressBar = document.getElementById("progressBarControl");
 var alea = document.getElementById("alea");
+
+//Les visuels à modifier du player (artistes, albumName + Cover, titres)
+var title = document.getElementById("title");
+var titleSmall = document.getElementById("titleSmall");
+var artist = document.getElementById("artist");
+var artistSmall = document.getElementById("artistSmall");
+var albumName = document.getElementById("album");
+var albumCover = document.getElementById("playing-cover");
+
+//Les visuels à modifier du Flow
+var titleFlow = document.getElementById("titleFlow");
+var artistFlow = document.getElementById("artistFlow");
+var albumFlow = document.getElementById("albumFlow");
+
+//Les boutons du flow (prev & next)
+var prevMusFlow = document.getElementById("prevMusFlow");
+var nextMusFlow = document.getElementById("nextMusFlow");
+
+//Les évènements boutons flow (prev & next)
+prevMusFlow.addEventListener("click", nextMusic);
+nextMusFlow.addEventListener("click", prevMusic);
 
 //Le son
 var id_sound = 1;
@@ -30,7 +51,7 @@ plus.addEventListener("click", soundMore);
 less.addEventListener("click", soundLess);
 alea.addEventListener("click", aleaMusic);
 
-var id_music = 1; // l'indice dans le tableau
+var id_music = 0; // l'indice dans le tableau
 var textPlaylist = "";
 
 
@@ -38,7 +59,7 @@ var duration;    // Durée totale
 var time; // Temps écoulé
 var fraction;
 var percent = 0;
- 
+
 //permet d'initialiser les classes
 play.className = "active";
 pause.className = "hide";
@@ -47,6 +68,18 @@ function changeMusic(){
 	player.pause();
 	player.currentTime = 0;
 	player.setAttribute("src", music[id_music].url);
+	albumCover.setAttribute("src", music[id_music].albumCover);
+	artist.innerHTML = music[id_music].chanteur;
+	title.innerHTML = music[id_music].titre;
+
+	artistSmall.innerHTML = music[id_music].chanteur;
+	titleSmall.innerHTML = music[id_music].titre;
+	albumName.innerHTML = music[id_music].albumName;
+	
+	artistFlow.innerHTML = music[id_music].chanteur;
+	titleFlow.innerHTML = music[id_music].titre;
+	albumFlow.innerHTML = music[id_music].albumName;
+	
 	player.play();
 	changeSound();
 }
@@ -55,7 +88,9 @@ function playMusic(){ // Met le player en play
 	if(player.hasAttribute("src")){
 		player.play();
 	} else {
-		changeMusic();
+		player.setAttribute("src", music[id_music].url);
+		player.play();
+		//changeMusic();
 	}
 	permut();
 } 
@@ -68,6 +103,10 @@ function pauseMusic() { // Met le player en pause
 function nextMusic(){ // Met la prochaine musique
 	id_music = (id_music + 1) % music.length;
 	changeMusic();
+	if (play.className == "active") {
+		play.className = "hide";
+		pause.className = "active";
+	}
 }
 
 function prevMusic(){ //Met la musique précédente
@@ -77,6 +116,10 @@ function prevMusic(){ //Met la musique précédente
 	} else {
 		id_music--;
 		changeMusic();
+	}
+	if (play.className == "active") {
+		play.className = "hide";
+		pause.className = "active";
 	}
 }
 
