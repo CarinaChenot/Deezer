@@ -1,45 +1,75 @@
 var music = [
 	{
-		"titre": "Flaws",
-		"chanteur": "Bastille",
+		"id": 0,
+		"title": "Flaws",
+		"artist": "Bastille",
 		"url": "musique/flaws.mp3",
 		"albumCover": "images/covers/cover_bastille.png",
-		"albumName": "Bad blood"
+		"albumName": "Bad blood",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    },
 	{
-		"titre": "Worth It",
-		"chanteur": "Fifth Harmony",
+		"id": 0,
+		"title": "Worth It",
+		"artist": "Fifth Harmony",
 		"url": "musique/worthIt.mp3",
 		"albumCover": "images/covers/cover_fifthHarmony.png",
-		"albumName": "Reflection"
+		"albumName": "Reflection",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    },
 	{
-		"titre": "Centuries",
-		"chanteur": "Fall out boy",
+		"id": 0,
+		"title": "Centuries",
+		"artist": "Fall out boy",
 		"url": "musique/centuries.mp3",
 		"albumCover": "images/covers/cover_fallOutBoy.png",
-		"albumName": "American beauty"
+		"albumName": "American beauty",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    },
 	{
-		"titre": "On top of the world",
-		"chanteur": "Imagine Dragons",
+		"id": 0,
+		"title": "On top of the world",
+		"artist": "Imagine Dragons",
 		"url": "musique/onTopOfTheWorld.mp3",
 		"albumCover": "images/covers/cover_imagineDragons.png",
-		"albumName": "Dream"
+		"albumName": "Dream",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    },
 	{
-		"titre": "Clint Eastwood",
-		"chanteur": "Gorillaz",
+		"id": 0,
+		"title": "Clint Eastwood",
+		"artist": "Gorillaz",
 		"url": "musique/clintEastwood.mp3",
 		"albumCover": "images/covers/cover_gorillaz.png",
-		"albumName": "Dream"
+		"albumName": "Dream",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    },
 	{
-		"titre": "Ain't your mama",
-		"chanteur": "Jennifer Lopez",
+		"id": 0,
+		"title": "Ain't your mama",
+		"artist": "Jennifer Lopez",
 		"url": "musique/aintYourMama.mp3",
 		"albumCover": "images/cover_jennyferLopez.jpg",
-		"albumName": "Ain't your mama"
+		"albumName": "Ain't your mama",
+		"date":"",
+		"genre": "",
+		"ambiance": "",
+		"like": 0
    }
 
 ]
