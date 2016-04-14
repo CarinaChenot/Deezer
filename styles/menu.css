@@ -181,6 +181,7 @@ li#infos a {
   background-image: url(../images/icones-menu/infos.png);
 }
 
+
 /******** FLOW ********/
 
 #flow {
@@ -351,15 +352,13 @@ li#infos a {
 MENU DROIT 
 **************************/
 
+
 /* Bouton Thème */
 
-/*div#theme {
-  position: absolute;
-  right: 155px;
-  top: 10px;
-  z-index: 20;
-}*/
-
+div#theme {
+  margin-top: 10px;
+  margin-left: 27px;
+}
 
 section#right {
   position: fixed;
