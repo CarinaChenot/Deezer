@@ -47,42 +47,6 @@ $(document).ready(function () {
     $('#page-' + $(this).attr('id')).css('display', 'block');
   });
 
-  //Fonction pour navigation page Nouveautés accueil
-  $('#nouveautesTitle').on('click', function () {
-    $('#menuNav li').removeClass('activeMenu');
-    $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
-    });
-    $('.page').css('display', 'none');
-    $('#nouveautes').addClass('activeMenu');
-    $('#nouveautes a').css('background-image', 'url(images/icones-menu/nouveautes-active.png)');
-    $('#page-nouveautes').css('display', 'block');
-  });
-
-  //Fonction pour navigation page Mix accueil
-  $('#mixTitle').on('click', function () {
-    $('#menuNav li').removeClass('activeMenu');
-    $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
-    });
-    $('.page').css('display', 'none');
-    $('#mix').addClass('activeMenu');
-    $('#mix a').css('background-image', 'url(images/icones-menu/mix-active.png)');
-    $('#page-mix').css('display', 'block');
-  });
-
-  //Fonction pour navigation page top_playlists accueil
-  $('#topPlaylisitsTitle').on('click', function () {
-    $('#menuNav li').removeClass('activeMenu');
-    $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
-    });
-    $('.page').css('display', 'none');
-    $('#top_playlists').addClass('activeMenu');
-    $('#top_playlists a').css('background-image', 'url(images/icones-menu/top_playlists-active.png)');
-    $('#page-top_playlists').css('display', 'block');
-  });
-
   // Fonction pour dérouler la playlist
   $('#list-playlists').hide();
   $('#playlists').on('click', function () {
