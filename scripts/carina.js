@@ -180,4 +180,24 @@ $(document).ready(function () {
       return val.substr(1) + val.substr(0, 1);
     });
   }
+
+  //Fonction pour sauvegarder couleurs
+  for (var i = 0; i < music.length; i++) {
+    if (music[i]["like"] == 1) {
+      $('.fa-heart').attr('data', i).css('color', 'red');
+    }
+  }
+
+  //Fonction pour changer couleur
+  $('.fa-heart').on('click', function () {
+    $(this).toggleClass('liked');
+    if ($(this).hasClass('liked')) {
+      music[$(this).attr('data')]["like"] = 1;
+      console.log(music[$(this).attr('data')]["like"]);
+    } else {
+      music[$(this).attr('data')]["like"] = 0;
+      console.log(music[$(this).attr('data')]["like"]);
+    }
+
+  });
 }); //Fin document ready
