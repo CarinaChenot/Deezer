@@ -1,3 +1,17 @@
+/****  Général  ****/
+
+//barre espace play/pause
+
+$(document).keydown(function (e) {
+	if (e.keyCode == 32) { // KeyCode de la touche espace
+		if (play.className == "active") {
+			playMusic();
+		} else {
+			pauseMusic();
+		}
+	}
+});
+
 /****  Page d'accueil  ****/
 
 /**  animation and play Flow  **/
