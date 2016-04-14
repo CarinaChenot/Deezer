@@ -90,6 +90,17 @@ $(document).ready(function () {
     $(this).addClass('activeMenu');
     $('#page-' + $(this).attr('id')).css('display', 'block');
   });
+  
+  //Fonction navigation page likes
+  $('#likes').on('click', function(){
+    $('#menuNav li').removeClass('activeMenu');
+    $('#menuNav li').each(function () {
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+    });
+    $('.page').css('display', 'none');
+    $(this).addClass('activeMenu');
+    $('#page-' + $(this).attr('id')).css('display', 'block');
+  });
 
 
   //Fonction pour navigation page Nouveautés accueil
