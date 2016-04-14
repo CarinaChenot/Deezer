@@ -3,8 +3,10 @@ $(document).ready(function () {
   //Régler la taille de la page
   $('.page').css('width', parseInt($('.page').css('width')) - 370);
   $('.page').css('width', $(window).width() - 370);
+  $('#player').css('width', $(window).width() - 150);
   $(window).resize(function () {
     $('.page').css('width', $(window).width() - 370);
+    $('#player').css('width', $(window).width() - 150);
   });
 
   //Fonction pour rétracter le menu gauche
@@ -15,25 +17,23 @@ $(document).ready(function () {
       $('.page').css('left', '53px');
       $('#left').css('width', '53');
       $('#left').css('height', $(window).height() - 35);
-      $('#playing-small').show();
-      /*$("#left").hover(
-        function () {
-          $(this).removeClass('reduced');
-          $('#left').css('width', '220');
-        },
-        function () {
-          $(this).addClass('reduced');
-          $('#left').css('width', '53');
-        }
-      );*/
     } else {
       $('#left').css('width', '220');
       $('.page').css('width', $(window).width() - 370);
       $('#left').css('height', $(window).height());
       $('.page').css('left', '220px');
-      $('#playing-small').hide();
     }
   });
+
+  //Fonction pour changer couleur icones hover
+  $("#menuNav li").hover(
+    function () {
+      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
+    },
+    function () {
+      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+    }
+  );
 
   //Fonction pour la navigation des pages
   $('#menuNav li').click(function () {

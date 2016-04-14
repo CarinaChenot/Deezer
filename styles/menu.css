@@ -105,9 +105,7 @@ header #logo img {
 }
 
 
-/*
-Les recultats de la recherche
-*/
+/* Les resultats de la recherche */
 
 #result {
   padding: 5px;
@@ -333,8 +331,10 @@ MENU DROIT
 /* Bouton Thème */
 
 div#theme {
-  margin-top: 10px;
-  margin-left: 27px;
+  margin-left: 35px;
+  margin-top: 50px;
+  z-index: 30;
+  bottom: 30px;
 }
 
 section#right {
