@@ -9,7 +9,7 @@
   margin-bottom: 30px;
 }
 
-#navMix a:hover{
+#navMix a:hover {
   color: #26c3f5;
 }
 
@@ -17,12 +17,12 @@
   position: relative;
 }
 
-#preferences div{
+#preferences div {
   height: 180px;
   background-color: #7b7f82;
 }
 
-#preferences h3{
+#preferences h3 {
   position: absolute;
   padding-top: 10px;
   left: 30%;
@@ -32,9 +32,4 @@
 
 .square {
   height: 200px;
-}
-
-
-}
-
 }
