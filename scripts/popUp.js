@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	
+
 	//localStorage.setItem("first", 0);
 	var aboOn;
-	
+
 	if(localStorage.getItem("first") <= 0){
 		localStorage.setItem("first", 0);
 		$("#welcome").removeClass("hide");
@@ -11,6 +11,7 @@ $(document).ready(function(){
 	} else if(localStorage.getItem("first") == 1){
 		$("#welcome").addClass("hide");
 		$("#cache").addClass("hide");	
+		aboOn = 1;
 	}
 
 	$(".abo").on("click", function(e){
@@ -21,8 +22,9 @@ $(document).ready(function(){
 
 	$("#abonnement, #cache").on("click", function(){
 		$("#abonnement").addClass("hide");
-		if(aboOn == 1)
-		$("#cache").addClass("hide");
+		if(aboOn == 1){
+			$("#cache").addClass("hide");
+		}
 	});
 
 	$("#wel").on("click", function(e){
