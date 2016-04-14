@@ -48,7 +48,6 @@ $(document).ready(function () {
     if (dayTime > 18) {
       body.css("background", "#454545");
       section.css("background", "#454545");
-      S
       button.removeClass("jour").addClass("nuit");
       situation = 1;
     } else {
