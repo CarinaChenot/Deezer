@@ -4,34 +4,38 @@ if (typeof(Storage) !== "undefined") {
 	var coeur;
 	var writing = $("#coeur");
 
+	// Retrieve
+
+	$("#wanted").on("click", function(){
+		coeur += id_music + ",";
+		localStorage.setItem("listMusic", coeur);
+		afficheNext(id_music);
+	});
+
+
+	function afficheNext(id){
+		$("#coeur").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
+	}
+
+	function afficheCoupsCoeur(){
+		
+		var text;
+		var id;
+		for(var i = 0; i < coeur.length/2; i++) {
+			id = parseInt(all_Id[i])
+			$("#coeur").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
+			console.log(i);
+		}  
+	}
+
 	if(localStorage.getItem("listMusic") <= 0){
 		localStorage.setItem("listMusic", "");
 		coeur = localStorage.getItem("listMusic");
 		all_Id = coeur.split("");
 	} else {
 		coeur = localStorage.getItem("listMusic");
-		all_Id = coeur.split("");
-		affiche();
-	}
-
-	// Retrieve
-
-	$("#wanted").on("click", function(){
-		coeur += id_music;
-		localStorage.setItem("listMusic", coeur);
-	});
-
-	
-	function afficheNext(id){
-		writing.html(writing.html() + "<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
-	}
-	
-	function affiche(){
-		var text;
-		for(i = 0; i< coeur.length; i++){
-			text += "<li><span class='artist'>" + music[parseFloat(coeur[i])].artist + "</span><span class='song'>" + music[parseFloat(coeur[i])].title + "</span><span class='closed'>X</span></li>"
-		}
-		writing.html(text);
+		all_Id = coeur.split(",");
+		afficheCoupsCoeur();
 	}
 
 } else {
