@@ -1,37 +1,44 @@
 var music = [
 	{
-		"titre": "Do I Wanna Know?",
-		"chanteur": "Arctic Monkeys",
-		"url": "musique/Arctic Monkeys - Do I Wanna Know.mp3",
-		"albumCover": "images/covers/cover_articsmonkey.png",
-		"albumName": "AM"
-	},
-	{
-		"titre": "Stressed Out",
-		"chanteur": "Twenty One Pilots",
-		"url": "musique/twentyonepilots-StressedOut.mp3",
-		"albumCover": "images/twenty_one_pilots_blurryface.jpg",
-		"albumName": "Blurryface"
-	},
-	{
-		"titre": "Les lacs du Connemara",
-		"chanteur": "Michel Sardou",
-		"url": "musique/lesLacDuConnemara.mp3",
-		"albumCover": "images/covers/cover_MS_connemara.jpg",
-		"albumName": "Les lacs du Connemara"
-	},
-	{
-		"titre": "Les Ricains",
-		"chanteur": "Michel Sardou",
-		"url": "musique/lesRicains.mp3",
-		"albumCover": "images/covers/cover_MS_ricains.jpg",
-		"albumName": "Les Ricains"
-	},
-	{
-		"titre": "Un Roi Barbare",
-		"chanteur": "Michel Sardou",
-		"url": "musique/unRoiBarbar.mp3",
-		"albumCover": "images/covers/cover_MS_vieille.jpg",
-		"albumName": "La vieille"
-	}
+       "titre" : "Flaws",
+        "chanteur" : "Bastille",
+        "url" : "musique/flaws.mp3",
+        "albumCover" : "images/covers/cover_bastille.png",
+        "albumName" :"Bad blood" 
+   },
+   {
+       "titre" : "Worth It",
+        "chanteur" : "Fifth Harmony",
+        "url" : "musique/worthIt.mp3",
+        "albumCover" : "images/covers/cover_fifthHarmony.png",
+        "albumName" :"Reflection" 
+   },
+   {
+       "titre" : "Centuries",
+        "chanteur" : "Fall out boy",
+        "url" : "musique/centuries.mp3",
+        "albumCover" : "images/covers/cover_fallOutBoy.png",
+        "albumName" :"American beauty" 
+   },
+   {
+       "titre" : "On top of the world",
+        "chanteur" : "Imagine Dragons",
+        "url" : "musique/onTopOfTheWorld.mp3",
+        "albumCover" : "images/covers/cover_imagineDragons.png",
+        "albumName" :"Dream" 
+   },
+   {
+       "titre" : "Clint Eastwood",
+        "chanteur" : "Gorillaz",
+        "url" : "musique/clintEastwood.mp3",
+        "albumCover" : "images/covers/cover_gorillaz.png",
+        "albumName" :"Dream" 
+   },
+   {
+       "titre" : "Ain't your mama",
+        "chanteur" : "Jennifer Lopez",
+        "url" : "musique/aintYourMama.mp3",
+        "albumCover" : "images/cover_jennyferLopez.jpg",
+        "albumName" :"Ain't your mama" 
+   }
 ]
