@@ -28,6 +28,7 @@ $('.playButtonFlow').on('click', function(){
 });
 
 
+
 // Quand on désactive le flow
 $('.pauseButtonFlow').on('click', function(){
 	$('.pauseButtonFlow').animate({ zIndex : '0' }, 1);
