@@ -7,7 +7,7 @@ $(document).ready(function () {
   	************************************************************/
 
 	var body = $("#body");
-
+	var section = $(".page");
 
 	// Récupération de l'heure
 	var date = new Date;
@@ -32,24 +32,28 @@ $(document).ready(function () {
 	function forceTime(){
 		if(situation == 0){
 			body.css("background", "#454545");
+			section.css("background", "#454545");
 			button.removeClass("jour").addClass("nuit");
 			situation = 1;
 		}
 		else{
-			body.css("background", "#C8C8C8");
+			body.css("background", "#FFF");
+			section.css("background", "#FFF");
 			button.removeClass("nuit").addClass("jour");
 			situation = 0;
 		}
-	}	
+	}
 
 	function changeTime(dayTime){
 		if(dayTime > 18){
 			body.css("background", "#454545");
+			section.css("background", "#454545");S
 			button.removeClass("jour").addClass("nuit");
 			situation = 1;
 		}
 		else{
-			body.css("background", "#C8C8C8");
+			body.css("background", "#FFF");
+			section.css("background", "#FFF");
 			button.removeClass("nuit").addClass("jour");
 			situation = 0;
 		}
@@ -71,5 +75,10 @@ $(document).ready(function () {
   		Pour changer la couleur du body en fonction de l'heure
 
    ************************************************************/
+
+	$("#share").on("click", function(){
+		$("#option").toggleClass("active");
+		$("#option").toggleClass("hide");
+	});
 
 });
