@@ -3,8 +3,10 @@ $(document).ready(function () {
   //Régler la taille de la page
   $('.page').css('width', parseInt($('.page').css('width')) - 370);
   $('.page').css('width', $(window).width() - 370);
+  $('#player').css('width', $(window).width() - 150);
   $(window).resize(function () {
     $('.page').css('width', $(window).width() - 370);
+    $('#player').css('width', $(window).width() - 150);
   });
 
   //Fonction pour rétracter le menu gauche
