@@ -231,3 +231,25 @@
 .margin{
   margin-bottom: 50px;
 }
+
+#page-likes .artist{
+  font-size: 12px;
+}
+
+#page-likes .song{
+  font-size: 12px;
+}
+
+#page-likes .music{
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#page-likes .textCover{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#page-likes .playMusic{
+  margin-top: 30px;
+}

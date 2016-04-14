@@ -8,6 +8,7 @@ if (typeof(Storage) !== "undefined") {
 
 	// Retrieve
 
+
 	$("#wanted").on("click", function(){
 		coeur += id_music + ",";
 		localStorage.setItem("listMusic", coeur);
@@ -16,9 +17,10 @@ if (typeof(Storage) !== "undefined") {
 
 
 	function afficheNext(id){
-      src = $("#playing-cover").attr('src');
-      $("#nouveauLike").after("<img src='"+src+"' alt='poadcast' class='cover'>");
+      
+		$("#nouveauLike").append("<div class='col-lg-3 music' data-key='"+ id +"'><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><img src='" + music[id].albumCover + "' alt='poadcast' class='cover'><a href='#' class='textCover' style='text-decoration:none;'><img src='images/iconePlay.png' alt='play' class='playMusic'></a></div>");
 	}
+  
 
 	function afficheCoupsCoeur(){
 		
@@ -26,8 +28,8 @@ if (typeof(Storage) !== "undefined") {
 		var id;
 		for(var i = 0; i < coeur.length/2; i++) {
 			id = parseInt(all_Id[i])
-      $("#nouveauLike").after("<img src='images/cover_playlist10.png' alt='poadcast' class='cover loveCover'>");
-			console.log(i);
+            
+			$("#nouveauLike").append("<div class='col-lg-3 music' data-key='"+ id +"'><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><img src='" + music[id].albumCover + "' alt='poadcast' class='cover'><a href='#' class='textCover' style='text-decoration:none;'><img src='images/iconePlay.png' alt='play' class='playMusic'></a></div>");
 		}  
 	}
 
@@ -40,6 +42,10 @@ if (typeof(Storage) !== "undefined") {
 		all_Id = coeur.split(",");
 		afficheCoupsCoeur();
 	}
+	
+	$(".music").on("click", function(){
+		var id = $(this).dataKey;
+	});
 
 } else {
 	document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
