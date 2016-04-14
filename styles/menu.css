@@ -1,7 +1,7 @@
 body {
   position: relative;
   color: #FFF;
-  background-color:#FFF;
+  background-color: #FFF;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -41,20 +41,9 @@ body {
 
 
 /***************************
-        MENU GAUCHE 
+MENU GAUCHE 
 ****************************/
 
-
-
-#reducedleft{
-  display: none;
-font-family: "Open Sans", Arial, sans-serif;
-  position: fixed;
-  background-color: #23232c;
-  width: 70px;
-  height: 100%;
-  font-size: 13px;
-}
 
 /**** LOGO ****/
 
@@ -69,45 +58,73 @@ header #logo img {
   width: 130px;
 }
 
+
 /**** HAMBURGER ****/
 
 #hamburger {
   margin-bottom: -10px;
   margin-left: 5px;
-  background-image: url(../images/hamburger.png);
+  background-image: url(../images/icones-menu/hamburger.png);
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
   display: inline-block;
 }
 
+
 /**** SEARCH ****/
 
-#search form {
-  text-align: center;
+#searchBar form {
+  margin-left: 18px;
   margin-bottom: 10px;
+  background: #23232c;
 }
 
-#search #textinput {
-  background-color: #d1d1d7;
-  color: #42424d;
-  border-radius: 3px;
-  border: none;
-  padding: 5px 10px;
-  width: 180px;
+#searchBar #search {
+  background-color: #23232c;
+  padding-left: 6px;
+  border-left: solid 2px #8c8c91;
+  outline: none;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
 }
 
-#search #loupe {
+#searchBar #submit {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
-  background-image: url(../images/loupe.png);
-  background-repeat: no-repeat;
+  background: url(../images/icones-menu/search.png) no-repeat right;
+  background-size: 12px 12px;
   margin-left: -23px;
   border: none;
-  background-color: #d1d1d7;
+  background-color: #23232c;
 }
 
-#menuNav ul{
+#searchBar form a {
+  margin-right: 5px;
+}
+
+
+/*
+Les recultats de la recherche
+*/
+
+#result {
+  padding: 5px;
+  height: 545px;
+  text-align: center;
+  background: #23232c;
+  overflow-y: scroll;
+}
+
+#result .album {
+  margin-bottom: 5px;
+}
+
+
+/**** MENU ****/
+
+#menuNav ul {
   margin-bottom: 0px;
 }
 
@@ -115,9 +132,6 @@ header #logo img {
   padding: 5px 37px;
   display: block;
 }
-
-
-/**** MENUS ****/
 
 #left li:hover,
 #right li:hover {
@@ -134,11 +148,6 @@ header #logo img {
   text-decoration: none;
 }
 
-.activeMenu {
-  background-color: #1c1c25;
-  border-left: solid 2px #007feb;
-}
-
 
 /**** Icones Menu ****/
 
@@ -149,111 +158,187 @@ header #logo img {
 }
 
 li#accueil a {
-  background-image: url(../images/accueil.png);
+  background-image: url(../images/icones-menu/accueil.png);
 }
 
-li#ecouter a {
-  background-image: url(../images/a_ecouter.png);
+li#a_ecouter a {
+  background-image: url(../images/icones-menu/a_ecouter.png);
 }
 
 li#nouveautes a {
-  background-image: url(../images/nouveautes.png);
+  background-image: url(../images/icones-menu/nouveautes.png);
 }
 
 li#top_playlists a {
-  background-image: url(../images/top_playlists.png);
+  background-image: url(../images/icones-menu/top_playlists.png);
 }
 
 li#mix a {
-  background-image: url(../images/mix.png);
+  background-image: url(../images/icones-menu/mix.png);
 }
 
 li#infos a {
-  background-image: url(../images/infos_et_divertissements.png);
+  background-image: url(../images/icones-menu/infos.png);
 }
+
 
 /**** THEME ****/
 
-#theme{
+#theme {
   display: none;
 }
 
-/**** FLOW ****/
+
+/******** FLOW ********/
 
 #flow {
-  border-top: solid 1px #292933;
-  border-bottom: solid 2px #292933;
-  margin: 0px 25px;
-  padding: 0px 10px;
+  margin-top: 10px;
 }
 
-#flow figure{
-  margin: 0px 15px;
-  text-align: center;
-  width: 190px;
-  height: 66px;
-  background-image: url(../images/flow-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  color: #FFF;
+#flow figure {
+  display: inline-block;
+  height: 76px;
+  width: 86px;
+  background: url(../images/flow-bg.jpg) no-repeat left;
+  background-size: 81px 76px;
   position: relative;
   cursor: pointer;
+  vertical-align: middle;
 }
 
-#flow figcaption{
+#flow figcaption {
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
+  background-size: 42px 42px;
 }
 
-#flow h4, #flow h6 {
+#flow div {
+  height: 76px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100px;
+  border-top: solid 2px #2e2e37;
+  border-bottom: solid 2px #2e2e37;
+  margin-left: 5px;
+}
+
+#flow h4,
+#flow h6 {
   text-align: left;
-  padding-left: 40px;
 }
 
 #flow h6 {
-  margin-top: 3px;
+  margin-top: 12px;
 }
 
 #flow h4 {
-  padding-top: 5px;
   margin-bottom: 0px;
+  margin-top: 6px;
 }
 
+
+/**** Personnaliser ****/
+
 #personnaliser {
-  background-image: url(../images/personnaliser.png);
-  background-repeat: no-repeat;
+  background: url(../images/icone-personnaliser.png) no-repeat left;
   background-size: 13px 13px;
-  background-position: left;
   padding: 0px 20px;
   width: 115px;
   margin: auto;
   margin-top: 15px;
+  color: rgba(194, 194, 202, 0.3);
+  cursor: not-allowed;
 }
 
-#left button.subscribe{
-  padding: 3px 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-}
-
-.subscribe {
-  background-color: #007feb;
-  border-radius: 5px;
-  padding: 4px 15px;
-  text-transform: uppercase;
-  margin: 13px 16px;
-}
 
 /**** PLAYING ****/
 
-#playing h6:nth-child(4){
-  font-style: italic;
+#playing img {
+  width: 100%;
 }
 
+#playing div {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#playing #title {
+  text-align: left;
+}
+
+#playing #artist {
+  margin-left: 13px;
+  font-weight: 100;
+  text-align: left;
+}
+
+#playing #album {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+
+/**** MENU GAUCHE SMALL ****/
+
+.reduced #logo {
+  display: none;
+}
+
+.reduced #hamburger {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.reduced #searchBar {
+  display: none;
+}
+
+.reduced #menuNav {
+  margin-top: 20px;
+}
+
+.reduced #menuNav a {
+  color: #FFF;
+}
+
+.reduced #flow {
+  display: none;
+}
+
+.reduced #personnaliser {
+  display: none;
+}
+
+.reduced #playing {
+  display: none;
+}
+
+#playing-small {
+  <<<<<<< HEAD width: 220px;
+  height: 35px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #707076;
+  =======width: 220px;
+  height: 35px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #707076;
+  padding: 8px 0px;
+  background-image: url(../images/eminem.png);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: none;
+  >>>>>>> refs/remotes/origin/master
+}
+
+
 /*************************
-        MENU DROIT 
+MENU DROIT 
 **************************/
 
 section#right {
@@ -287,7 +372,7 @@ section#right {
 }
 
 #ma_musique a {
-  background-image: url(../images/ma-musique.png);
+  background-image: url(../images/icones-menu/ma_musique.png);
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: left;
@@ -303,7 +388,7 @@ section#right {
 }
 
 #arrow {
-  background-image: url(../images/uparrow.png);
+  background-image: url(../images/icones-menu/playlist-arrow.png);
   background-repeat: no-repeat;
   width: 13px;
   height: 13px;
@@ -318,17 +403,19 @@ section#right {
   -ms-transform: rotate(180deg);
 }
 
+
 /**** SUGGESTIONS ****/
 
 #suggestions {
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 #suggestions span {
   padding-left: 23px;
   margin-left: 13px;
   text-transform: uppercase;
-  background-image: url(../images/suggestions.png);
+  background-image: url(../images/icones-menu/suggestions.png);
   background-repeat: no-repeat;
   background-size: 18px 18px;
   color: #c1c1c9;
@@ -342,12 +429,12 @@ section#right {
 }
 
 #suggestions a {
-  background-image:url(../images/suggestion-twitter.png);
+  background-image: url(../images/suggestion-twitter.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: 18px 18px;
-  padding: 10px 0px 10px 25px;
   display: block;
+  padding: 10px 0px 10px 25px;
 }
 
 #suggestions button {
@@ -361,12 +448,10 @@ section#right {
   margin-top: 5px;
 }
 
-/*************************
-        PLAYER 
-**************************/
-
-#player {
-  position: fixed;
-  bottom: 0px;
-  
+.subscribe {
+  background-color: #007feb;
+  border-radius: 5px;
+  padding: 4px 15px;
+  text-transform: uppercase;
+  margin: 13px 16px;
 }

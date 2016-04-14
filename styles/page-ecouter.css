@@ -1,0 +1,58 @@
+#page-a_ecouter h2{
+  color:#bcd42d;
+}
+
+#page-a_ecouter .navPage a:hover{
+  color: #bcd42d;
+}
+
+#page-a_ecouter h5{
+  font-size: 14px;
+  text-align: center;
+}
+
+#actu1{
+  margin-bottom: 20px;
+}
+
+#page-a_ecouter h4{
+  font-size: 13px;
+  font-weight: 600;
+  display: inline;
+  color: #23232c; /* modif margaux */
+}
+
+#page-a_ecouter p{
+  font-size: 11px;
+}
+
+.secondaryText{
+  font-size:  11px;
+  color: #73737b;
+}
+
+.italicText{
+  font-size:  11px;
+  color: #73737b;
+  font-style: italic;
+}
+
+.line{
+  border-bottom: 1px solid #73737b;
+  width: 150px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.line2{
+  border-bottom: 1px solid #73737b;
+  width: 120px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.down{
+  margin-top: 10px;
+} 

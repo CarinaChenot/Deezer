@@ -1,0 +1,49 @@
+/*************************
+        PAGE NOUVEAUTES 
+**************************/
+
+#page-nouveautes h2{
+  color: #ee1e23;
+}
+
+#page-nouveautes .navPage a:hover{
+  color: #ee1e23;
+}
+
+#page-infos h5{
+  font-size: 14px;
+  text-align: center;
+}
+
+#page-nouveautes .square{
+  height: 230px;
+}
+
+#album{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#artiste{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#date{
+  font-size: 11px;
+  font-weight: 200;
+}
+
+#legende{
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.infosCover{
+  padding-top: 18px;
+}
+
+#logos{
+  margin-top: 20px;
+}

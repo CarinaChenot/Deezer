@@ -1,0 +1,40 @@
+/*************************
+        PAGE MIX 
+**************************/
+
+#page-mix h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #26c3f5;
+  margin-bottom: 30px;
+}
+
+#navMix a:hover{
+  color: #26c3f5;
+}
+
+#preferences {
+  position: relative;
+}
+
+#preferences div{
+  height: 180px;
+  background-color: #7b7f82;
+}
+
+#preferences h3{
+  position: absolute;
+  padding-top: 10px;
+  left: 30%;
+  padding-bottom: 100px;
+  background: url(../images/MergedLayers.png) no-repeat bottom;
+}
+
+.square {
+  height: 200px;
+}
+
+
+}
+
+}
