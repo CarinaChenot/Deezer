@@ -48,14 +48,14 @@
 
 .main-pos {
   margin-left: 2em !important;
-  z-index: 3000;
+  z-index: 15;
   /*background-image: url('http://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 
 .left-pos {
   opacity: .3;
   margin-left: -17em !important;
-  z-index: 1000;
+  z-index: 10;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
   transform: scale(.75);
@@ -72,7 +72,7 @@
 .right-pos {
   opacity: .3;
   margin-left:  21em !important;
-  z-index: 1000;
+  z-index: 10;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
   transform: scale(.75);
