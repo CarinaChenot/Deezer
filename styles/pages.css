@@ -115,8 +115,18 @@
 }
 
 .playMusic {
-  width: 40px;
+  width: 40px !important;
   padding-top: 30px;
+}
+
+#page-nouveautes .playMusic {
+  width: 40px;
+  padding-top: 55px;
+}
+
+#page-top_playlists .playMusic {
+  width: 40px;
+  padding-top: 55px;
 }
 
 .informationsChansons {
@@ -171,8 +181,8 @@
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid;
+  border: 1px solid #ABABAB;
+  width: 145px;
 }
 
 .navPage:hover li ul{
