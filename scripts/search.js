@@ -8,15 +8,12 @@ $(document).ready(function(){
 		e.preventDefault();
 		searchBar();
 	});
-	
+
 	$("#result").on("click", function(){
-		$("#result").hide();
+		$("#result").addClass("hide");
+		var empti = $("#search").val("");
 	});
 
-	$("#emptie").on("click", function(e){
-		e.preventDefault;
-		var search = $("#search").val("");
-	})
 	function searchBar(){
 		var search = $("#search").val();
 		var text = "";
@@ -43,7 +40,7 @@ $(document).ready(function(){
 					}
 				}
 			}
-			$("#result").html(text);
+			$("#result").removeClass("hide").html(text);
 		});
 	}
 });
