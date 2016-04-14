@@ -10,9 +10,11 @@ function getSong() {
 		if (music[j].id == currentTitle) {
 			currentMusic = j;
 		}
+		/*
 		console.log("j = " + j);
 		console.log("currentTitle = " + currentTitle);
 		console.log("currentMusic = " + currentMusic);
+		*/
 	}
 	id_music = currentMusic;
 }

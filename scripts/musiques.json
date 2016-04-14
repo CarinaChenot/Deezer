@@ -233,7 +233,7 @@ var music = [
 		"id": 19,
 		"title": "Ultralight Beam",
 		"artist": "Kanye West",
-		"url": "musique/kanyeWest",
+		"url": "musique/kanyeWest.mp3",
 		"albumCover": "images/covers/cover_kanyeWest.jpg",
 		"albumName": "The life of Pablo",
 		"date": "",
