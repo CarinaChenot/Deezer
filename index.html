@@ -8,10 +8,10 @@
 		<title>Deezer</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-		<link rel=stylesheet href="styles/styles.css" >
+		<link href="styles/styles.css" rel=stylesheet>
 		<link rel="stylesheet" href="styles/player.css">
-		<link rel=stylesheet href="styles/menu.css" >
-		<link rel=stylesheet href="styles/pages.css" >
+		<link href="styles/menu.css" rel=stylesheet>
+		<link href="styles/pages.css" rel=stylesheet>
 		<link rel="stylesheet" href="styles/page-accueil.css">
 		<link rel="stylesheet" href="styles/page-nouveautes.css">
 		<link rel="stylesheet" href="styles/page-playlists.css">
@@ -35,9 +35,9 @@
 				<div id="searchBar">
 					<div id="shortcuts-zone">
 						<form id="div_search" method="post">
-							<input type="search" placeholder="Recherche" id="search" />
+							<input type="search" placeholder="Recherche" id="search"/>
 							<a href="#" id="emptie">x</a>
-							<input type="submit" value=" " id="submit" />
+							<input type="submit" value=" " id="submit"/>
 						</form>
 					</div>
 					<div id="result" class="hide"></div>
@@ -72,17 +72,15 @@
 			</div>
 			<div id="personnaliser">Personnaliser</div>
 			<button class="btn subscribe abo">+ S'abonner</button>
+
 			<div id="playing" class="text-center">
 				<img src="images/Calque-16.png" alt="" id="playing-cover">
 				<div>
 					<span id="title">Ultralight beam</span>
 					<span id="artist">Kanye West</span>
 				</div>
+
 				<h6 id="album">The life of Pablo</h6>
-			</div>
-			<div id="playing-small">
-				<span id="title">Song title</span>
-				<span id="artist">Song artist</span>
 			</div>
 		</section>
 
@@ -131,6 +129,7 @@
 						<div class="flowText">FLOW</div>
 						<a href="#">
 							<img src="images/iconePlay.png" alt="play" class="playButtonFlow">
+							<img src="images/iconePause.png" alt="play" class="pauseButtonFlow">
 						</a>
 					</div>
 					<div class="marge col-lg-6 col-md-6 col-sm-12">
@@ -154,6 +153,7 @@
 				</div>
 				<h4>Découvrez toute l'actualité musicale de DEEZER</h4>
 			</div>
+
 			<div id="actuAccueil">
 				<div class="exclusiveCover">
 					<img src="images/cover_jennyferLopez.jpg" alt="Cover Jennyfer Lopez" class="coverPrincipale">
@@ -182,6 +182,7 @@
 					<span class="popular">MOST POPULAR</span>
 				</div>
 			</div>
+
 			<div id="playlistAccueil">
 				<span class="subtitle black">PLAYLIST</span>
 				<span class="subtitle"> | SÉLECTION DEEZER</span>
@@ -257,6 +258,7 @@
 				</div>
 			</div>
 			<div class="clearBoth"></div>
+
 			<div id="mixAccueil">
 				<h4>Les meilleures ambiances selon vos goûts</h4>
 				<img src="images/eminem.png" alt="cover" class="cover">
@@ -328,6 +330,7 @@
 				</div>
 			</div>
 		</section>
+
 
 		<!-- PAGE NOUVEAUTES -->
 		<section id="page-nouveautes" class="page">
@@ -631,7 +634,9 @@
 			</div>
 		</section>
 
-		<div id="cache"></div>
+		<!-- Les popUps avec le cache -->
+
+		<div id="cache" class="hide"></div>
 
 		<div id="abonnement" class="hide popUp">
 			<h2>En t'abonnant</h2>
@@ -640,21 +645,23 @@
 	<a href="http://www.deezer.com/offers/">9,99 € / month</a>
 	</div>
 
-<div id="welcome" class="popUp">
+<div id="welcome" class="popUp hide">
 	<h2>Bienvenue sur Deezer</h2>
 	<p>La musique que tu veux quand tu veux.</br>
 Pour seulement</p>
 <a href="#" id="wel">Pour continuer</a>
-</div>s
+</div>
+<!-- Fin de popUp -->
 
 <div id="dz-root"></div>
 <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="scripts/musiques.json"></script>
+<script src="scripts/musiques.json" ></script>
 <script src="scripts/player.js"></script>
 <script src="scripts/popUp.js"></script>
 <script src="scripts/slider.js"></script>
+<script src="scripts/berenice.js"></script>
 <script src="scripts/carina.js"></script>
 <script src="scripts/search.js"></script>
 

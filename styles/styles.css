@@ -3,10 +3,9 @@ body {
 	transition: background-color 0.5s ease;
 }
 
-
-/*
+/*---------------*\
 Le cache
-*/
+\*---------------*/
 #cache{
 	background-color:black;
 	position:fixed;
@@ -18,11 +17,11 @@ Le cache
 	height: 100%;
 }
 
-/*
+/*-------------------*\
 
 Le style des popUp	
 
-*/
+\*-------------------*/
 .popUp{
 	width: 400px;
 	height: 250px;
@@ -59,4 +58,3 @@ Le style des popUp
 .hide{
 	display: none;
 }
-
