@@ -69,12 +69,12 @@ function changeMusic() {
 	player.setAttribute("src", music[id_music].url);
 	albumCover.setAttribute("src", music[id_music].albumCover);
 
-	artistPlayer.innerHTML = music[id_music].artist;
-	titlePlayer.innerHTML = music[id_music].title;
+	artistPlayer.innerHTML = music[id_music].chanteur;
+	titlePlayer.innerHTML = music[id_music].titre;
 	albumPlayer.innerHTML = music[id_music].albumName;
 
-	artistFlow.innerHTML = music[id_music].artist;
-	titleFlow.innerHTML = music[id_music].title;
+	artistFlow.innerHTML = music[id_music].chanteur;
+	titleFlow.innerHTML = music[id_music].titre;
 	albumFlow.innerHTML = music[id_music].albumName;
 
 	player.play();
