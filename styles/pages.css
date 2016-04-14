@@ -205,3 +205,18 @@
   width: 15px !important;
   margin-bottom: 2px;
 }
+
+/* Coeurs */
+
+.fa-heart {
+  color: white;
+}
+
+.fa-heart:hover{
+  color: red;
+  transition: 1s all ease;
+}
+
+.fa-heart.liked {
+  color: red;
+}
