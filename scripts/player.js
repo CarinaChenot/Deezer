@@ -39,8 +39,8 @@ var less = document.getElementById("minus");
 //les évènements 
 play.addEventListener("click", playMusic);
 pause.addEventListener("click", pauseMusic);
-prevMus.addEventListener("click", nextMusic);
-nextMus.addEventListener("click", prevMusic);
+prevMus.addEventListener("click", prevMusic);
+nextMus.addEventListener("click", nextMusic);
 progressBar.addEventListener("click", function () {
 	clickProgress(player, this, event);
 });
