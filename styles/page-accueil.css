@@ -367,9 +367,17 @@ svg#box2 {
 
 #mixAccueil {
 	margin-top: 30px;
+    position: relative;
 }
 
 .couvertureRihanna {
 	position: relative;
 	float: right;
+}
+
+.buttonAccueil{
+  position: absolute;
+  top: 550%;
+  left: 45%;
+  margin-bottom: 50px;
 }
