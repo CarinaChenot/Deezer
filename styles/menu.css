@@ -254,13 +254,31 @@ li#infos a {
 
 /**** PLAYING ****/
 
-#playing img {
-  width: 100%;
+#playingWrap {
+  position: absolute;
+  bottom: 0px;
 }
 
-#playing div {
+#playing {
+  position: relative;
+  height: 220px;
+  width: 220px;
+}
+
+#playing img {
   width: 100%;
-  margin-top: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+#playingInfos {
+  font-size: 11px;
+  position: absolute;
+  width: 220px;
+  background-color: rgba(100, 100, 100, 0.5);
+  bottom: 0px;
+  height: 35px;
 }
 
 #playing #title {

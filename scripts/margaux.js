@@ -13,24 +13,10 @@ $(document).ready(function () {
     }
     });
   
-  $(".playCover").hide();
-  $("img").mouseover(function(){
-    if ($(this).hasClass("cover")){
-      $(this).addClass("coverHover");
-      $(this).find(".playcover").slideDown();
-    }
-  });
-  $("img").mouseleave(function(){
-    if ($(this).hasClass("cover")){
-      $(this).removeClass("coverHover");
-      $(this).find(".playcover").slideUp();
-    }
-  });
-  
   $(".music a").hide();
   $(".music").hover(
-    function(){$(this).find("a").slideDown();},
-    function(){$(this).find("a").slideUp();}
+    function(){$(this).find("a").fadeIn();},
+    function(){$(this).find("a").fadeOut();}
     );
   
 }); 
