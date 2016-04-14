@@ -1,5 +1,6 @@
 var player = document.getElementById("myMusic");
 var playliste = document.getElementById("playliste");
+var block = document.getElementById("cache");
 
 //Les boutons des options
 var play = document.getElementById("play");
@@ -97,7 +98,9 @@ function playMusic(){ // Met le player en play
 
 function pauseMusic() { // Met le player en pause
 	player.pause();
-	permut();
+	if(block.className == "hide"){
+		permut();
+	}
 }
 
 function nextMusic(){ // Met la prochaine musique
@@ -203,25 +206,31 @@ function formatTime(time) {
 
 //La bar de progression
 function update(player) {
-	var duration = player.duration;    // Durée totale
-	var time     = player.currentTime; // Temps écoulé
-	var fraction = time / duration;
-	var percent  = Math.ceil(fraction * 100);
+	if(block.className != "hide"){
+		pauseMusic();
+		play.className = "active";
+		pause.className = "hide";	
+	} else{
+		var duration = player.duration;    // Durée totale
+		var time     = player.currentTime; // Temps écoulé
+		var fraction = time / duration;
+		var percent  = Math.ceil(fraction * 100);
 
-	var displayTime = document.getElementById("time");
+		var displayTime = document.getElementById("time");
 
-	var progress = document.querySelector('#progressBar');
+		var progress = document.querySelector('#progressBar');
 
-	document.querySelector('#progressTime').textContent = formatTime(time);
+		document.querySelector('#progressTime').textContent = formatTime(time);
 
-	progress.style.width = percent + '%';
+		progress.style.width = percent + '%';
 
-	if(percent > 0){
-		progress.style.background = "#FFF";
-	}
-	if(percent == 100){
-		id_music = (id_music + 1) % music.length;
-		changeMusic();
+		if(percent > 0){
+			progress.style.background = "#FFF";
+		}
+		if(percent == 100){
+			id_music = (id_music + 1) % music.length;
+			changeMusic();
+		}
 	}
 }
 
@@ -254,6 +263,7 @@ function clickProgress(idPlayer, control, event) {
 
 	var percent = Math.ceil((x / wrapperWidth) * 100);    
 	var duration = player.duration;
+
 
 	player.currentTime = (duration * percent) / 100;
 }

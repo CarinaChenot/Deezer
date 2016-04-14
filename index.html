@@ -8,10 +8,10 @@
 		<title>Deezer</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-		<link href="styles/styles.css" rel=stylesheet>
+		<link rel=stylesheet href="styles/popUp.css" >
 		<link rel="stylesheet" href="styles/player.css">
-		<link href="styles/menu.css" rel=stylesheet>
-		<link href="styles/pages.css" rel=stylesheet>
+		<link rel=stylesheet href="styles/menu.css" >
+		<link rel=stylesheet href="styles/pages.css" >
 		<link rel="stylesheet" href="styles/page-accueil.css">
 		<link rel="stylesheet" href="styles/page-nouveautes.css">
 		<link rel="stylesheet" href="styles/page-playlists.css">
@@ -40,7 +40,7 @@
 							<input type="submit" value=" " id="submit"/>
 						</form>
 					</div>
-					<div id="result"></div>
+					<div id="result" class="hide"></div>
 				</div>
 				<nav id="menuNav">
 					<ul class="text-uppercase list-unstyled">
@@ -71,7 +71,7 @@
 					<h6>Un mix basé sur vos favoris</h6></div>
 			</div>
 			<div id="personnaliser">Personnaliser</div>
-			<button class="btn subscribe">+ S'abonner</button>
+			<button class="btn subscribe abo">+ S'abonner</button>
 
 			<div id="playing" class="text-center">
 				<img src="images/Calque-34.png" alt="" id="playing-cover">
@@ -724,21 +724,47 @@
 				<span id="alea">
 					<i class="fa fa-random" aria-hidden="true"></i>
 				</span>
+				<span id="share">...</span>
+				<span id="wanted"><i class="fa fa-heart" aria-hidden="true"></i></span>			
 			</div>
 		</section>
 
-		<div id="dz-root"></div>
-		<script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="scripts/musiques.json" ></script>
-		<script src="scripts/player.js"></script>
-		<script src="scripts/slider.js"></script>
-		<script src="scripts/berenice.js"></script>
-		<script src="scripts/carina.js"></script>
-		<script src="scripts/search.js"></script>
+		<!-- Les popUps avec le cache -->
 
+<<<<<<< HEAD
+		<div id="cache" class="hide"></div>
+
+		<div id="abonnement" class="hide popUp">
+			<h2>En t'abonnant</h2>
+			<p>La musique que tu veux quand tu veux.</br>
+		Pour seulement</p>
+	<a href="http://www.deezer.com/offers/">9,99 € / month</a>
+	</div>
+
+<div id="welcome" class="popUp hide">
+	<h2>Bienvenue sur Deezer</h2>
+	<p>La musique que tu veux quand tu veux.</br>
+Pour seulement</p>
+<a href="#" id="wel">Pour continuer</a>
+</div>
+<!-- Fin de popUp -->
+
+<div id="dz-root"></div>
+<script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="scripts/musiques.json" ></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/popUp.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/berenice.js"></script>
+<script src="scripts/carina.js"></script>
+<script src="scripts/search.js"></script>
+
+</body>
+=======
 	</body>
   <script src="scripts/margaux.js"></script>
+>>>>>>> refs/remotes/origin/master
 
 </html>
