@@ -376,7 +376,7 @@ section#right {
 
 #suggestions {
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 #suggestions span {
@@ -413,7 +413,7 @@ section#right {
   padding: 5px 25px;
   color: #c1c1c9;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .subscribe {
@@ -421,5 +421,5 @@ section#right {
   border-radius: 5px;
   padding: 4px 15px;
   text-transform: uppercase;
-  margin: 13px 16px;
+  margin: 0px 16px;
 }
