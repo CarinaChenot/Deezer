@@ -43,13 +43,6 @@ $(document).ready(function () {
     $(".ambiance").show();
   });
 
-  $("#genres-mix").on("click", function () {
-    $(".artistes").hide();
-    $(".genre").hide();
-    $(".ambiance").hide();
-    $(".genre").show();
-  });
-
   $("#artistes-mix").on("click", function () {
     $(".artistes").hide();
     $(".genre").hide();
@@ -67,6 +60,27 @@ $(document).ready(function () {
     $(".podcast").hide();
     $(".emission").hide();
     $(".emission").show();
+  });
+  
+  $("#electro").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".electro").show();
+  });
+  
+  $("#chanson_française").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".chanson_française").show();
+  });
+  
+  $("#musique_classique").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".classique").show();
   });
   
   $(".select").on("click", function(e){
