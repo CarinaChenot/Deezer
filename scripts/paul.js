@@ -46,16 +46,17 @@ $(document).ready(function () {
 
   function changeTime(dayTime) {
     if (dayTime > 18) {
-    if (dayTime > 18 || dayTime < 8) {
-      body.css("background", "#454545");
-      section.css("background", "#454545");
-      button.removeClass("jour").addClass("nuit");
-      situation = 1;
-    } else {
-      body.css("background", "#FFF");
-      section.css("background", "#FFF");
-      button.removeClass("nuit").addClass("jour");
-      situation = 0;
+      if (dayTime > 18 || dayTime < 8) {
+        body.css("background", "#454545");
+        section.css("background", "#454545");
+        button.removeClass("jour").addClass("nuit");
+        situation = 1;
+      } else {
+        body.css("background", "#FFF");
+        section.css("background", "#FFF");
+        button.removeClass("nuit").addClass("jour");
+        situation = 0;
+      }
     }
   }
 
