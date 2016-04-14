@@ -1,129 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Deezer</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-		<link href="styles/styles.css" rel=stylesheet>
-		<link rel="stylesheet" href="styles/player.css">
-		<link href="styles/menu.css" rel=stylesheet>
-		<link href="styles/pages.css" rel=stylesheet>
-		<link rel="stylesheet" href="styles/page-accueil.css">
-		<link rel="stylesheet" href="styles/page-nouveautes.css">
-		<link rel="stylesheet" href="styles/page-playlists.css">
-		<link rel="stylesheet" href="styles/page-mix.css">
-		<link rel="stylesheet" href="styles/page-infos.css">
-		<link rel="stylesheet" href="styles/page-ecouter.css">
-		<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-	</head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deezer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="styles/styles.css" rel=stylesheet>
+  <link rel="stylesheet" href="styles/player.css">
+  <link href="styles/menu.css" rel=stylesheet>
+  <link href="styles/pages.css" rel=stylesheet>
+  <link rel="stylesheet" href="styles/page-accueil.css">
+  <link rel="stylesheet" href="styles/page-nouveautes.css">
+  <link rel="stylesheet" href="styles/page-playlists.css">
+  <link rel="stylesheet" href="styles/page-mix.css">
+  <link rel="stylesheet" href="styles/page-infos.css">
+  <link rel="stylesheet" href="styles/page-ecouter.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-	<body id="body">
-		<!-- MENU GAUCHE -->
-		<section id="left">
-			<header>
-				<div id="logo">
-					<img src="images/deezer_logo.png" alt="logo">
-				</div>
-				<div id="hamburger"></div>
-				<div id="searchBar">
-					<div id="shortcuts-zone">
-						<form id="div_search" method="post">
-							<input type="search" placeholder="Recherche" id="search"/>
-							<a href="#" id="emptie">x</a>
-							<input type="submit" value=" " id="submit"/>
-						</form>
-					</div>
-					<div id="result"></div>
-				</div>
-				<nav id="menuNav">
-					<ul class="text-uppercase list-unstyled">
-						<li id="accueil"><a href="#accueil">Accueil</a></li>
-						<li id="a_ecouter"><a href="#a_ecouter">À écouter</a></li>
-						<li id="nouveautes"><a href="#nouveautes">Nouveautés</a></li>
-						<li id="top_playlists"><a href="#top_playlists">Top playlists</a></li>
-						<li id="mix"><a href="#mix">Mix</a></li>
-						<li id="infos"><a href="#infos">Infos & divertissement</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div id="theme">
-				<div class="switch" id="jourNuit">
-					<input type="checkbox" id="input-switch" class="switch__checkbox" />
-					<label class="switch__label" for="input-switch" id="jour">
-						<span class="switch__circle" id="buttonJour"></span>
-					</label>
-				</div>
-			</div>
-			<div id="flow">
-				<figure>
-					<figcaption>
-					</figcaption>
-				</figure>
-				<div>
-					<h4>Flow</h4>
-					<h6>Un mix basé sur vos favoris</h6></div>
-			</div>
-			<div id="personnaliser">Personnaliser</div>
-			<button class="btn subscribe">+ S'abonner</button>
+<body id="body">
+  <!-- MENU GAUCHE -->
+  <section id="left">
+    <header>
+      <div id="logo">
+        <img src="images/deezer_logo.png" alt="logo">
+      </div>
+      <div id="hamburger"></div>
+      <div id="searchBar">
+    <div id="shortcuts-zone">
+			<form id="div_search" method="post">
+				<input type="search" placeholder="Recherche" id="search"/>
+				<a href="#" id="emptie">x</a>
+				<input type="submit" value=" " id="submit"/>
+			</form>
+		</div>
+		<div id="result"></div>
+      </div>
+      <nav id="menuNav">
+        <ul class="text-uppercase list-unstyled">
+          <li id="accueil"><a href="#accueil">Accueil</a></li>
+          <li id="a_ecouter"><a href="#a_ecouter">À écouter</a></li>
+          <li id="nouveautes"><a href="#nouveautes">Nouveautés</a></li>
+          <li id="top_playlists"><a href="#top_playlists">Top playlists</a></li>
+          <li id="mix"><a href="#mix">Mix</a></li>
+          <li id="infos"><a href="#infos">Infos & divertissement</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="theme">
+      <div class="switch" id="jourNuit">
+        <input type="checkbox" id="input-switch" class="switch__checkbox" />
+        <label class="switch__label" for="input-switch" id="jour">
+          <span class="switch__circle" id="buttonJour"></span>
+        </label>
+      </div>
+    </div>
+    <div id="flow">
+      <figure>
+        <figcaption>
+        </figcaption>
+      </figure>
+      <div>
+        <h4>Flow</h4>
+        <h6>Un mix basé sur vos favoris</h6></div>
+    </div>
+    <div id="personnaliser">Personnaliser</div>
+    <button class="btn subscribe">+ S'abonner</button>
 
-			<div id="playing" class="text-center">
-				<img src="images/Calque-34.png" alt="" id="playing-cover">
-				<div>
-					<span id="title">Do I Wanna Know?</span>
-					<span id="artist">Arctic Monkeys</span>
-				</div>
-				<h6 id="album">AM</h6>
-			</div>
-			<div id="playing-small">
-				<span id="titleSmall">Do I Wanna Know?</span>
-				<span id="artistSmall">Arctic Monkeys</span>
-			</div>
-		</section>
+    <div id="playing" class="text-center">
+      <img src="images/Calque-16.png" alt="" id="playing-cover">
+      <div>
+        <span id="title">Ultralight beam</span>
+        <span id="artist">Kanye West</span>
+      </div>
 
-		<!-- MENU DROIT -->
-		<section id="right">
-			<div id="user">
-				<a href="#" title="Mon profil">
-					<img src="images/user.jpg" alt="user">Pseudo
-				</a>
-				<a href="#"><img src="images/icones-menu/settings.png" alt="settings" title="Paramètres" id="settings"></a>
-			</div>
-			<nav id="profilNav">
-				<ul class="list-unstyled">
-					<li id="ma_musique"><a href="#">MA MUSIQUE</a></li>
-					<li id="playlists"><a href="#">MES PLAYLISTS<div id="arrow" class="arrowRotate"></div></a>
-						<ul id="list-playlists" class="list-unstyled">
-							<li><a href="#">Chill - Relax</a></li>
-							<li><a href="#">Sport</a></li>
-							<li><a href="#">Party</a></li>
-						</ul>
-					</li>
-					<li><a href="#">COUPS DE CŒUR</a></li>
-					<li><a href="#">ALBUMS</a></li>
-					<li><a href="#">PODCASTS</a></li>
-					<li><a href="#">APPLICATIONS</a></li>
-					<li><a href="#">HISTORIQUE</a></li>
-				</ul>
-			</nav>
-			<div id="suggestions">
-				<span>Suggestions</span>
-				<ul class="list-unstyled">
-					<li><a href="" class="scrollthis">Pony - Deluxe</a></li>
-					<li><a href="" class="scrollthis">The Sun - Parrow</a></li>
-					<li><a href="" class="scrollthis">Mountains at my goal</a></li>
-				</ul>
-				<button class="btn text-uppercase">Voir plus</button>
-			</div>
-		</section>
+      <h6 id="album">The life of Pablo</h6>
+    </div>
+  </section>
 
-		<!-- PAGE ACCUEIL -->
+  <!-- MENU DROIT -->
+  <section id="right">
+    <div id="user">
+      <a href="#" title="Mon profil">
+        <img src="images/user.jpg" alt="user">Pseudo
+      </a>
+      <a href="#"><img src="images/icones-menu/settings.png" alt="settings" title="Paramètres" id="settings"></a>
+    </div>
+    <nav id="profilNav">
+      <ul class="list-unstyled">
+        <li id="ma_musique"><a href="#">MA MUSIQUE</a></li>
+        <li id="playlists"><a href="#">MES PLAYLISTS<div id="arrow" class="arrowRotate"></div></a>
+          <ul id="list-playlists" class="list-unstyled">
+            <li><a href="#">Chill - Relax</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="#">COUPS DE CŒUR</a></li>
+        <li><a href="#">ALBUMS</a></li>
+        <li><a href="#">PODCASTS</a></li>
+        <li><a href="#">APPLICATIONS</a></li>
+        <li><a href="#">HISTORIQUE</a></li>
+      </ul>
+    </nav>
+    <div id="suggestions">
+      <span>Suggestions</span>
+      <ul class="list-unstyled">
+        <li><a href="" class="scrollthis">Pony - Deluxe</a></li>
+        <li><a href="" class="scrollthis">The Sun - Parrow</a></li>
+        <li><a href="" class="scrollthis">Mountains at my goal</a></li>
+      </ul>
+      <button class="btn text-uppercase">Voir plus</button>
+    </div>
+  </section>
+
+  <!-- PAGE ACCUEIL -->
 		<section id="page-accueil" class="page">
 			<figure id="accueilFlow" class="text-center">
 				<div class="row">
@@ -131,19 +128,16 @@
 						<img src="images/background_flow.jpg" alt="flow-banner" class="testImg">
 						<div class="flowText">FLOW</div>
 						<a href="#">
-							<span id="prevMusFlow"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
-							<span id="nextMusFlow"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
 							<img src="images/iconePlay.png" alt="play" class="playButtonFlow">
-							<img src="images/iconePause.png" alt="play" class="pauseButtonFlow">
 						</a>
 					</div>
 					<div class="marge col-lg-6 col-md-6 col-sm-12">
 						<img src="images/background_gif.jpg" alt="flow-banner" class="testImg">
 						<img src="images/gifDeezer.gif" alt="gif" class="gif">
 						<div class="flowSong">
-							<p id="titleFlow">Do I Wanna Know?</p>
-							<p id="artistFlow">Arctic Monkeys</p>
-							<p id="albumFlow">AM</p>
+							<p>"Woes"</p>
+							<p>Tim Rosenthal</p>
+							<p>Summer songs</p>
 						</div>
 					</div>
 				</div>
@@ -176,16 +170,24 @@
 					</div>
 				</div>
 				<div class="clearBoth"></div>
+				<div class="exclusiveCover">
+				<svg id="box2" width="250" height="100">
+						<line class="cls-1" x1="0" y1="50" x2="0" y2="100" />
+						<line class="cls-1" x1="0" y1="100" x2="100" y2="100" />
+						<line class="cls-1" x1="150" y1="0" x2="250" y2="0" />
+						<line class="cls-1" x1="250" y1="0" x2="250" y2="50" />
+				</svg>
 				<div class="infos2">
 					<span>RIHANNA</span><span class="red"> CONCERT</span>
 					<p>Anti Tour à Paris & Lyon les 25.09.16 et 27.09.16</p>
 					<span class="button">En savoir +</span>
 				</div>
-				<div class="exclusiveCover">
+				<div class="couvertureRihanna">
 					<img src="images/cover_rihanna.png" alt="Cover Rihanna" class="coverPrincipale">
 					<span class="newAlbum">ALBUM</span>
 					<span class="popular">MOST POPULAR</span>
 				</div>
+		        </div>
 			</div>
 
 			<div id="playlistAccueil">
@@ -199,17 +201,17 @@
 					</div>
 					<div>
 						<span><img src="images/cover_playlist_accueil2.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>One Dance</span>
 						<span class="mini"> par Snake</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Come</span>
 						<span class="mini"> par Jain</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Home</span>
 						<span class="mini"> par Daniel</span>
 					</div>
@@ -222,17 +224,17 @@
 					</div>
 					<div>
 						<span><img src="images/cover_playlist_accueil1.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Orange Blossom</span>
 						<span class="mini"> par Mayce</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Never give up</span>
 						<span class="mini"> par K.Fast</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Work</span>
 						<span class="mini"> par Rihanna</span>
 					</div>
@@ -246,17 +248,17 @@
 					</div>
 					<div>
 						<span><img src="images/cover_playlist_accueil3.png"  alt="cover playlist" class="coverPlaylistAccueil"></span>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Blueberry</span>
 						<span class="mini"> par Topie Loupe</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Back Down</span>
 						<span class="mini"> par Mauno</span>
 					</div>
 					<div>
-						<span><img src=images/playBlack.png alt="play" class="play"></span>
+						<a href="#"><img src=images/playBlack.png alt="play" class="play"></a>
 						<span>Wistling</span>
 						<span class="mini"> par Jackie</span>
 					</div>
@@ -266,388 +268,470 @@
 
 			<div id="mixAccueil">
 				<h4>Les meilleures ambiances selon vos goûts</h4>
-				<img src="images/eminem.png" alt="cover" class="cover">
-				<img src="images/eminem.png" alt="cover" class="cover">
-				<img src="images/eminem.png" alt="cover" class="cover">
-				<img src="images/eminem.png" alt="cover" class="cover">
+				<img src="images/covers/cover_paramore.png" alt="cover" class="cover">
+				<img src="images/iconePlay.png" alt="play" class="playCover">
+				<img src="images/covers/cover_train.png" alt="cover" class="cover">
+				<img src="images/cover_playlist2.png" alt="cover" class="cover">
+				<img src="images/covers/cover_SamSmith.png" alt="cover" class="cover">
 				<div class="petitFilet"></div>
 				<span class="button">Voir tous les mix</span>
 			</div>
+			<div class="filet"></div>
 		</section>
 
-		<!-- PAGE A ECOUTER -->
-		<section id="page-a_ecouter" class="page">
-			<h2>À écouter <span>Toute l'actualité musciale DEEZER</span></h2>
-			<ul id="navNouveautes" class="navPage col-lg-11 text-uppercase list-inline">
-				<li class="col-md-4"><a href="#">événements</a></li>
-				<li class="col-md-4"><a href="#">recommandé pour vous</a></li>
-				<li class="col-md-4"><a href="#">selection deezer</a></li>
-			</ul>
-			<div class="col-md-12" id="actu1">
-				<div class="col-md-7">
-					<img src="images/actu1.png" alt="actu">
-				</div>
-				<div class="col-md-5">
-					<span><h4>INTERVIEW</h4></span>
-					<div class="line"></div>
-					<div class="petitFilet"></div>
-					<p><b>21 pilots en close-up</b></p>
-					<p class="secondaryText">Regardez Josh et Tyler discuter de leurs influences musicales dans une interview vidéo exclusive sous-titrée français</p>
-					<div class="petitFilet"></div>
-					<span class="button">Leur playlist</span>
-					<span class="button">Leur dernier album</span>
-				</div>
-			</div>
-			<div class="clearBoth"></div>
-			<div class="col-md-12" id="actu1">
-				<div class="col-md-5">
-					<span><h4>PRIX DEEZER ADAMI</h4></span>
-					<div class="line2"></div>
-					<div class="petitFilet"></div>
-					<p class="secondaryText">DEEZER et Adami sont heureux de vous annoncer les trois lauréats de l'édition 2016 ! Découvrez-les en concerts accompagnés de Youssoupha, le parrain de cette édition, le 6 juin au Casino de Paris.</p>
-					<p class="secondaryText">Les places sont disponibles sur Digitick dès le 27 avril !</p>
-					<div class="petitFilet"></div>
-					<span class="button">Acheter des places</span>
-				</div>
-				<div class="col-md-7">
-					<img src="images/actu2.png" alt="actu">
-				</div>
-			</div>
-			<div class="clearBoth"></div>
-			<div>
-				<div class="col-md-3"><img src="images/actu3.png" alt="actu" class="cover"></div>
-				<div class="col-md-3">
-					<h4>JEU CONCOURS</h4>
-					<div class="petitFilet"></div>
-					<p class="secondaryText">Gagnez vos places pour le festival "Les nuits claires"</p>
-					<p class="italicText">1 & 2 avril - Palais de Tokyo</p>
-					<div class="petitFilet"></div>
-					<span class="button">En savoir plus</span>
-				</div>
-				<div class="col-md-3"><img src="images/actu4.png" alt="actu" class="cover"></div>
-				<div class="col-md-3">
-					<h4>CONCERT</h4>
-					<div class="petitFilet"></div>
-					<p class="secondaryText">Gagnez vos places pour le Drones World Tour de MUSE"</p>
-					<p class="italicText">4 septembre - Stade de France</p>
-					<div class="petitFilet"></div>
-					<span class="button">En savoir plus</span>
-				</div>
-			</div>
-		</section>
+  <!-- PAGE A ECOUTER -->
+<section id="page-a_ecouter" class="page">
+    <h2>À écouter <span>Toute l'actualité musciale DEEZER</span></h2>
+    <ul id="navNouveautes" class="navPage col-lg-11 text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">événements</a></li>
+      <li class="col-md-4"><a href="#">recommandé pour vous</a></li>
+      <li class="col-md-4"><a href="#">selection deezer</a></li>
+    </ul>
+    <div class="col-md-12" id="actu1">
+      <div class="col-md-7">
+        <img src="images/actu1.png" alt="actu">
+      </div>
+      <div class="col-md-5">
+        <span><h4>INTERVIEW</h4></span>
+        <div class="line"></div>
+        <div class="petitFilet"></div>
+        <p><b>21 pilots en close-up</b></p>
+        <p class="secondaryText">Regardez Josh et Tyler discuter de leurs influences musicales dans une interview vidéo exclusive sous-titrée français</p>
+        <div class="petitFilet"></div>
+        <span class="button">Leur playlist</span>
+        <span class="button">Leur dernier album</span>
+      </div>
+    </div>
+    <div class="clearBoth"></div>
+    <div class="col-md-12" id="actu1">
+      <div class="col-md-5">
+        <span><h4>PRIX DEEZER ADAMI</h4></span>
+        <div class="line2"></div>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">DEEZER et Adami sont heureux de vous annoncer les trois lauréats de l'édition 2016 ! Découvrez-les en concerts accompagnés de Youssoupha, le parrain de cette édition, le 6 juin au Casino de Paris.</p>
+        <p class="secondaryText">Les places sont disponibles sur Digitick dès le 27 avril !</p>
+        <div class="petitFilet"></div>
+        <span class="button">Acheter des places</span>
+      </div>
+      <div class="col-md-7">
+        <img src="images/actu2.png" alt="actu">
+      </div>
+    </div>
+    <div class="clearBoth"></div>
+    <div>
+      <div class="col-md-3"><img src="images/actu3.png" alt="actu" class="cover"></div>
+      <div class="col-md-3">
+        <h4>JEU CONCOURS</h4>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">Gagnez vos places pour le festival "Les nuits claires"</p>
+        <p class="italicText">1 & 2 avril - Palais de Tokyo</p>
+        <div class="petitFilet"></div>
+        <span class="button">En savoir plus</span>
+      </div>
+      <div class="col-md-3"><img src="images/actu4.png" alt="actu" class="cover"></div>
+      <div class="col-md-3">
+        <h4>CONCERT</h4>
+        <div class="petitFilet"></div>
+        <p class="secondaryText">Gagnez vos places pour le Drones World Tour de MUSE"</p>
+        <p class="italicText">4 septembre - Stade de France</p>
+        <div class="petitFilet"></div>
+        <span class="button">En savoir plus</span>
+      </div>
+    </div>
+  </section>
 
 
-		<!-- PAGE NOUVEAUTES -->
-		<section id="page-nouveautes" class="page">
-			<h2>Nouveautés <span>Les nouveautés que vous ne devez vraiment pas manquer</span></h2>
-			<ul id="navNouveautes" class="navPage text-center col-lg-10 text-uppercase list-inline">
-				<li class="col-md-3"><a href="#">Genres</a></li>
-				<li class="col-md-3"><a href="#">Singles</a></li>
-				<li class="col-md-3"><a href="#">Albums</a></li>
-				<li class="col-md-3"><a href="#">Extended play</a></li>
-			</ul>
-			<div class="col-md-12">
-				<div class="col-lg-6">
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--/gauche-->
-				<div class="col-lg-6">
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-					<div class="row square">
-						<div class="col-md-6">
-							<img src="images/Calque-34.png" alt="cover">
-						</div>
-						<div class="col-md-6">
-							<h5 id="album">Nom d'album</h5>
-							<h5 id="artiste">Nom d'artiste</h5>
-							<h5 id="date">Sorti le 12-04-2016</h5>
-							<p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-							<div id="logos">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-								<img src="images/Calque-32.png" alt="coeur">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--/droite-->
-			</div>
-		</section>
+  <!-- PAGE NOUVEAUTES -->
+  <section id="page-nouveautes" class="page">
+    <h2>Nouveautés <span>Les nouveautés que vous ne devez vraiment pas manquer</span></h2>
+    <ul id="navNouveautes" class="navPage text-center col-lg-10 text-uppercase list-inline">
+      <li class="col-md-3"><a href="#">Genres</a></li>
+      <li class="col-md-3"><a href="#">Singles</a></li>
+      <li class="col-md-3"><a href="#">Albums</a></li>
+      <li class="col-md-3"><a href="#">Extended play</a></li>
+    </ul>
+    <div class="col-md-12">
+      <div class="col-lg-6">
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_articsmonkey.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">Do I wanna Know ?</h5>
+            <h5 id="artiste">Artics Monkey</h5>
+            <h5 id="date">Sorti le 9-04-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_bastille.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">Flaws</h5>
+            <h5 id="artiste">Bastille</h5>
+            <h5 id="date">Sorti le 12-04-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_fallOutBoy.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">Centuries</h5>
+            <h5 id="artiste">Fall Out Boy</h5>
+            <h5 id="date">Sorti le 12-03-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/gauche-->
+      <div class="col-lg-6">
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_fifthHarmony.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">Worth It</h5>
+            <h5 id="artiste">Fifth Harmony</h5>
+            <h5 id="date">Sorti le 23-03-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_gorillaz.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">Clint Eastwood</h5>
+            <h5 id="artiste">Gorillaz</h5>
+            <h5 id="date">Sorti le 07-03-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+        <div class="row square">
+          <div class="col-md-6">
+            <img src="images/covers/cover_imagineDragons.png" alt="cover" class="cover">
+          </div>
+          <div class="col-md-6">
+           <div class="infosCover">
+            <h5 id="album">On top of the World</h5>
+            <h5 id="artiste">Imagine Dragons</h5>
+            <h5 id="date">Sorti le 16-02-2016</h5>
+            <p id="legende">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+           </div>
+            <div id="logos">
+              <img src="images/Calque-32.png" alt="coeur" class="love">
+              <img src="images/Calque-35.png" alt="plus" class="plus">
+              <img src="images/Calque-33.png" alt="more" class="more">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/droite-->
+  </div>
+  </section>
 
-		<!-- PAGE TOP PLAYLISTS -->
-		<section id="page-top_playlists" class="page">
-			<h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
-			<ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
-				<li class="col-md-4"><a href="#">Genres</a></li>
-				<li class="col-md-4"><a href="#">Ambiances</a></li>
-			</ul>
-			<div class="col-lg-12">
-				<ul class="carousel">
-					<li class="items main-pos" id="1">
-						<img src="images/cover_playlist1.png" alt="caroussel">
-					</li>
-					<li class="items right-pos" id="2">
-						<img src="images/cover_playlist2.png" alt="caroussel">
-					</li>
-					<li class="items back-pos" id="3">
-						<img src="images/cover_playlist3.png" alt="caroussel">
-					</li>
-					<li class="items back-pos" id="4">
-						<img src="images/cover_playlist4.png" alt="caroussel">
-					</li>
-					<li class="items back-pos" id="5">
-						<img src="images/cover_playlist5.png" alt="caroussel">
-					</li>
-				</ul>
-				<div id="prevNext">
-					<input type="button" value="Prev" id="prev">
-					<input type="button" value="Next" id="next">
-				</div>
-			</div>
-		</section>
+  <!-- PAGE TOP PLAYLISTS -->
+<section id="page-top_playlists" class="page">
+    <h2>Top playlists <span>Les meilleures playlists du moment pour toutes vos envies</span></h2>
+    <ul id="navTopPlaylists" class="navPage text-center col-lg-10 text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-4"><a href="#">Ambiances</a></li>
+    </ul>
+    <div class="col-lg-12">
+     <h4>Les meilleures playlists du moment</h4>
+      <ul class="carousel">
+        <li class="items main-pos" id="1">
+          <img src="images/cover_playlist1.png" alt="caroussel">
+        </li>
+        <li class="items right-pos" id="2">
+          <img src="images/cover_playlist2.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="3">
+          <img src="images/cover_playlist3.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="4">
+          <img src="images/cover_playlist4.png" alt="caroussel">
+        </li>
+        <li class="items back-pos" id="5">
+          <img src="images/cover_playlist5.png" alt="caroussel">
+        </li>
+      </ul>
+      <div id="prevNext">
+        <a><img src="images/previous.png" alt="Previous" id="prev"></a>
+        <a><img src="images/next.png" alt="Next" id="next"></a>
+        <!--
+        <input type="button" value="Prev" id="prev">
+        <input type="button" value="Next" id="next">
+        -->
+      </div>
+    </div>
+    <div class="col-md-12">
+     <h4>Autres playlists</h4>
+      <div id="row" class="row">
+        <div class="col-lg-3">
+          <img src="images/cover_playlist6.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist7.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist8.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist9.png" alt="poadcast" class="cover">
+        </div>
+      </div>
+      <div id="row" class="row">
+        <div class="col-lg-3">
+          <img src="images/cover_playlist10.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist11.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist12.png" alt="poadcast" class="cover">
+        </div>
+        <div class="col-lg-3">
+          <img src="images/cover_playlist13.png" alt="poadcast" class="cover">
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<!-- PAGE MIX -->
-		<section id="page-mix" class="page">
-			<h2>Mix <span>Nos chansons préférées et nos recommandations, le tout dans un mix thématique</span></h2>
-			<ul id="navMix" class="navPage text-center text-uppercase list-inline">
-				<li class="col-md-4"><a href="#">Genres</a></li>
-				<li class="col-md-4"><a href="#">Ambiances</a></li>
-				<li class="col-md-4"><a href="#">Artistes</a></li>
-			</ul>
-			<div class="col-lg-12">
-				<div id="row1" class="row">
-					<div id="preferences" class="col-lg-6">
-						<div>
-							<h3>Vos préférences</h3></div>
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-				<div id="row2" class="row">
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-				<div id="row3" class="row">
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-			</div>
-		</section>
+  <!-- PAGE MIX -->
+  <section id="page-mix" class="page">
+    <h2>Mix <span>Nos chansons préférées et nos recommandations, le tout dans un mix thématique</span></h2>
+    <ul id="navMix" class="navPage text-center text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-4"><a href="#">Ambiances</a></li>
+      <li class="col-md-4"><a href="#">Artistes</a></li>
+    </ul>
+    <div class="col-lg-12">
+      <div id="row1" class="row">
+        <div id="preferences" class="col-lg-6">
+          <div>
+            <h3>Vos préférences</h3></div>
+        </div>
+        <div class="square music col-lg-3">
+          <img src="images/covers/cover_kanyeWest.jpg" alt="Mix" class="cover">
+          <a href="#" class="textCover">
+            <img src="images/play.png" alt="play">
+            <span>Musique</span><span>Artiste</span>
+          </a>
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_concentration.png" alt="Mix" class="cover">
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_electro.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_lanaDelRey.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_festival.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_frenchsongs.png" alt="Mix" class="cover">
+        </div>
+      </div>
+      <div id="row3" class="row">
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_fun.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_holidays.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_madeon.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_party.png" alt="Mix" class="cover">
+        </div>
+      </div>
+      <div id="row3" class="row">
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_roadtrip.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_nirvana.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_vintage.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_electroSwing.png" alt="Mix" class="cover">
+        </div>
+      </div>
+      <div id="row3" class="row">
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_theWeeknd.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_travel.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_seafret.png" alt="Mix" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <img src="images/covers/cover_classique.png" alt="Mix" class="cover">
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<!-- PAGE INFOS -->
-		<section id="page-infos" class="page">
-			<h2>Infos & divertissements <span>À écouter sans modération</span></h2>
-			<ul id="navInfos" class="navPage text-center text-uppercase list-inline">
-				<li class="col-md-4"><a href="#">Genres</a></li>
-				<li class="col-md-4"><a href="#">Podcasts</a></li>
-				<li class="col-md-4"><a href="#">Émissions</a></li>
-			</ul>
-			<div class="col-lg-12">
-				<div id="row1" class="row">
-					<div class="square col-lg-3">
-						<h5>Les mardis de l'espace</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>De la tête aux pieds</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Les mardis de l'espace</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Women of the hour</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-				<div id="row2" class="row">
-					<div class="square col-lg-3">
-						<h5>Slack variety pack</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Revue de presse</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>L'entretien</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Télérama</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-				<div id="row3" class="row">
-					<div class="square col-lg-3">
-						<h5>Limetown</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Un oeif sur les médias</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<div class="square col-lg-3">
-						<h5>Munchies</h5>
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-					<h5>Face à face</h5>
-					<div class="square col-lg-3">
-						<img src="images/eminem.png" alt="Eminem">
-					</div>
-				</div>
-			</div>
-		</section>
+  <!-- PAGE INFOS -->
+  <section id="page-infos" class="page">
+    <h2>Infos & divertissements <span>À écouter sans modération</span></h2>
+    <ul id="navInfos" class="navPage text-center text-uppercase list-inline">
+      <li class="col-md-4"><a href="#">Genres</a></li>
+      <li class="col-md-4"><a href="#">Podcasts</a></li>
+      <li class="col-md-4"><a href="#">Émissions</a></li>
+    </ul>
+    <div class="col-lg-12">
+      <div id="row1" class="row">
+        <div class="square col-lg-3">
+          <h5>Les mardis de l'espace</h5>
+          <img src="images/Cover_podcast1.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>De la tête aux pieds</h5>
+          <img src="images/Cover_podcast2.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Les mardis de l'espace</h5>
+          <img src="images/Cover_podcast3.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Women of the hour</h5>
+          <img src="images/Cover_podcast4.png" alt="poadcast" class="cover">
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div class="square col-lg-3">
+          <h5>Slack variety pack</h5>
+          <img src="images/Cover_podcast5.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Revue de presse</h5>
+          <img src="images/Cover_podcast6.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>L'entretien</h5>
+          <img src="images/Cover_podcast7.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Télérama</h5>
+          <img src="images/Cover_podcast8.png" alt="poadcast" class="cover">
+        </div>
+      </div>
+      <div id="row3" class="row">
+        <div class="square col-lg-3">
+          <h5>Limetown</h5>
+          <img src="images/Cover_podcast9.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Un oeil sur les médias</h5>
+          <img src="images/Cover_podcast10.png" alt="poadcast" class="cover">
+        </div>
+        <div class="square col-lg-3">
+          <h5>Munchies</h5>
+          <img src="images/Cover_podcast11.png" alt="poadcast" class="cover">
+        </div>
+        <h5>Face à face</h5>
+        <div class="square col-lg-3">
+          <img src="images/Cover_podcast12.png" alt="poadcast" class="cover">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  
+  <!-- PLAYER -->
+  <section id="player">
+    <audio id="myMusic" preload ontimeupdate="update(this)"></audio>
+    <div id="playliste">
+    </div>
+    <div class="playerUltime">
+      <span id="prevMus"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+      <span id="play"><i class="fa fa-play" aria-hidden="true"></i></span>
+      <span id="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
+      <span id="nextMus"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+      <div id="progressBarControl">
+        <div id="progressBar"><span id="cercle"></span></div>
+      </div>
+      <span id="progressTime">00:00</span>
+      <div id="sound">
+        <span id="minus" class="vol">
+		  <i class="fa fa-minus" aria-hidden="true"></i>
+		</span>
+        <span id="plus" class="vol">
+		  <i class="fa fa-plus" aria-hidden="true"></i>
+		</span>
+        <span id="soundUp" class="hide">
+		  <i class="fa fa-volume-up" aria-hidden="true"></i>
+		</span>
+        <span id="mute">
+		  <i class="fa fa-volume-off" aria-hidden="true"></i>
+		</span>
+      </div>
+      <span id="alea">
+		  <i class="fa fa-random" aria-hidden="true"></i>
+	  </span>
+    </div>
+  </section>
 
-		<!-- PLAYER -->
-		<section id="player">
-			<audio id="myMusic" preload ontimeupdate="update(this)"></audio>
-			<div id="playliste">
-			</div>
-			<div class="playerUltime">
-				<span id="prevMus"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
-				<span id="play"><i class="fa fa-play" aria-hidden="true"></i></span>
-				<span id="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
-				<span id="nextMus"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
-				<div id="progressBarControl">
-					<div id="progressBar"><span id="cercle"></span></div>
-				</div>
-				<span id="progressTime">00:00</span>
-				<div id="sound">
-					<span id="minus" class="vol">
-						<i class="fa fa-minus" aria-hidden="true"></i>
-					</span>
-					<span id="plus" class="vol">
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</span>
-					<span id="soundUp" class="hide">
-						<i class="fa fa-volume-up" aria-hidden="true"></i>
-					</span>
-					<span id="mute">
-						<i class="fa fa-volume-off" aria-hidden="true"></i>
-					</span>
-				</div>
-				<span id="alea">
-					<i class="fa fa-random" aria-hidden="true"></i>
-				</span>
-			</div>
-		</section>
-
-		<div id="dz-root"></div>
-		<script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="scripts/musiques.json" ></script>
-		<script src="scripts/player.js"></script>
-		<script src="scripts/slider.js"></script>
-		<script src="scripts/berenice.js"></script>
-		<script src="scripts/carina.js"></script>
-		<script src="scripts/search.js"></script>
-
-	</body>
+  <div id="dz-root"></div>
+  <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="scripts/musiques.json" ></script>
+  <script src="scripts/player.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/carina.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/margaux.js"></script>
+  
+</body>
 
 </html>
