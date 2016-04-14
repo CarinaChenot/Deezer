@@ -1,3 +1,16 @@
+#page-a_ecouter h2{
+  color:#bcd42d;
+}
+
+#page-a_ecouter .navPage a:hover{
+  color: #bcd42d;
+}
+
+#page-a_ecouter h5{
+  font-size: 14px;
+  text-align: center;
+}
+
 #actu1{
   margin-bottom: 20px;
 }

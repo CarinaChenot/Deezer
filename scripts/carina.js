@@ -11,14 +11,26 @@ $(document).ready(function () {
   $('#hamburger').on('click', function () {
     $('#left').toggleClass('reduced');
     if ($('#left').hasClass('reduced')) {
+      $('.page').css('width', $(window).width() - 203);
+      $('.page').css('left', '53px');
       $('#left').css('width', '53');
+      $('#playing-small').show();
+      /*$("#left").hover(
+        function () {
+          $(this).removeClass('reduced');
+          $('#left').css('width', '220');
+        },
+        function () {
+          $(this).addClass('reduced');
+          $('#left').css('width', '53');
+        }
+      );*/
+    } else {
+      $('#left').css('width', '220');
+      $('.page').css('width', $(window).width() - 370);
+      $('.page').css('left', '220px');
+      $('#playing-small').hide();
     }
-    /*$('#left').toggle("slide");
-    $('#left').toggleClass('reduced');
-    if ($('#left').hasClass('reduced')) {
-      console.log('test');
-      $('#reducedleft').css('display', 'block');
-    }*/
   });
 
   //Fonction pour la navigation des pages

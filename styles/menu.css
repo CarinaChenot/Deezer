@@ -53,10 +53,6 @@ header #logo {
   display: inline-block;
 }
 
-.reduced #logo{
-  display: none;
-}
-
 header #logo img {
   width: 130px;
 }
@@ -73,11 +69,6 @@ header #logo img {
   display: inline-block;
 }
 
-.reduced #hamburger {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
 /**** SEARCH ****/
 
 #searchBar form {
@@ -88,7 +79,7 @@ header #logo img {
 #searchBar #search {
   border: none;
   background-color: #23232c;
-  padding-left: 10px;
+  padding-left: 6px;
   border-left: solid 2px #8c8c91;
 }
 
@@ -100,6 +91,10 @@ header #logo img {
   margin-left: -23px;
   border: none;
   background-color:#23232c;
+}
+
+#searchBar form a {
+  margin-right: 5px;
 }
 
 
@@ -265,6 +260,65 @@ width: 100%;
   font-style: italic;
   margin-top: 5px;
 }
+
+
+/**** MENU GAUCHE SMALL ****/
+
+.reduced #logo{
+  display: none;
+}
+
+.reduced #hamburger {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.reduced #searchBar {
+  display: none;
+}
+
+.reduced #menuNav {
+  margin-top: 20px;
+}
+
+.reduced #menuNav a{
+  color: #FFF;
+}
+
+.reduced #flow {
+  display: none;
+}
+
+.reduced #personnaliser {
+  display: none;
+}
+
+.reduced button.subscribe {
+  display: none;
+}
+
+.reduced #playing {
+  display: none;
+}
+
+#playing-small{
+  width: 220px;
+  height: 35px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #707076;
+  padding: 8px 0px;
+  background-image: url(../images/eminem.png);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: none;
+}
+
+
+
+
 
 /*************************
         MENU DROIT 
