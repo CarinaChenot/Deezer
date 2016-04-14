@@ -83,6 +83,53 @@ $(document).ready(function () {
     $(".classique").show();
   });
   
+    $("#tous").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".genre").show();
+  });
+      
+    $("#pop").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".pop").show();
+  });
+      
+    $("#rap").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".rap").show();
+  });
+      
+    $("#rock").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".rock").show();
+  });
+      
+    $("#jazz").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+  });
+      
+    $("#reggae").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+  });
+      
+    $("#soul").on("click", function () {
+    $(".artistes").hide();
+    $(".genre").hide();
+    $(".ambiance").hide();
+    $(".soul").show();
+  });
+  
   $(".select").on("click", function(e){
     e.preventDefault();
     var genre = $(this).text();
