@@ -12,7 +12,7 @@ var music = [
 		"like": 0
    },
 	{
-		"id": 0,
+		"id": 1,
 		"title": "Worth It",
 		"artist": "Fifth Harmony",
 		"url": "musique/worthIt.mp3",
@@ -24,7 +24,7 @@ var music = [
 		"like": 0
    },
 	{
-		"id": 0,
+		"id": 2,
 		"title": "Centuries",
 		"artist": "Fall out boy",
 		"url": "musique/centuries.mp3",
@@ -36,7 +36,7 @@ var music = [
 		"like": 0
    },
 	{
-		"id": 0,
+		"id": 3,
 		"title": "On top of the world",
 		"artist": "Imagine Dragons",
 		"url": "musique/onTopOfTheWorld.mp3",
@@ -48,7 +48,7 @@ var music = [
 		"like": 0
    },
 	{
-		"id": 0,
+		"id": 4,
 		"title": "Clint Eastwood",
 		"artist": "Gorillaz",
 		"url": "musique/clintEastwood.mp3",
@@ -60,7 +60,7 @@ var music = [
 		"like": 0
    },
 	{
-		"id": 0,
+		"id": 5,
 		"title": "Ain't your mama",
 		"artist": "Jennifer Lopez",
 		"url": "musique/aintYourMama.mp3",
