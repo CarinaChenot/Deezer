@@ -18,16 +18,6 @@ $(document).ready(function () {
       $('#left').css('width', '53');
       $('#left').css('height', $(window).height() - 35);
       $('#playing-small').show();
-      /*$("#left").hover(
-        function () {
-          $(this).removeClass('reduced');
-          $('#left').css('width', '220');
-        },
-        function () {
-          $(this).addClass('reduced');
-          $('#left').css('width', '53');
-        }
-      );*/
     } else {
       $('#left').css('width', '220');
       $('.page').css('width', $(window).width() - 370);
@@ -36,6 +26,16 @@ $(document).ready(function () {
       $('#playing-small').hide();
     }
   });
+
+  //Fonction pour changer couleur icones hover
+  $("#menuNav li").hover(
+    function () {
+      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
+    },
+    function () {
+      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+    }
+  );
 
   //Fonction pour la navigation des pages
   $('#menuNav li').click(function () {
