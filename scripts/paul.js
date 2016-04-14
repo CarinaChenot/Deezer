@@ -46,6 +46,7 @@ $(document).ready(function () {
 
   function changeTime(dayTime) {
     if (dayTime > 18) {
+    if (dayTime > 18 || dayTime < 8) {
       body.css("background", "#454545");
       section.css("background", "#454545");
       button.removeClass("jour").addClass("nuit");

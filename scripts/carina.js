@@ -90,6 +90,17 @@ $(document).ready(function () {
     $(this).addClass('activeMenu');
     $('#page-' + $(this).attr('id')).css('display', 'block');
   });
+  
+  //Fonction navigation page likes
+  $('#likes').on('click', function(){
+    $('#menuNav li').removeClass('activeMenu');
+    $('#menuNav li').each(function () {
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+    });
+    $('.page').css('display', 'none');
+    $(this).addClass('activeMenu');
+    $('#page-' + $(this).attr('id')).css('display', 'block');
+  });
 
 
   //Fonction pour navigation page Nouveautés accueil
@@ -180,4 +191,24 @@ $(document).ready(function () {
       return val.substr(1) + val.substr(0, 1);
     });
   }
+
+  //Fonction pour sauvegarder couleurs
+  for (var i = 0; i < music.length; i++) {
+    if (music[i]["like"] == 1) {
+      $('.fa-heart').attr('data', i).css('color', 'red');
+    }
+  }
+
+  //Fonction pour changer couleur
+  $('.fa-heart').on('click', function () {
+    $(this).toggleClass('liked');
+    if ($(this).hasClass('liked')) {
+      music[$(this).attr('data')]["like"] = 1;
+      console.log(music[$(this).attr('data')]["like"]);
+    } else {
+      music[$(this).attr('data')]["like"] = 0;
+      console.log(music[$(this).attr('data')]["like"]);
+    }
+
+  });
 }); //Fin document ready
