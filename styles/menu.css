@@ -78,10 +78,13 @@ header #logo img {
 }
 
 #searchBar #search {
-	border: none;
 	background-color: #23232c;
 	padding-left: 6px;
 	border-left: solid 2px #8c8c91;
+	outline: none;
+	border-bottom: none;
+	border-top: none;
+	border-right: none;
 }
 
 #searchBar #submit {
