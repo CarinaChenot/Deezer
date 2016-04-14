@@ -23,26 +23,23 @@ $(document).ready(function () {
   );
 
   $("#ambiances").on("click", function () {
-    $(".artistes").show();
-    $(".genre").show();
-    $(".ambiance").show();
-    $(".artistes").hide();
-    $(".genre").hide();
+    $(".artistes").fadeOut("slow");
+    $(".genre").fadeOut("slow");
+    $(".ambiance").fadeOut("slow");
+    $(".ambiance").fadeIn("slow");
   });
 
   $("#genres").on("click", function () {
-    $(".artistes").show();
-    $(".genre").show();
-    $(".ambiance").show();
-    $(".artistes").hide();
-    $(".ambiance").hide();
+    $(".artistes").fadeOut("slow");
+    $(".genre").fadeOut("slow");
+    $(".ambiance").fadeOut("slow");
+    $(".genre").fadeIn("slow");
   });
 
   $("#artistes").on("click", function () {
-    $(".artistes").show();
-    $(".genre").show();
-    $(".ambiance").show();
-    $(".ambiance").hide();
-    $(".genre").hide();
+    $(".artistes").fadeOut("slow");
+    $(".genre").fadeOut("slow");
+    $(".ambiance").fadeOut("slow");
+    $(".artistes").fadeIn("slow");
   });
 });
