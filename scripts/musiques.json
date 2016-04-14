@@ -1,44 +1,45 @@
 var music = [
 	{
-       "titre" : "Flaws",
-        "chanteur" : "Bastille",
-        "url" : "musique/flaws.mp3",
-        "albumCover" : "images/covers/cover_bastille.png",
-        "albumName" :"Bad blood" 
+		"titre": "Flaws",
+		"chanteur": "Bastille",
+		"url": "musique/flaws.mp3",
+		"albumCover": "images/covers/cover_bastille.png",
+		"albumName": "Bad blood"
    },
-   {
-       "titre" : "Worth It",
-        "chanteur" : "Fifth Harmony",
-        "url" : "musique/worthIt.mp3",
-        "albumCover" : "images/covers/cover_fifthHarmony.png",
-        "albumName" :"Reflection" 
+	{
+		"titre": "Worth It",
+		"chanteur": "Fifth Harmony",
+		"url": "musique/worthIt.mp3",
+		"albumCover": "images/covers/cover_fifthHarmony.png",
+		"albumName": "Reflection"
    },
-   {
-       "titre" : "Centuries",
-        "chanteur" : "Fall out boy",
-        "url" : "musique/centuries.mp3",
-        "albumCover" : "images/covers/cover_fallOutBoy.png",
-        "albumName" :"American beauty" 
+	{
+		"titre": "Centuries",
+		"chanteur": "Fall out boy",
+		"url": "musique/centuries.mp3",
+		"albumCover": "images/covers/cover_fallOutBoy.png",
+		"albumName": "American beauty"
    },
-   {
-       "titre" : "On top of the world",
-        "chanteur" : "Imagine Dragons",
-        "url" : "musique/onTopOfTheWorld.mp3",
-        "albumCover" : "images/covers/cover_imagineDragons.png",
-        "albumName" :"Dream" 
+	{
+		"titre": "On top of the world",
+		"chanteur": "Imagine Dragons",
+		"url": "musique/onTopOfTheWorld.mp3",
+		"albumCover": "images/covers/cover_imagineDragons.png",
+		"albumName": "Dream"
    },
-   {
-       "titre" : "Clint Eastwood",
-        "chanteur" : "Gorillaz",
-        "url" : "musique/clintEastwood.mp3",
-        "albumCover" : "images/covers/cover_gorillaz.png",
-        "albumName" :"Dream" 
+	{
+		"titre": "Clint Eastwood",
+		"chanteur": "Gorillaz",
+		"url": "musique/clintEastwood.mp3",
+		"albumCover": "images/covers/cover_gorillaz.png",
+		"albumName": "Dream"
    },
-   {
-       "titre" : "Ain't your mama",
-        "chanteur" : "Jennifer Lopez",
-        "url" : "musique/aintYourMama.mp3",
-        "albumCover" : "images/cover_jennyferLopez.jpg",
-        "albumName" :"Ain't your mama" 
+	{
+		"titre": "Ain't your mama",
+		"chanteur": "Jennifer Lopez",
+		"url": "musique/aintYourMama.mp3",
+		"albumCover": "images/cover_jennyferLopez.jpg",
+		"albumName": "Ain't your mama"
    }
+
 ]
