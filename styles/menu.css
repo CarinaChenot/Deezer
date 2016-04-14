@@ -119,7 +119,6 @@ header #logo img {
   margin-bottom: 5px;
 }
 
-
 /**** MENU ****/
 
 #menuNav ul {
@@ -285,42 +284,6 @@ li#infos a {
 #playing #album {
   font-style: italic;
   margin-top: 5px;
-}
-
-
-/**** MENU GAUCHE SMALL ****/
-
-.reduced #logo {
-  display: none;
-}
-
-.reduced #hamburger {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.reduced #searchBar {
-  display: none;
-}
-
-.reduced #menuNav {
-  margin-top: 20px;
-}
-
-.reduced #menuNav a {
-  color: #FFF;
-}
-
-.reduced #flow {
-  display: none;
-}
-
-.reduced #personnaliser {
-  display: none;
-}
-
-.reduced #playing {
-  display: none;
 }
 
 /*************************
