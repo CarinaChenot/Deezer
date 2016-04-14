@@ -24,9 +24,15 @@
   margin-top: 43px;
 }
 
+#page-infos .coverPodcast{
+  margin-top: 0px;
+}
+
+
 .PodcastCover{
   padding-top: 20px;
 }
+
 
 #page-infos .square {
   height: 400px;
