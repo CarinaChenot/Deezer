@@ -81,9 +81,22 @@
 #prevNext {
   position: relative;
   text-align: center;
-  margin: 230px;
+  margin-top: 240px;
+  margin-bottom: 20px;
 }
 
 .carousel{
   margin-left: 200px;
+}
+
+#page-top_playlists h4{
+  font-size: 12px;
+}
+
+#prev{
+  width: 30px !important;
+}
+
+#next{
+  width: 30px !important;
 }
