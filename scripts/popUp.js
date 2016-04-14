@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	//localStorage.setItem("first", 0);
+//localStorage.setItem("first", 0);
 	var aboOn;
 
 	if(localStorage.getItem("first") <= 0){
