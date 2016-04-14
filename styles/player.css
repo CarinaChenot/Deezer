@@ -116,6 +116,67 @@ Le volume
 }
 
 
+/*------------------------*\
+
+Les options
+
+\*------------------------*/
+#option{
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	left: 965px;
+	bottom: 40px;
+
+	width: 150px;
+	z-index: 10;
+
+	background: #FFF;
+	border: 1px solid #23232c;
+	border-radius: 10px;
+}
+
+#option li{
+	text-align: center;
+	border-bottom: 1px solid #AAAAAA;;
+}
+
+#option li:last-child{
+	border-bottom:none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#option li:first-child{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#option a{
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	color: #23232c;
+	font-size: 0.8em;
+}
+
+#option a i{
+	margin: 0 10px;
+}
+
+#option a:hover{
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+#option li:hover{
+ background: #23232c;
+}
+
 /*---------------*\
 
 cacher et afficher

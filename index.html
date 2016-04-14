@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/page-mix.css">
   <link rel="stylesheet" href="styles/page-infos.css">
   <link rel="stylesheet" href="styles/page-ecouter.css">
+  <link rel="stylesheet" href="styles/jour_nuit.css">
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -36,7 +37,6 @@
         <div id="shortcuts-zone">
           <form id="div_search" method="post">
             <input type="search" placeholder="Recherche" id="search" />
-            <a href="#" id="emptie">x</a>
             <input type="submit" value=" " id="submit" />
           </form>
         </div>
@@ -53,14 +53,6 @@
         </ul>
       </nav>
     </header>
-    <div id="theme">
-      <div class="switch" id="jourNuit">
-        <input type="checkbox" id="input-switch" class="switch__checkbox" />
-        <label class="switch__label" for="input-switch" id="jour">
-          <span class="switch__circle" id="buttonJour"></span>
-        </label>
-      </div>
-    </div>
     <div id="flow">
       <figure>
         <figcaption>
@@ -70,7 +62,7 @@
         <h4>Flow</h4>
         <h6>Un mix basé sur vos favoris</h6></div>
     </div>
-    <div id="personnaliser">Personnaliser</div>
+    <div id="personnaliser" class="abo">Personnaliser</div>
     <div id="playingWrap">
       <div id="playing" class="text-center">
         <img src="images/Calque-34.png" alt="" id="playing-cover">
@@ -113,6 +105,15 @@
       <button class="btn text-uppercase">Voir plus</button>
     </div>
     <button class="btn subscribe abo">+ S'abonner</button>
+    <!-- Changer le thème -->
+    <div id="theme">
+      <div class="switch" id="jourNuit">
+        <input type="checkbox" id="input-switch" class="switch__checkbox" />
+        <label class="switch__label" for="input-switch" id="jour">
+          <span class="switch__circle" id="buttonJour"></span>
+        </label>
+      </div>
+    </div>
   </section>
 
   <!-- PAGE ACCUEIL -->
@@ -1096,15 +1097,23 @@
       <span id="share">...</span>
       <span id="wanted"><i class="fa fa-heart" aria-hidden="true"></i></span>
     </div>
+    <ul id="option" class="hide">
+				<li><a href="#">Ecouter plustard</a></li><!--
+--><li><a href="#">Ajouter à la queue</a></li><!--
+--><li><a href="#">Ajouter à mes musiques</a></li><!--
+--><li><a href="#">Ajouter à ma playliste</a></li><!--
+--><li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i> Partager</a></li><!--
+--><li><a href="http://www.deezer.com/playlist/53362031">Playlist <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+			</ul>
   </section>
 
   <!-- Les popUps avec le cache -->
   <div id="cache" class="hide"></div>
   <div id="abonnement" class="hide popUp">
     <h2>En t'abonnant</h2>
-    <p>La musique que tu veux quand tu veux.
-      <br/> Pour seulement</p>
-    <a href="http://www.deezer.com/offers/">9,99 € / month</a>
+    <p>La musique que tu veux quand tu veux ainsi que l'accès à pleins d'autres fonctionnalités.</p>
+    <h4>Pour seulement</h4>
+    <a href="http://www.deezer.com/offers/">9,99 € / mois</a>
   </div>
 
   <div id="welcome" class="popUp hide">
@@ -1121,16 +1130,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="scripts/musiques.json"></script>
   <script src="scripts/player.js"></script>
+  <script src="scripts/paul.js"></script>
   <script src="scripts/popUp.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/berenice.js"></script>
   <script src="scripts/carina.js"></script>
   <script src="scripts/search.js"></script>
-
+  <script src="scripts/margaux.js"></script>
 </body>
-=======
-</body>
-<script src="scripts/margaux.js"></script>
->>>>>>> refs/remotes/origin/master
 
 </html>

@@ -3,7 +3,7 @@ var music = [
 		"titre": "Do I Wanna Know?",
 		"chanteur": "Arctic Monkeys",
 		"url": "musique/Arctic Monkeys - Do I Wanna Know.mp3",
-		"albumCover": "images/Calque-34.png",
+		"albumCover": "images/covers/cover_articsmonkey.png",
 		"albumName": "AM"
 	},
 	{
@@ -17,21 +17,21 @@ var music = [
 		"titre": "Les lacs du Connemara",
 		"chanteur": "Michel Sardou",
 		"url": "musique/lesLacDuConnemara.mp3",
-		"albumCover": "images/lacsCone.jpg",
+		"albumCover": "images/covers/cover_MS_connemara.jpg",
 		"albumName": "Les lacs du Connemara"
 	},
 	{
 		"titre": "Les Ricains",
 		"chanteur": "Michel Sardou",
 		"url": "musique/lesRicains.mp3",
-		"albumCover": "images/michelSardouRicains.jpg",
+		"albumCover": "images/covers/cover_MS_ricains.jpg",
 		"albumName": "Les Ricains"
 	},
 	{
 		"titre": "Un Roi Barbare",
 		"chanteur": "Michel Sardou",
 		"url": "musique/unRoiBarbar.mp3",
-		"albumCover": "images/sardouLavieille.jpg",
+		"albumCover": "images/covers/cover_MS_vieille.jpg",
 		"albumName": "La vieille"
 	}
 ]
