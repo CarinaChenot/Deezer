@@ -41,4 +41,5 @@ var music = [
         "albumCover" : "images/cover_jennyferLopez.jpg",
         "albumName" :"Ain't your mama" 
    }
+	
 ]
