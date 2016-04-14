@@ -40,8 +40,17 @@
 }
 
 .cover{
-  width: 170px;
+  width: 170px !important;
   margin: 10px;
+}
+
+.coverHover{
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%) !important;
+}
+
+.playCover{
+  width: 30px;
 }
 
 .clearBoth{
@@ -51,6 +60,7 @@
 .button{
   font-size: 11px;
   border: 1px solid #23232c;
+  color: #23232c; /* modif margaux */
   border-radius: 4px;
   padding: 3px 5px;
   text-align: center;
@@ -71,3 +81,36 @@
     border-top: 1px solid #FFF; 
   margin: 10px;
 } 
+
+.love{
+  width: 10px;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+
+.more{
+  width: 12px;
+  margin-right: 25px;
+}
+
+.plus{
+  width: 12px;
+  margin-right: 25px;
+}
+
+.music{
+  position: relative;
+  width: 170px !important;
+  height: 170px !important;
+}
+
+
+.textCover{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.5);
+}

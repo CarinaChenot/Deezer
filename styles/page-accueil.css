@@ -45,6 +45,26 @@
 	left: 89.5%;
 }
 
+#accueilFlow span#prevMusFlow, #accueilFlow span#nextMusFlow{
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+
+#accueilFlow span#prevMusFlow i, #accueilFlow span#nextMusFlow i{
+	font-size: 28px;
+}
+
+#accueilFlow span#prevMusFlow{
+	top: 48%;
+	left: 35%;
+}
+
+#accueilFlow span#nextMusFlow{
+	top: 48%;
+	left: 60%;
+}
+
 .playButtonFlow, .pauseButtonFlow{
 	position: absolute;
 	width: 50px;
@@ -64,12 +84,13 @@
 }
 
 .flowSong{
+	text-align: left;
 	opacity: 0;
 	position: absolute;
 	font-size: 11px;
-	top: 55%;
+	top: 45%;
 	color: #FFF;
-	left: 43%;
+	left: 57%;
 }
 
 .flowSong p{
@@ -79,8 +100,8 @@
 .gif{
 	opacity: 0;
 	position: absolute;
-	left: 40%;
-	top: 25%;
+	left: 22%;
+	top: 40%;
 	width: 100px;
 }
 
@@ -181,7 +202,7 @@
 	font-size: 9px;
 	position: absolute;
 	left: 240px;
-	top: 40px;
+	top: 60px;
 	z-index: 10;
 	/*border: 1px solid black;
 	margin-left: 20px;
@@ -192,9 +213,11 @@
 	color: #23232c ;
 	font-size: 9px;
 	display: inline-block;
-	border: 1px solid black;
+    /* modifié par margaux */
 	margin-right: 20px;
 	padding: 20px;
+    position: absolute;
+    top: 40px;
 }
 
 /**  infos box  **/
@@ -202,8 +225,15 @@
 svg#box{
 	position: absolute;
 	left: 220px;
-	top: 0;
+	top: 20px;
 	z-index: 12;
+}
+
+svg#box2{
+	position: absolute;
+	right: 220px;
+	top: 40px;
+	z-index: 13;
 }
 
 #box .cls-1{
@@ -234,6 +264,38 @@ svg#box{
 }
 
 #box:hover line:nth-of-type(4){
+	-webkit-transform: translateY(-25px);
+	transform: translateY(-25px);
+}
+
+#box2 .cls-1{
+	fill:none;
+	stroke:#4f4f4f ;
+	/*stroke-miterlimit:10;*/
+	stroke-width="5";
+}
+
+#box2 line{
+	-webkit-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+
+#box2:hover line:nth-of-type(1){
+	-webkit-transform: translateY(25px);
+	transform: translateY(25px);
+}
+
+#box2:hover line:nth-of-type(2){
+	-webkit-transform: translate(-50px);
+	transform: translate(-50px);
+}
+
+#box2:hover line:nth-of-type(3){
+	-webkit-transform: translate(50px);
+	transform: translate(50px);
+}
+
+#box2:hover line:nth-of-type(4){
 	-webkit-transform: translateY(-25px);
 	transform: translateY(-25px);
 }
@@ -276,6 +338,10 @@ svg#box{
 	width: 15px;
 }
 
+.pause{
+	width: 15px;
+}
+
 .newPlaylist{
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -293,4 +359,9 @@ svg#box{
 
 #mixAccueil{
 	margin-top: 30px;
+}
+
+.couvertureRihanna{
+  position: relative;
+  float: right;
 }
