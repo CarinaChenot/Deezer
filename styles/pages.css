@@ -44,11 +44,6 @@
   margin: 10px;
 }
 
-.coverHover {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%) !important;
-}
-
 .playCover {
   width: 30px;
 }
@@ -104,6 +99,7 @@
   width: 170px !important;
   height: 170px !important;
   margin-right: 25px;
+  margin-bottom: 25px;
 }
 
 .textCover {
@@ -114,14 +110,31 @@
   left: 25px;
   top: 10px;
   background: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
-
-.textCover a {}
 
 .playMusic {
   width: 40px;
+  padding-top: 30px;
 }
 
 .informationsChansons {
+  padding-top: 25px;
   color: #FFF;
+  font-size: 10px;
+  text-align: center;
+}
+
+.informationsChansons p {
+  margin-bottom: -1px;
+}
+
+.icones {
+  color: #FFF;
+  padding-top: 10px;
+}
+
+.icones span {
+  padding-left: 17px;
+  padding-right: 17px;
 }
