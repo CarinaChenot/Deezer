@@ -299,7 +299,8 @@ MENU DROIT
 div#theme {
   margin-left: 35px;
   margin-top: 50px;
-  z-index: 30;
+  position: fixed;
+  z-index: 10;
   bottom: 30px;
 }
 
@@ -343,6 +344,11 @@ section#right {
 
 #playlists {
   margin-bottom: 10px;
+}
+
+#playlists #list-playlists {
+  height: 80px;
+  overflow-y: scroll;
 }
 
 #playlists a {
