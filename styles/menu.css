@@ -333,8 +333,10 @@ MENU DROIT
 /* Bouton Thème */
 
 div#theme {
-  margin-top: 10px;
-  margin-left: 27px;
+  margin-left: 35px;
+  margin-top: 50px;
+  z-index: 30;
+  bottom: 30px;
 }
 
 section#right {
