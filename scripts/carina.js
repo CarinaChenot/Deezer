@@ -14,10 +14,13 @@ $(document).ready(function () {
 
     //animation du menu de grand à petit
     if ($('#left').hasClass('reduced')) {
+      $('#menuNav a').removeClass('menuBig');
+      $('#menuNav a').addClass('menuSmall');
+      $('.reduced #menuNav a').html('');
       $('.reduced #logo').fadeOut('slow');
       $('.reduced #hamburger').animate({
         "margin-top": "10px",
-        "margin-left": "10px"
+        "margin-left": "14px"
       }, 'slow');
       $('.reduced #searchBar').fadeOut('slow');
       $('.reduced #menuNav').animate({
@@ -41,6 +44,14 @@ $(document).ready(function () {
 
       //animation du menu de petit à grand
     } else {
+      $('#accueil a').html('Accueil');
+      $('#a_ecouter a').html('À Écouter');
+      $('#nouveautes a').html('Nouveautés');
+      $('#top_playlists a').html('Top Playlists');
+      $('#mix a').html('Mix');
+      $('#infos a').html('Infos & Divertissements');
+      $('#menuNav a').removeClass('menuSmall');
+      $('#menuNav a').addClass('menuBig');
       $('#logo').fadeIn('slow');
       $('#hamburger').animate({
         "margin-top": "0",
@@ -72,9 +83,9 @@ $(document).ready(function () {
   $('#menuNav li').click(function () {
     $('#menuNav li').removeClass('activeMenu');
     $('#menuNav li').each(function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     });
-    $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
+    $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
     $('.page').css('display', 'none');
     $(this).addClass('activeMenu');
     $('#page-' + $(this).attr('id')).css('display', 'block');
@@ -120,10 +131,10 @@ $(document).ready(function () {
   //Fonction pour changer couleur icones hover
   $("#menuNav li").hover(
     function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '-active.png)');
     },
     function () {
-      $('a', this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
+      $(this).css('background-image', 'url(images/icones-menu/' + $(this).attr('id') + '.png)');
     }
   );
 
