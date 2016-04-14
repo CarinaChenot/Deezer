@@ -227,3 +227,7 @@
   text-transform: lowercase;
   color: darkgray;
 }
+
+.margin{
+  margin-bottom: 50px;
+}
