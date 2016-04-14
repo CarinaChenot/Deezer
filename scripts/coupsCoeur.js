@@ -3,6 +3,8 @@ if (typeof(Storage) !== "undefined") {
 	var all_Id;
 	var coeur;
 	var writing = $("#page-likes");
+    var src = $("#playing-cover").attr('src');
+  console.log(src);
 
 	// Retrieve
 
@@ -14,10 +16,8 @@ if (typeof(Storage) !== "undefined") {
 
 
 	function afficheNext(id){
-      /*
-		$("#page-likes").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
-        */
-      $("#nouveauLike").after("<img src='images/cover_playlist10.png' alt='poadcast' class='cover'>");
+      src = $("#playing-cover").attr('src');
+      $("#nouveauLike").after("<img src='"+src+"' alt='poadcast' class='cover'>");
 	}
 
 	function afficheCoupsCoeur(){
@@ -26,9 +26,6 @@ if (typeof(Storage) !== "undefined") {
 		var id;
 		for(var i = 0; i < coeur.length/2; i++) {
 			id = parseInt(all_Id[i])
-            /*
-			$("#page-likes").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
-            */
       $("#nouveauLike").after("<img src='images/cover_playlist10.png' alt='poadcast' class='cover loveCover'>");
 			console.log(i);
 		}  
