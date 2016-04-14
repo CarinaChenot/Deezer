@@ -2,7 +2,7 @@ if (typeof(Storage) !== "undefined") {
 	// Store
 	var all_Id;
 	var coeur;
-	var writing = $("#coeur");
+	var writing = $("#page-likes");
 
 	// Retrieve
 
@@ -14,7 +14,7 @@ if (typeof(Storage) !== "undefined") {
 
 
 	function afficheNext(id){
-		$("#coeur").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
+		$("#page-likes").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
 	}
 
 	function afficheCoupsCoeur(){
@@ -23,7 +23,7 @@ if (typeof(Storage) !== "undefined") {
 		var id;
 		for(var i = 0; i < coeur.length/2; i++) {
 			id = parseInt(all_Id[i])
-			$("#coeur").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
+			$("#page-likes").append("<li><span class='artist'>" + music[id].artist + "</span><span class='song'>" + music[id].title + "</span><span class='closed'>X</span></li>");
 			console.log(i);
 		}  
 	}
