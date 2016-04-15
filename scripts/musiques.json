@@ -111,7 +111,7 @@ var music = [
 		"id": 9,
 		"title": "Midnight City",
 		"artist": "M83",
-		"url": "musique/Midnight City.mp3",
+		"url": "musique/Midnight-City.mp3",
 		"albumCover": "images/covers/cover_m83-hurry.jpg",
 		"albumName": "Hurry Up, We're Dreaming",
 		"date": "",
