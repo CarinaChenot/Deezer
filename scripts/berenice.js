@@ -1,11 +1,9 @@
 /****  Général  ****/
 
-//lecture des chansons au click bouton
-//$('a img.play').on('click', function () {
-
-function getSong() {
+//lecture des chansons palylists au click bouton
+function getSong(parent, sibling) {
 	var currentMusic = 0;
-	var currentTitle = $(".currentlyPlaying").parent("a").next('span.title').attr('data');
+	var currentTitle = $(".currentlyPlaying").parent(parent).next(sibling).attr('data');
 	for (var j = 0; j < music.length; j++) {
 		if (music[j].id == currentTitle) {
 			currentMusic = j;
@@ -19,10 +17,24 @@ function getSong() {
 	id_music = currentMusic;
 }
 
-//});
+//lecture des chansons nouvautés au click bouton
+function getSongNouveautes() {
+	var currentMusic = 0;
+	var currentTitle = $(".currentlyPlaying").parent("a").parent("div.col-md-4.music").next("div.col-md-5").children("div.infosCover").children("h5.title").attr('data');
+	for (var k = 0; k < music.length; k++) {
+		if (music[k].id == currentTitle) {
+			currentMusic = k;
+		}
+	
+		console.log("k = " + k);
+		console.log("currentTitle = " + currentTitle);
+		console.log("currentMusic = " + currentMusic);
+		
+	}
+	id_music = currentMusic;
+}
 
 //barre espace play/pause
-
 $(document).keydown(function (e) {
 	if (e.keyCode == 32) { // KeyCode de la touche espace
 		if (play.className == "active") {

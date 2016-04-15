@@ -140,6 +140,8 @@
 	color: #FFF;
 	z-index: 20px;
 	font-style: italic;
+.pauseMusic {
+  margin-left: 5px;
 }
 /*--------------------*\
 	le coups coeur
@@ -150,16 +152,17 @@
 .playMusic {
   width: 40px !important;
   padding-top: 30px;
+  margin-right: 5px;
 }
 
-#page-nouveautes .playMusic {
+#page-nouveautes .playMusic, #page-nouveautes .pauseMusic {
   width: 40px;
-  padding-top: 55px;
+  padding-top: 65px;
 }
 
-#page-top_playlists .playMusic {
+#page-top_playlists .playMusic, #page-top_playlists .pauseMusic {
   width: 40px;
-  padding-top: 55px;
+  padding-top: 65px;
 }
 
 .informationsChansons {
