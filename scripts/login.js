@@ -104,4 +104,14 @@ var LoginModalController = {
 
 $(document).ready(function() {
   LoginModalController.initialize();
+  $('#log').on('click', function(){
+    var location = window.location.pathname;
+    var newLocation = location.replace('index.html', 'accueil.html');
+    console.log(newLocation);
+    window.location.pathname=newLocation;
+
+    
+    
+    // /Users/Carina/Desktop/Deezer-master/index.html
+  });
 });
