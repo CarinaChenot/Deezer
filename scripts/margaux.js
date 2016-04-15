@@ -25,11 +25,11 @@ $(document).ready(function () {
 			$(this).attr("src", "images/pauseBlack.png");
 			$(this).addClass("currentlyPlaying");
 			$(this).removeClass("play");
-			getSong();
+			getSong("a", 'span.title');
 			updateAllPlayer();
 			permut();
 		} else if ($(this).hasClass("pause")) {
-			getSong();
+			getSong("a", 'span.title');
 			pauseMusic();
 			$(".currentlyPlaying").attr("src", "images/playBlack.png");
 			$(this).removeClass("currentlyPlaying");
@@ -38,6 +38,52 @@ $(document).ready(function () {
 			$(this).removeClass("pause");
 		}
 	});
+	
+	$(".pauseMusic").hide();
+
+	$("#page-nouveautes .playMusic, #page-mix .playMusic").on("click", function (e) {
+		$(this).fadeOut("slow");
+		$(this).next(".pauseMusic").delay(600).fadeIn("slow");
+		$(".playMusic").remove("currentlyPlaying");
+		$(this).addClass("currentlyPlaying");
+		e.preventDefault();
+		getSongNouveautes();
+		updateAllPlayer();
+		permut();
+	});
+
+	$("#page-nouveautes .pauseMusic, #page-mix .pauseMusic").on("click", function (e) {
+		$(this).fadeOut("slow");
+		$(this).prev(".playMusic").delay(600).fadeIn("slow");
+		e.preventDefault();
+		getSongNouveautes();
+		pauseMusic();
+		$(this).removeClass("currentlyPlaying");
+		//permut();
+	});
+
+	/*if ($(this).hasClass("playMusic")) {
+			$(".currentlyPlaying").attr("src", "images/playBlack.png");
+			$(".pause").addClass("playMusic");
+			$(".pause").removeClass("currentlyPlaying");
+			$(".pause").removeClass("pauseMusic");
+			$(this).addClass("pauseMusic");
+			$(this).attr("src", "images/pauseBlack.png");
+			$(this).addClass("currentlyPlaying");
+			$(this).removeClass("playMusic");
+			getSongNouveautes();
+			updateAllPlayer();
+			permut();
+		} else if ($(this).hasClass("pauseMusic")) {
+			getSongNouveautes();
+			pauseMusic();
+			$(".currentlyPlaying").attr("src", "images/playBlack.png");
+			$(this).removeClass("currentlyPlaying");
+			//$(this).attr("src", "images/playBlack.png");
+			$(this).addClass("playMusic");
+			$(this).removeClass("pauseMusic");
+}
+									});*/
 
 	$(".music a").hide();
 	$(".music").hover(
@@ -165,8 +211,8 @@ $(document).ready(function () {
 		var genreSelectionné = localStorage.getItem("genre_selectionné");
 		$("#selected-nouveautés").html(genreSelectionné);
 	});
-  
-  $(".select").on("click", function(e){
+
+	$(".select").on("click", function(e){
 		e.preventDefault();
 		var genre = $(this).text();
 		localStorage.setItem("genre_selectionné", genre);
