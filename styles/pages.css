@@ -113,7 +113,7 @@
   width: 100%;
   height: 100%;
   left: 25px;
-  top: -10px;
+  top: 10px;
   background: rgba(42, 42, 42, 0.5);
   text-align: center;
 }
@@ -140,19 +140,25 @@
 	color: #FFF;
 	z-index: 20px;
 	font-style: italic;
-.pauseMusic {
-  margin-left: 5px;
 }
+
 /*--------------------*\
 	le coups coeur
  				Fin
 
 \*--------------------*/
 
+.pauseMusic {
+  margin-left: 5px;
+}
+
 .playMusic {
+  margin-right: 5px;
+}
+
+.playMusic, .pauseMusic {
   width: 40px !important;
   padding-top: 30px;
-  margin-right: 5px;
 }
 
 #page-nouveautes .playMusic, #page-nouveautes .pauseMusic {
