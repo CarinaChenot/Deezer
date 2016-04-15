@@ -160,6 +160,14 @@ $(document).ready(function () {
 		var genre = $(this).text();
 		localStorage.setItem("genre_selectionné", genre);
 		var genreSelectionné = localStorage.getItem("genre_selectionné");
+		$("#selected-nouveautés").html(genreSelectionné);
+	});
+  
+  $(".select").on("click", function(e){
+		e.preventDefault();
+		var genre = $(this).text();
+		localStorage.setItem("genre_selectionné", genre);
+		var genreSelectionné = localStorage.getItem("genre_selectionné");
 		$("#selected-mix").html(genreSelectionné);
 	});
 });
