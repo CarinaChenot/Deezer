@@ -7,7 +7,9 @@ html {
 }
 
 body{
-  background-image: url(http://cdn-files.deezer.com/cache/images/pages/index/signup/visual_wide.ec2b8485284290c121d776ad0619d5c4.jpg)
+  background-image: url(http://cdn-files.deezer.com/cache/images/pages/index/signup/visual_wide.ec2b8485284290c121d776ad0619d5c4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .deezer {
