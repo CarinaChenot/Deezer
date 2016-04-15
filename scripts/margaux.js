@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+	//changement dans le player de l'album, titre et artist affiché
 	function updateAllPlayer() {
 		player.pause();
 		player.currentTime = 0;
@@ -12,6 +13,7 @@ $(document).ready(function () {
 		player.play();
 	}
 
+	//playlists accueil lecture
 	$(".play").on("click", function (e) {
 		e.preventDefault();
 		if ($(this).hasClass("play")) {
@@ -47,6 +49,7 @@ $(document).ready(function () {
 		}
 	);
 
+	//tri par ambiances, genres, artistes,...
 	$("#ambiances-playlists").on("click", function () {
 		$(".artistes").hide();
 		$(".genre").hide();
